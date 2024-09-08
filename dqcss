@@ -1,0 +1,158 @@
+/* Don't show me activity */
+[class^='membersGroup']:has([role=button]),
+[class^='member'] [class^='container']:has([class*='badges']) {
+  display: none;
+}
+
+/* minimise spotify player, expand on hover */
+#vc-spotify-player {
+    height: 50px;
+    transition: height 0.4s ease-out;
+    overflow: hidden;
+    #vc-spotify-progress-bar,
+    .vc-spotify-button-row {
+        opacity: 0;
+        transition: opacity 0.4s ease-out;
+    }
+    &:hover {
+        height: 115px;
+        #vc-spotify-progress-bar,
+        .vc-spotify-button-row {
+            opacity: 1;
+        }
+    }
+}
+
+/* Expandable User Panel */
+
+.panels_a4d4d9 div[class^="container"] div[class^="flex"] {
+  width: fit-content !important; 
+  margin-left: auto; 
+  margin-right: 0;
+}
+
+.panels_a4d4d9 div[class^="container"] div[class^="avatarWrapper"] {
+  width: 194px;
+  margin-right: 8px !important;
+}
+
+.panels_a4d4d9 div[class^="container"] div[class^="flex"] button[role="switch"] {
+  width: 0px;
+  overflow: hidden;
+  transition: all 0.3s;
+  left: 16px;
+}
+
+.panels_a4d4d9 div[class^="container"] div[class^="flex"]:hover button[role="switch"] {
+  width: 32px;
+  overflow: visible;
+  transition: all 0.3s;
+  left: 0px;
+}
+
+.panels_a4d4d9 div[class^="container"] div[class^="flex"]:not(:hover) button:not([role="switch"]) svg {
+  rotate: 360deg;
+  transition: rotate 0.3s;
+  background-color: transparent;
+}
+
+.panels_a4d4d9 div[class^="container"] div[class^="flex"]:hover button:not([role="switch"]) svg {
+  rotate: 0deg;
+  transition: rotate 0.3s;
+}
+
+/* Allow scrolling in your user popout if it's too large (next to settings) */
+[class*=userPopoutInner_]>[class*=body_] {
+  overflow-y: auto;
+}
+
+/* bio scrollbar + unclamp */
+[class^="descriptionClamp_"] {
+  -webkit-line-clamp: unset;
+  max-height: 112px;
+  overflow-x: hidden;
+  overflow-y: auto;
+    
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border: 2px solid var(--scrollbar-thin-track);
+      background-color: var(--scrollbar-thin-track);
+      border-color: var(--scrollbar-thin-track);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--profile-body-divider-color);
+      background-clip: padding-box;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      min-height: 40px;
+    }
+}
+
+/* ModViewNitroless */
+@import url(https://raw.githubusercontent.com/SeaswimmerTheFsh/VencordThemes/main/Snippets/ModViewNitroless/Catppuccin.css);
+
+/* user tags after the name in replies */
+[class^=botTagCompact],
+[class^=repliedTextPreview]
+{
+    order: 1 !important;
+}
+
+/* shiggy loading */
+[class^=content]:has(> video[data-testid="app-spinner"]) {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    translate: 25%;
+    width: 200px;
+    height: 180px;
+    background-image: url('./1039992459209490513.png') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  video { visibility: hidden; }
+}
+
+.sprite__d0696b.spriteGreyscale__750f4 {
+    mask-image: url(./1024751291504791654.png);
+    mask-size: 24px;
+}
+
+/* shiggy home icon */
+[data-list-item-id="guildsnav___home"] {
+    content: url(./1024751291504791654.gif);
+}
+
+/* hide Apps button */
+button[aria-label="Apps"] {
+    display: none;
+}
+
+/* hide Gift button */
+button[aria-label="Send a gift"] {
+    display: none;
+}
+
+/* hide Stickers button */
+button[aria-label="Open sticker picker"] {
+    display: none;
+}
+
+/* DisableSuperLongBio */
+[class^=userPopoutInner_] [class^=blockquoteContainer_] {
+  max-height: 90px;
+}
+
+/* Move button bar above reply */
+[class*=buttonContainer] > [class*=buttons_] {
+    transform: translateY(-20%);
+}
