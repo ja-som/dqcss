@@ -1,6 +1,6 @@
 /* Remove the Create Invite button from Channel Lists */
-[class^="iconVisibility_"] [aria-label="Create Invite"] {
-    display: none !important;
+[class^=actionIcon_]:has(>[d^="M14.5 8a3 3 0 1 0-2.7-4.3c"]) {
+  display: none;
 }
 [class^="iconVisibility_"] [class^="channelInfo_"] {
     display: flex !important;
