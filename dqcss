@@ -1,8 +1,10 @@
 /* Remove the Create Invite and Edit Channel buttons from Channels List */
-[class^="iconVisibility_"] [aria-label="Edit Channel"] {
-    display: none !important;
-}
+/* Create Invite */
 [class^=actionIcon_]:has(>[d^="M14.5 8a3 3 0 1 0-2.7-4.3c"]) {
+  display: none;
+}
+/* Edit Channel */
+[class^=actionIcon_]:has(>[d^="M10.56 1.1c-.46.05-.7.53-.64.98.18"]) {
   display: none;
 }
 [class^="iconVisibility_"] [class^="channelInfo_"] {
