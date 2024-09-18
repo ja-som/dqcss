@@ -1,4 +1,7 @@
-/* Remove the Create Invite button from Channel Lists */
+/* Remove the Create Invite and Edit Channel buttons from Channels List */
+[class^="iconVisibility_"] [aria-label="Edit Channel"] {
+    display: none !important;
+}
 [class^=actionIcon_]:has(>[d^="M14.5 8a3 3 0 1 0-2.7-4.3c"]) {
   display: none;
 }
