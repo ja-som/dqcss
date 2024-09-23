@@ -1,3 +1,8 @@
+/* Removes App Icon on Images */
+[aria-label="Edit Image with Apps"]{
+  display: none;
+}
+
 /* Remove the Create Invite and Edit Channel buttons from Channels List */
 /* Create Invite */
 [class^=actionIcon_]:has(>[d^="M14.5 8a3 3 0 1 0-2.7-4.3c"]) {
