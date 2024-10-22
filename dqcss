@@ -1,3 +1,12 @@
+/* Spinny Discover button */
+[data-list-item-id*="guild-discover-button"] svg {
+    transform: rotate(0deg);
+    transition: transform 1s ease-in-out;
+}
+[data-list-item-id*="guild-discover-button"]:hover svg {
+    transform: rotate(720deg);
+}
+
 /* Removes App Icon on Images */
 [aria-label="Edit Image with Apps"]{
   display: none;
