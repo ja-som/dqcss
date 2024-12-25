@@ -1,13 +1,3 @@
-/* Replace the server icon for a specific server */
-[data-list-item-id="897109205968912415"] img {
-    content: url("./neon_512_A_t.gif") !important;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
 /* corner text */
 :root {
 --corner-text: 'ja_som'
@@ -164,7 +154,7 @@
 
 /* ja_som home icon */
 [data-list-item-id="guildsnav___home"] {
-    content: url(./neon_720_A_t.gif);
+    content: url(./neon_512_A_t.gif);
 }
 
 /* hide Apps button */
@@ -194,7 +184,7 @@ button[aria-label="Open sticker picker"] {
 
 /* ja_som Emoji Button */
 .sprite_d91a75.spriteColored_d91a75 {
-    background-image: url(./neon_720_A_t.gif);
+    background-image: url(./neon_512_A_t.gif);
     background-size: 24px;
 }
 
