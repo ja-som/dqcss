@@ -157,9 +157,9 @@
     mask-size: 24px;
 }
 
-/* shiggy home icon */
+/* ja_som home icon */
 [data-list-item-id="guildsnav___home"] {
-    content: url(./1024751291504791654.gif);
+    content: url(./neon_720_A_t.gif);
 }
 
 /* hide Apps button */
