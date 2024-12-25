@@ -154,7 +154,7 @@
 
 /* ja_som home icon */
 [data-list-item-id="guildsnav___home"] {
-    content: url(./neon_512_A_t.gif);
+    content: url(./neon_720_A_t.png);
 }
 
 /* hide Apps button */
@@ -184,7 +184,7 @@ button[aria-label="Open sticker picker"] {
 
 /* ja_som Emoji Button */
 .sprite_d91a75.spriteColored_d91a75 {
-    background-image: url(./neon_512_A_t.gif);
+    background-image: url(./neon_720_A_t.png);
     background-size: 24px;
 }
 
