@@ -1,6 +1,6 @@
 /* Replace the server icon for a specific server */
 [data-list-item-id="897109205968912415"] img {
-    content: url("neon_720_A_t.gif") !important;
+    content: url("./neon_512_A_t.gif") !important;
     width: 100%;
     height: 100%;
     object-fit: cover;
