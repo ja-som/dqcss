@@ -152,11 +152,6 @@
   video { visibility: hidden; }
 }
 
-.sprite__d0696b.spriteGreyscale__750f4 {
-    mask-image: url(./1024751291504791654.png);
-    mask-size: 24px;
-}
-
 /* ja_som home icon */
 [data-list-item-id="guildsnav___home"] {
     content: url(./neon_720_A_t.gif);
