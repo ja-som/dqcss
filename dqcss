@@ -133,7 +133,7 @@
     order: 1 !important;
 }
 
-/* shiggy loading */
+/* ja_som loading */
 [class^=content]:has(> video[data-testid="app-spinner"]) {
   position: relative;
   &::after {
@@ -144,7 +144,7 @@
     translate: 25%;
     width: 200px;
     height: 180px;
-    background-image: url('./1039992459209490513.png') !important;
+    background-image: url('./neon_720_A_t.png') !important;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
