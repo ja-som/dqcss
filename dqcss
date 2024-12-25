@@ -182,13 +182,13 @@ button[aria-label="Open sticker picker"] {
     transform: translateY(-20%);
 }
 
-/* Custom Emoji Button */
+/* ja_som Emoji Button */
 .sprite_d91a75.spriteColored_d91a75 {
-    background-image: url(./1024751291504791654.gif);
+    background-image: url(./neon_720_A_t.gif);
     background-size: 24px;
 }
 
 .sprite_d91a75.spriteGreyscale_d91a75 {
-    mask-image: url(./1024751291504791654.png);
+    mask-image: url(./neon_720_t.png);
     mask-size: 24px;
 }
