@@ -154,7 +154,7 @@
 
 /* ja_som home icon */
 [data-list-item-id="guildsnav___home"] {
-    content: url(./neon_720_A_t.png);
+    content: url('https://cdn.discordapp.com/avatars/315546500639752202/a_0a1f5d4c367b485389c57791f71a60aa.gif');
 }
 
 /* hide Apps button */
