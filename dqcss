@@ -192,3 +192,9 @@ button[aria-label="Open sticker picker"] {
     mask-image: url(./neon_720_t.png);
     mask-size: 24px;
 }
+
+/* ja_som's server animated icon */
+[data-list-item-id="guildsnav___897109205968912415"] 
+[class*=icon] {
+  content:url("./neon_720_A_t.png");
+}
