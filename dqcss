@@ -144,7 +144,7 @@
     translate: 25%;
     width: 200px;
     height: 200px;
-    background-image: url('./neon_720_A_t.png') !important;
+    background-image: url('./neon_700_A_t.png') !important;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -154,7 +154,7 @@
 
 /* ja_som home icon */
 [data-list-item-id="guildsnav___home"] {
-    content: url('./neon_720_A_t.png');
+    content: url('./neon_700_A_t.png');
 }
 
 /* hide Apps button */
@@ -184,19 +184,19 @@ button[aria-label="Open sticker picker"] {
 
 /* ja_som Emoji Button */
 .sprite_d91a75.spriteColored_d91a75 {
-    background-image: url(./neon_720_A_t.png);
+    background-image: url(./neon_700_A_t.png);
     background-size: 24px;
 }
 
 .sprite_d91a75.spriteGreyscale_d91a75 {
-    mask-image: url(./neon_720_t.png);
+    mask-image: url(./neon_700_t.png);
     mask-size: 24px;
 }
 
 /* ja_som's server animated icon */
 [data-list-item-id="guildsnav___897109205968912415"] 
 [class*=icon] {
-  content:url("./neon_720_A_t.png");
+  content:url("./neon_700_A_t.png");
 }
 
 /* ja_som's emoji dump server animated icon */
