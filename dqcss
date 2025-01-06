@@ -142,8 +142,8 @@
     top: 0px;
     left: 0px;
     translate: 25%;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     background-image: url('./neon_700_A_t.png') !important;
     background-size: contain;
     background-repeat: no-repeat;
