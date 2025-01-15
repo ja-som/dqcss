@@ -54,7 +54,6 @@
 }
 
 /* Expandable User Panel */
-
 .panels_a4d4d9 div[class^="container"] div[class^="flex"] {
   width: fit-content !important; 
   margin-left: auto; 
@@ -215,4 +214,24 @@ button[aria-label="Open sticker picker"] {
 [data-list-item-id="guildsnav___1291491635695452190"] 
 [class*=icon] {
   content:url("https://cdn.discordapp.com/emojis/1306291490502348861.webp?animated=true");
+}
+
+/* Collapsible chat actions */
+[class^=chat_] [class^=textArea_] {
+  margin-right: 24px;
+  +[class^=buttons_] {
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+    &:not(:hover)>:not(:last-child) {
+      display: none;
+    }
+    /* Send message button fix */
+    &:not(:hover)>[class^=separator_] {
+      margin-left: 0;
+      &::before { display: none; }
+      button>div { margin-left: 8px; }
+    }
+  }
 }
