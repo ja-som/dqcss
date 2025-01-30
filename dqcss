@@ -54,6 +54,7 @@
 }
 
 /* Expandable User Panel */
+
 .panels_c48ade div[class^="container"] div[class^="flex"] {
   width: fit-content !important; 
   margin-left: auto; 
