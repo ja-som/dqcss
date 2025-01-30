@@ -182,12 +182,12 @@ button[aria-label="Open sticker picker"] {
 }
 
 /* ja_som Emoji Button */
-.sprite_d91a75.spriteColored_d91a75 {
+.sprite__04eed.spriteColored__04eed {
     background-image: url(./neon_700_A_t.png);
     background-size: 24px;
 }
 
-.sprite_d91a75.spriteGreyscale_d91a75 {
+.sprite__04eed.spriteGreyscale__04eed {
     mask-image: url(./neon_700_t.png);
     mask-size: 24px;
 }
