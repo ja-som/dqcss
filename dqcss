@@ -257,3 +257,11 @@ button[aria-label="Open sticker picker"] {
     font-size: 14px;
     padding: 0;
 }
+
+/* Pin page switcher to bottom of search results */
+[class^=container_]:has([class^=pageControlContainer_]){
+  position:sticky;
+  bottom:0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));;
+}
