@@ -263,5 +263,5 @@ button[aria-label="Open sticker picker"] {
   position:sticky;
   bottom:0px;
   z-index: 999;
-  background: hsl(240, 21%, 15%);;
+  background: var(--bg-overlay-1);;
 }
