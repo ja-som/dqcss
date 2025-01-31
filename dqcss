@@ -253,7 +253,7 @@ button[aria-label="Open sticker picker"] {
 }
 
 .tooltipDescription_f240e3 {
-    color: white !important;
+    color: hsl(228, 24%, 72%) !important;
     font-size: 14px;
     padding: 0;
 }
@@ -263,5 +263,5 @@ button[aria-label="Open sticker picker"] {
   position:sticky;
   bottom:0px;
   z-index: 999;
-  background: var(--bg-overlay-1, var(--background-secondary));;
+  background: hsl(240, 21%, 15%);;
 }
