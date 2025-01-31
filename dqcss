@@ -231,3 +231,29 @@ button[aria-label="Open sticker picker"] {
     }
   }
 }
+
+/* Small Nitro badge pop-up */
+.tooltipWordmarkContainer_f240e3 {
+       display: none;
+       padding: 0;
+}
+
+.tooltipContainer_f240e3 > img {
+    display: none;
+}
+
+.tooltipContainer_f240e3 > h1 {
+    display: none;
+    padding: 0;
+}
+
+.tooltipContainer_f240e3 {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.tooltipDescription_f240e3 {
+    color: white !important;
+    font-size: 14px;
+    padding: 0;
+}
