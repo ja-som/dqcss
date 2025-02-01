@@ -259,9 +259,9 @@ button[aria-label="Open sticker picker"] {
 }
 
 /* Pin page switcher to bottom of search results */
-[class^=container_]:has([class^=pageControlContainer_]){
-  position:sticky;
-  bottom:0px;
+[class^="searchResultsWrap_"] [class^="container_"]:has([class^="pageControlContainer_"]){
+  position: sticky;
+  bottom: 0px;
   z-index: 999;
-  background: var(--bg-overlay-1);;
+  background: var(--bg-overlay-1, var(--background-primary));
 }
