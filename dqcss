@@ -278,7 +278,7 @@ button[aria-label="Open sticker picker"] {
     z-index: 1;
 }
 
-.roleRemoveButton_dfa8b6 {
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -287,11 +287,11 @@ button[aria-label="Open sticker picker"] {
     margin: 0 !important;
 }
 
-.roleCircle__4f569 {
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
     margin: 6px 8px;
 }
 
-.roleCircle__4f569::before {
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
     content: '';
     display: block;
     position: absolute;
