@@ -232,30 +232,27 @@ button[aria-label="Open sticker picker"] {
   }
 }
 
-/* Small Nitro badge pop-up */
-.tooltipWordmarkContainer_f240e3 {
-       display: none;
-       padding: 0;
-}
-
-.tooltipContainer_f240e3 > img {
-    display: none;
-}
-
-.tooltipContainer_f240e3 > h1 {
-    display: none;
-    padding: 0;
-}
-
-.tooltipContainer_f240e3 {
-    padding: 0;
-    margin: 0 auto;
-}
-
-.tooltipDescription_f240e3 {
-    color: hsl(228, 24%, 72%) !important;
-    font-size: 14px;
-    padding: 0;
+/* Remove Nitro tenure tooltip bloat */
+[class^="tooltipContainer_"]:has([class^="tooltipWordmarkContainer_"]) {
+    padding: initial;
+    & img, h1, h2, [class^="tooltipWordmarkContainer_"] { display: none; }
+    
+    & [class*="tooltipDescription_"] {
+        color: inherit!important;
+        font: inherit;
+        margin: inherit;
+        /* text-transform: lowercase;
+        &:after, &:before { text-transform: initial; } */
+        &:before { content: "Nitro "; }
+    }
+    & [src="/assets/242f4d0069d97414.svg"] ~ div:after { content: " (Bronze)" }
+    & [src="/assets/a28ccbd2a55e8413.svg"] ~ div:after { content: " (Silver)" }
+    & [src="/assets/45bb84c5fd852085.svg"] ~ div:after { content: " (Gold)" }
+    & [src="/assets/d343a0b3439e81d1.svg"] ~ div:after { content: " (Platinum)" }
+    & [src="/assets/bb018f1613e8d528.svg"] ~ div:after { content: " (Diamond)" }
+    & [src="/assets/11a893d07ab86fe4.svg"] ~ div:after { content: " (Emerald)" }
+    & [src="/assets/2801bd9ef48c1d87.svg"] ~ div:after { content: " (Ruby)" }
+    & [src="/assets/c20bd44dcc3b5ecb.svg"] ~ div:after { content: " (Opal)" }
 }
 
 /* Pin page switcher to bottom of search results */
