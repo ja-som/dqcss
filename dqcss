@@ -54,39 +54,32 @@
 }
 
 /* Expandable User Panel */
-
-.panels_c48ade div[class^="container"] div[class^="flex"] {
+.panels_c48ade div[class^="buttons_"] {
   width: fit-content !important; 
   margin-left: auto; 
   margin-right: 0;
 }
 
-.panels_c48ade div[class^="container"] div[class^="avatarWrapper"] {
-  width: 194px;
-  margin-right: 8px !important;
-}
-
-.panels_c48ade div[class^="container"] div[class^="flex"] button[role="switch"] {
+.panels_c48ade div[class^="buttons_"] button[role="switch"] {
   width: 0px;
   overflow: hidden;
   transition: all 0.3s;
   left: 16px;
 }
 
-.panels_c48ade div[class^="container"] div[class^="flex"]:hover button[role="switch"] {
+.panels_c48ade div[class^="buttons_"]:hover button[role="switch"] {
   width: 32px;
   overflow: visible;
   transition: all 0.3s;
   left: 0px;
 }
 
-.panels_c48ade div[class^="container"] div[class^="flex"]:not(:hover) button:not([role="switch"]) svg {
+.panels_c48ade div[class^="buttons_"]:not(:hover) button:not([role="switch"]) svg {
   rotate: 360deg;
   transition: rotate 0.3s;
-  background-color: transparent;
 }
 
-.panels_c48ade div[class^="container"] div[class^="flex"]:hover button:not([role="switch"]) svg {
+.panels_c48ade div[class^="buttons_"]:hover button:not([role="switch"]) svg {
   rotate: 0deg;
   transition: rotate 0.3s;
 }
