@@ -290,3 +290,10 @@ button[aria-label="Open sticker picker"] {
       12px/2);  /* Circle size */
   }
 }
+
+/* Status based Activity Status Icon */
+[class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #a6e3a1 }
+[class^=memberInner]:has(> div >[aria-label*="Idle"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f9e2af }
+[class^=memberInner]:has(> div > [aria-label*="Do Not Disturb"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f38ba8 }
+[class^=memberInner]:has(> div > [aria-label*="Streaming"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #cba6f7 }
+[class^=memberInner] [class^=subText] svg > path[fill="#23a55a"] { fill: #747f8d }
