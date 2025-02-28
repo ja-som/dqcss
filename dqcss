@@ -284,4 +284,5 @@ button[aria-label="Open sticker picker"] {
   }
 }
 
-
+/* Hide Activity Status Icon */
+[class^=container] > [class^=icon]:has(> path) { display: none }
