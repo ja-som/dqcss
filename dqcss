@@ -192,12 +192,6 @@ button[aria-label="Open sticker picker"] {
   content:url("./neon_700_A_t.png");
 }
 
-/* ja_som's emoji dump server animated icon */
-[data-list-item-id="guildsnav___1231134596716957697"] 
-[class*=icon] {
-  content:url("https://cdn.discordapp.com/emojis/1261778408673640480.webp?animated=true");
-}
-
 /* ja_som's Helloween emojis server animated icon */
 [data-list-item-id="guildsnav___1288171506710614090"] 
 [class*=icon] {
