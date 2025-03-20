@@ -127,22 +127,22 @@
 }
 
 /* ja_som loading */
-[class^=content]:has(> video[data-testid="app-spinner"]) {
- position: relative;
- &::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 20px;
-  width: 180px;
-  height: 200px;
-  background-image: url('./neon_700_A_t.png') !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
- }
- video { visibility: hidden; }
- div[class^=text_] { top: 20px; }
+[class*=content]:has(> video[data-testid="app-spinner"]) {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    translate: 25%;
+    width: 200px;
+    height: 180px;
+    background-image: url('./neon_700_A_t.png') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  video { visibility: hidden; }
 }
 
 /* Blurred Background while loading */
