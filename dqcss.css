@@ -145,6 +145,12 @@
   video { visibility: hidden; }
 }
 
+/* Blurred Background while loading */
+[class*="container_"][class*="fixClipping_"] {
+  background: 0 0;
+  backdrop-filter: blur(5px);
+}
+
 /* ja_som home icon */
 [data-list-item-id="guildsnav___home"] {
     content: url('./neon_700_A_t.png');
