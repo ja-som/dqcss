@@ -12,11 +12,6 @@
     transform: rotate(720deg);
 }
 
-/* Removes App Icon on Images */
-[aria-label="Edit Image with Apps"]{
-  display: none;
-}
-
 /* Remove the Create Invite and Edit Channel buttons from Channels List */
 [class^="iconVisibility_"] [aria-label="Create Invite"] {
     display: none !important;
@@ -157,10 +152,11 @@
     content: url('./neon_700_A_t.png');
 }
 
-/* hide Apps button */
-button[aria-label="Apps"] {
-    display: none;
-}
+/* Hide App Launcher button */
+[class^=channelAppLauncher] { display: none }
+
+/* Hide Edit Image with Apps button */
+[class^=hoverButtonGroup] { display: none }
 
 /* hide Gift button */
 button[aria-label="Send a gift"] {
