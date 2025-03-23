@@ -172,6 +172,9 @@ button[aria-label="Open sticker picker"] {
     display: none;
 }
 
+/* Hide 🔊 Show All button */
+[class^=voiceChannelsButton] { display: none }
+
 /* DisableSuperLongBio */
 [class^=userPopoutInner_] [class^=blockquoteContainer_] {
   max-height: 90px;
