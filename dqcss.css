@@ -9,6 +9,16 @@
     margin-bottom: 10px!important;
 }
 
+/* Put chatbox icons closer */
+div:has(button[aria-label='Send a gift']) {
+  gap: 0px !important;
+}
+
+/* Server icons are circles */
+[data-dnd-name] > div > svg > foreignObject > div > img {
+    border-radius: 100% !important;
+}
+
 /* Move button bar above reply */
 [class*=buttonContainer] > [class*=buttons_] {
     transform: translateY(-20%);
@@ -263,17 +273,6 @@ button[aria-label="Apps"] {
 /* ja_som home icon */
 [data-list-item-id="guildsnav___home"] {
     content: url('./neon_700_A_t.png');
-}
-
-/* ja_som Emoji Button */
-.sprite__04eed.spriteColored__04eed {
-    background-image: url(./neon_700_A_t.png);
-    background-size: 24px;
-}
-
-.sprite__04eed.spriteGreyscale__04eed {
-    mask-image: url(./neon_700_t.png);
-    mask-size: 24px;
 }
 
 /* ja_som's server animated icon */
