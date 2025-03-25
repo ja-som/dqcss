@@ -23,21 +23,6 @@
     transform: rotate(720deg);
 }
 
-/* Collapsible chat actions */
-[class^=chat_] [class^=textArea_] {
-  margin-right: 24px;
-  +[class^=buttons_] {
-    position: absolute;
-    right: 0;
-    background-color: hsl(240,21%,12%);
-    backdrop-filter: blur(3px);
-    border-radius: 8px;
-    &:not(:hover)>:not(:last-child) {
-      display: none;
-    }
-  }
-}
-
 /* minimise spotify player, expand on hover */
 #vc-spotify-player {
     height: 50px;
