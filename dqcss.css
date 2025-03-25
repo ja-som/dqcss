@@ -52,6 +52,15 @@ div:has(button[aria-label='Send a gift']) {
     }
 }
 
+/* Smaller User Panel */
+.panels_c48ade {
+    margin-left: var(--custom-guild-list-width);
+    width: calc(calc(100% - 42px * 2)) !important;
+}
+.visual-refresh .wrapper_ef3116 {
+    margin-bottom: 10px; /* or whatever you want */
+}
+
 /* Expandable User Panel */
 .panels_c48ade div[class^="buttons_"] {
   width: fit-content !important; 
