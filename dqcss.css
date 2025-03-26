@@ -6,14 +6,14 @@
 
 /* Aligned Chat Box and Typing indicator */
 .container_c48ade {
-  --custom-chat-input-margin-bottom: 22px;
+  --custom-chat-input-margin-bottom: 18px;
 }
 :root {
-  --custom-channel-textarea-text-area-height: 42px;
+  --custom-channel-textarea-text-area-height: 40px;
 }
 .visual-refresh .base_b88801 {
-  font-size: 13.5px;
-  height: 18px;
+  font-size: 12px;
+  height: 15px;
 }
 
 /* Put chatbox icons closer */
@@ -79,18 +79,6 @@ div:has(button[aria-label='Send a gift']) {
             opacity: 1;
         }
     }
-}
-
-/* Don't cover server list with panels */
-.visual-refresh section.panels_c48ade {
-  margin-left: var(--custom-guild-list-width);
-  width: calc(100% - var(--space-xs)*2 - var(--custom-guild-list-width)) !important;
-  .actionButtons_e131a9 button {
-    padding: 0;
-  }
-}
-nav.guilds_c48ade {
-  margin-bottom: 0 !important;
 }
 
 /* Expandable User Panel */
