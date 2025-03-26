@@ -16,11 +16,6 @@
   height: 15px;
 }
 
-/* Put chatbox icons closer */
-div:has(button[aria-label='Send a gift']) {
-  gap: 0px !important;
-}
-
 /* Collapsible chat actions */
 [class^=chat_] [class*=textArea_] {
   margin-right: 32px;
