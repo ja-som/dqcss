@@ -19,9 +19,9 @@
  div[class^=text_] { top: 10px; }
 }
 
-/* ja_som home icon */
+/* custom home icon */
 [data-list-item-id="guildsnav___home"] {
-    content: url('./neon_700_A_t.png');
+    content: url('./discord-music-512.gif');
 }
 
 /* ja_som Emoji Button */
