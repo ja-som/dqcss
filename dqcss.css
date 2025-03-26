@@ -4,9 +4,16 @@
   backdrop-filter: blur(5px);
 }
 
-/* Move channel text input area lower */
-[class*="channelTextArea_"] {
-    margin-bottom: 10px!important;
+/* Aligned Chat Box and Typing indicator */
+.container_c48ade {
+  --custom-chat-input-margin-bottom: 22px;
+}
+:root {
+  --custom-channel-textarea-text-area-height: 42px;
+}
+.visual-refresh .base_b88801 {
+  font-size: 13.5px;
+  height: 18px;
 }
 
 /* Put chatbox icons closer */
@@ -14,10 +21,32 @@ div:has(button[aria-label='Send a gift']) {
   gap: 0px !important;
 }
 
+/* Collapsible chat actions */
+[class^=chat_] [class*=textArea_] {
+  margin-right: 32px;
+  +[class^=buttons_] {
+    position: absolute;
+    right: 0;
+    &:not(:hover)>:not(:has(>[class^=emojiButton] )) {
+      display: none;
+    }
+    &:not(:hover)>[class^=container_] button>div {
+      margin-left: 8px;
+    }
+    >:has(> [class*=emojiButton_]) {
+        order: 99;
+    }
+    >:has(> .app-launcher-entrypoint) {
+        order: -1;
+    }
+  }
+}
+
 /* Server icons are circles */
 [data-dnd-name] > div > svg > foreignObject > div > img {
     border-radius: 100% !important;
 }
+.icon_f34534.guildIcon__48112 { border-radius: 50% !important }
 
 /* Move button bar above reply */
 [class*=buttonContainer] > [class*=buttons_] {
@@ -52,13 +81,16 @@ div:has(button[aria-label='Send a gift']) {
     }
 }
 
-/* Smaller User Panel */
-.panels_c48ade {
-    margin-left: var(--custom-guild-list-width);
-    width: calc(calc(100% - 42px * 2)) !important;
+/* Don't cover server list with panels */
+.visual-refresh section.panels_c48ade {
+  margin-left: 72px;
+  width: calc(100% - var(--space-xs)*2 - 72px) !important;
+  .actionButtons_e131a9 button {
+    padding: 0;
+  }
 }
-.visual-refresh .wrapper_ef3116 {
-    margin-bottom: 10px; /* or whatever you want */
+nav.guilds_c48ade {
+  margin-bottom: 0 !important;
 }
 
 /* Expandable User Panel */
@@ -249,6 +281,9 @@ button[aria-label="Open sticker picker"] {
 /* Hide 🔊 Show All button */
 [class^=refreshVoiceChannelsButton] { display: none }
 
+/* Hide "X IN VOICE" bar */
+[class*=voiceBar__] { display: none }
+
 /* hide App Launcher button */
 button[aria-label="Apps"] {
     display: none;
@@ -282,6 +317,19 @@ button[aria-label="Apps"] {
 /* ja_som home icon */
 [data-list-item-id="guildsnav___home"] {
     content: url('./neon_700_A_t.png');
+}
+
+/* ja_som Emoji Button */
+:root{
+  --customEmojiIconURL: url(./neon_700_A_t.png);
+  --customEmojiIconMask: url(./neon_700_A_t.png);
+}
+[class*=emojiButton] [class*=spriteColored]{
+  background: var(--customEmojiIconURL) center/contain no-repeat;
+}
+
+[class*=emojiButton] [class*=spriteGreyscale]{
+  mask: var(--customEmojiIconMask) center/contain no-repeat;
 }
 
 /* ja_som's server animated icon */
