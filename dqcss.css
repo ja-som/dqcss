@@ -68,7 +68,7 @@ div:has(button[aria-label='Send a gift']) {
     transform: rotate(720deg);
 }
 
-/* minimise spotify player, expand on hover */
+/* minimise Spotify player, expand on hover */
 #vc-spotify-player {
     height: 50px;
     transition: height 0.4s ease-out;
@@ -223,6 +223,12 @@ nav.guilds_c48ade {
 
 /* Hide Activity Status Icon */
 [class^=container] > [class^=icon]:has(> path) { display: none }
+
+/* Hide Activity Status in Member list */
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+}
 
 /* Hide chat box if you have no permission to write in the channel */
 [class*=channelTextAreaDisabled] {
