@@ -46,7 +46,13 @@ div:has(button[aria-label='Send a gift']) {
 [data-dnd-name] > div > svg > foreignObject > div > img {
     border-radius: 100% !important;
 }
-.icon_f34534.guildIcon__48112 { border-radius: 50% !important }
+.visual-refresh .closedFolderIconWrapper__48112>div {
+  border-radius: 50% !important;
+  width: 16px;
+  height: 16px;
+  font-size: 6px !important;
+  line-height: 16px;
+}
 
 /* Move button bar above reply */
 [class*=buttonContainer] > [class*=buttons_] {
