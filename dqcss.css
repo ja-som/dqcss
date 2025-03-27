@@ -4,18 +4,6 @@
   backdrop-filter: blur(5px);
 }
 
-/* Aligned Chat Box and Typing indicator */
-.container_c48ade {
-  --custom-chat-input-margin-bottom: 18px;
-}
-:root {
-  --custom-channel-textarea-text-area-height: 40px;
-}
-.visual-refresh .base_b88801 {
-  font-size: 12px;
-  height: 15px;
-}
-
 /* Collapsible chat actions */
 [class^=chat_] [class*=textArea_] {
   margin-right: 32px;
