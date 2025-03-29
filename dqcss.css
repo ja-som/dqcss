@@ -195,6 +195,9 @@
   display: none;
 }
 
+/* Hide Active Now */
+[class^=nowPlayingColumn] { display: none }
+
 /* Hide chat box if you have no permission to write in the channel */
 [class*=channelTextAreaDisabled] {
     display: none!important;
