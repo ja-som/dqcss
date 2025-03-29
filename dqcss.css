@@ -208,6 +208,9 @@
     z-index: 0!important;
 }
 
+/* Hide Find or start a conversation button */
+[class=searchBar__35e86] { display: none }
+
 /* Adding people isn't that important Discord */
 [data-tab-id=ADD_FRIEND]{
     background-color: var(--background-color) !important;
