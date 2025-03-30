@@ -37,7 +37,7 @@ body {
     --window-control-size: 14px; /* size of custom window controls */
 
     /* dms button icon options */
-    --dms-icon: off; /* set to default to use discord icon, on to use custom icon, off to disable completely */
+    --dms-icon: on; /* set to default to use discord icon, on to use custom icon, off to disable completely */
     --dms-icon-svg-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
     --dms-icon-svg-size: 90%; /* size of the svg (css mask-size) */
     --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
