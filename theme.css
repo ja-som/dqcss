@@ -72,9 +72,9 @@ body {
 
 /* color options */
 :root {
-/* accent colors */    
-	--mention: var(--bg-3); /* background of messages that mention you */
-    --mention-hover: var(--bg-3); /* background of messages that mention you when hovered */
-    --reply: var(--bg-3); /* background of messages that reply to you */
-    --reply-hover: var(--bg-3); /* background of messages that reply to you when hovered */
+/* accent colors */   
+    --mention: var(--message-hover); /* background of messages that mention you */
+    --mention-hover: var(--message-hover); /* background of messages that mention you when hovered */
+    --reply: var(--message-hover); /* background of messages that reply to you */
+    --reply-hover: var(--message-hover); /* background of messages that reply to you when hovered */
 }
