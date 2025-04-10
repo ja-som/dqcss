@@ -1,6 +1,3 @@
-/* An icon pack by Mudueon based on the Solar icon set by Designs480 */
-@import url(https://raw.githubusercontent.com/mudaranrhiod/discord-iconpacks/refs/heads/master/vencord/solar/solar.css);
-
 /* Blurred Background while loading */
 [class*="container_"][class*="fixClipping_"] {
   background: 0 0;
