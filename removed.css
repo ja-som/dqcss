@@ -3,3 +3,8 @@
 [class*=icon] {
   content:url("https://cdn.discordapp.com/emojis/1261778408673640480.webp?animated=true");
 }
+
+/* custom home icon */
+[data-list-item-id="guildsnav___home"] {
+    content: url('./discord-music-512.gif');
+}
