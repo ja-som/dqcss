@@ -1,6 +1,16 @@
-/* An icon pack by Mudueon based on the Solar icon set by Designs480 */
+/* icon pack */
+/**
+ * @name Solar Bold
+ * @author Mudueon
+ * @authorId 807170846497570848
+ * @description An iconpack based off the Solar iconset by Designs480
+ * @version 1.0.0
+ * @updateUrl https://mudaranrhiod.github.io/DT/vencord/solar.css
+ * @source
+ */
 @import url(https://raw.githubusercontent.com/mudaranrhiod/discord-iconpacks/refs/heads/master/vencord/solar/solar.css);
 
+/* theme */
 /**
  * @name midnight
  * @description a dark, rounded discord theme.
