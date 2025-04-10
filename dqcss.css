@@ -27,6 +27,15 @@
   }
 }
 
+/* bigger folder icon */
+[class*=expandedFolderIconWrapper__] {
+    svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1px;
+    }
+}
+
 /* Server icons are circles */
 [class*="closedFolderIconWrapper_"] > [class*="guildIcon_"],
 [data-list-item-id*="guildsnav_"] > [class*="icon_"] {
