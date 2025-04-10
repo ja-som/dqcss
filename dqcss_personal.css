@@ -19,11 +19,6 @@
  div[class^=text_] { top: 10px; }
 }
 
-/* custom home icon */
-[data-list-item-id="guildsnav___home"] {
-    content: url('./discord-music-512.gif');
-}
-
 /* makes my name purple */
 img[src*="315546500639752202"]~h3 [class*="username_"] {
     color:#ac02be!important
