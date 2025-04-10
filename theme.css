@@ -36,7 +36,7 @@ body {
     --custom-app-top-bar-height: 24px; /* height of the titlebar/top bar (default is 36px)*/
 
     /* window controls */
-    --custom-window-controls: on; /* turn off to use discord default window controls */
+    --custom-window-controls: off; /* turn off to use discord default window controls */
     --window-control-size: 14px; /* size of custom window controls */
 
     /* dms button icon options */
