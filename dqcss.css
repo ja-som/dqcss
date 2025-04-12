@@ -277,7 +277,7 @@ button[aria-label="Open sticker picker"] {
     display: none;
 }
 
-/* Hide 🔊 Show All button */
+/* Hide "🔊 Show All" button */
 [class^=refreshVoiceChannelsButton] { display: none }
 
 /* Hide "X IN VOICE" bar */
@@ -285,5 +285,13 @@ button[aria-label="Open sticker picker"] {
 
 /* hide App Launcher button */
 button[aria-label="Apps"] {
+    display: none;
+}
+
+/* Hide the "message @name" box from profile */
+[class=footer__5be3e] { display: none }
+
+/* hide "Add Friend" button from profile */
+button[aria-label="Add Friend"] {
     display: none;
 }
