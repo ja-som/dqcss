@@ -24,19 +24,6 @@ img[src*="315546500639752202"]~h3 [class*="username_"] {
     color:#ac02be!important
 }
 
-/* ja_som Emoji Button */
-:root{
-  --customEmojiIconURL: url(./neon_700_A_t.png);
-  --customEmojiIconMask: url(./neon_700_A_t.png);
-}
-[class*=emojiButton] [class*=spriteColored]{
-  background: var(--customEmojiIconURL) center/contain no-repeat;
-}
-
-[class*=emojiButton] [class*=spriteGreyscale]{
-  mask: var(--customEmojiIconMask) center/contain no-repeat;
-}
-
 /* ja_som's server animated icon */
 [data-list-item-id="guildsnav___897109205968912415"] 
 [class*=icon] {
