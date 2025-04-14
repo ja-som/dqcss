@@ -8,3 +8,16 @@
 [data-list-item-id="guildsnav___home"] {
     content: url('./discord-music-512.gif');
 }
+
+/* ja_som Emoji Button */
+:root{
+  --customEmojiIconURL: url(./neon_700_A_t.png);
+  --customEmojiIconMask: url(./neon_700_A_t.png);
+}
+[class*=emojiButton] [class*=spriteColored]{
+  background: var(--customEmojiIconURL) center/contain no-repeat;
+}
+
+[class*=emojiButton] [class*=spriteGreyscale]{
+  mask: var(--customEmojiIconMask) center/contain no-repeat;
+}
