@@ -10,7 +10,7 @@
   +[class^=buttons_] {
     position: absolute;
     right: 0;
-    background-color: #181825;
+    background-color: var(--bg-3);
     border-radius: 8px;
     &:not(:hover)>:not(:has(>[class^=emojiButton] )) {
       display: none;
