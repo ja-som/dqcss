@@ -227,10 +227,6 @@
     z-index: 0!important;
 }
 
-/* Hide "Active Now" section from channel list */
-[class=containerDefault_c69b6d] { display: none }
-[class*=wrapperStatic__29444] { display: none }
-
 /* Hide Find or start a conversation button */
 [class=searchBar__35e86] { display: none }
 
