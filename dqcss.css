@@ -207,11 +207,6 @@ span[class*="timestampInline_"] {
   }
 }
 
-/* hide the title */
-.title_c38106 {
-  display: none !important
-}
-
 /* Hide Activity Status Icon */
 [class^=container] > [class^=icon]:has(> path) { display: none }
 
