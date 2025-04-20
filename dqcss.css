@@ -207,6 +207,12 @@ span[class*="timestampInline_"] {
   }
 }
 
+/* jump to present button on right side */
+.jumpToPresentBar__0f481{
+    justify-self: end;
+    margin: 3px 10px !important;
+}
+
 /* Hide Activity Status Icon */
 [class^=container] > [class^=icon]:has(> path) { display: none }
 
