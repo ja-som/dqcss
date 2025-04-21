@@ -272,6 +272,15 @@ span[class*="timestampInline_"] {
     z-index: 0!important;
 }
 
+/* Hide typing dots in chat bar */
+svg[class^="ellipsis"] {
+  display: none !important;
+
+  & + span {
+    margin-left: 5px !important;
+  }
+}
+
 /* Hide Find or start a conversation button */
 [class=searchBar__35e86] { display: none }
 
