@@ -307,6 +307,11 @@ svg[class^="ellipsis"] {
 
 
 /* Hide buttons */
+/* Hide the "Invite to Server" button */
+[class^="inviteButton_"] {
+     display: none !important;
+}
+
 /* Hide the "..." Channel Options button from Channels List */
 [class^="iconVisibility_"] [aria-label="Channel Options"] {
     display: none !important;
