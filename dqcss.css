@@ -307,14 +307,8 @@ svg[class^="ellipsis"] {
 
 
 /* Hide buttons */
-/* Hide the Create Invite and Edit Channel buttons from Channels List */
-[class^="iconVisibility_"] [aria-label="Create Invite"] {
-    display: none !important;
-}
-[class^="iconVisibility_"] [aria-label="Invite to Server"] {
-    display: none !important;
-}
-[class^="iconVisibility_"] [aria-label="Edit Channel"] {
+/* Hide the "..." Channel Options button from Channels List */
+[class^="iconVisibility_"] [aria-label="Channel Options"] {
     display: none !important;
 }
 
