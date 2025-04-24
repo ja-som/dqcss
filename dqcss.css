@@ -318,7 +318,9 @@ svg[class^="ellipsis"] {
 }
 
 /* Hide Edit Image with Apps button */
-[class^=hoverButtonGroup] { display: none }
+[class^=hoverButtonGroup] {
+    display: none;
+}
 
 /* hide Gift button */
 button[aria-label="Send a gift"] {
@@ -331,10 +333,14 @@ button[aria-label="Open sticker picker"] {
 }
 
 /* Hide "🔊 Show All" button */
-[class^=refreshVoiceChannelsButton] { display: none }
+[class^=refreshVoiceChannelsButton] {
+    display: none;
+}
 
 /* Hide "X IN VOICE" bar */
-[class*=voiceBar__] { display: none }
+[class*=voiceBar__] {
+    display: none;
+}
 
 /* hide App Launcher button */
 button[aria-label="Apps"] {
@@ -342,7 +348,9 @@ button[aria-label="Apps"] {
 }
 
 /* Hide the "message @name" box from profile */
-[class=footer__5be3e] { display: none }
+[class=footer__5be3e] {
+    display: none;
+}
 
 /* hide "Add Friend" button from profile */
 button[aria-label="Add Friend"] {
