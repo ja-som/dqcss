@@ -116,13 +116,35 @@ span[class*="timestampInline_"] {
   transition: rotate 0.3s;
 }
 
+/* Profile Popout Actions Hover */
+.wrapper_da5890:not(:hover) {
+    pointer-events: none;
+}
+.wrapper_da5890 button:not([aria-label="More"]) {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+.wrapper_da5890 button[aria-label="More"] {
+    opacity: 1;
+    pointer-events: all;
+    transform: none;
+}
+.wrapper_da5890:hover button:not([aria-label="More"]) {
+    opacity: 1;
+    pointer-events: all;
+    transform: none;
+}
+
 /* Scrollable/compact codeblocks */
 :root {
-  --codeblock-height: 200px;
+    --codeblock-height: 200px;
 }
-.codeContainer__75297 > code {
+.codeContainer__75297 > code, .vc-shiki-code {
   max-height: var(--codeblock-height);
   overflow-y: scroll;
+  
   &::-webkit-scrollbar {
     height: 8px;
     width: 8px;
@@ -131,7 +153,7 @@ span[class*="timestampInline_"] {
     background-color: transparent;
   }
     &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb {
-    /* visibility: hidden; */
+    visibility: hidden;
   }
   &::-webkit-scrollbar-thumb {
     background-clip: padding-box;
@@ -148,6 +170,14 @@ span[class*="timestampInline_"] {
     border: 2px solid var(--scrollbar-thin-track);
     border-color: var(--scrollbar-thin-track);
   }
+}
+.vc-shiki-btns {
+    position: sticky;
+    display: flex;
+    justify-content: flex-end;
+  }
+.vc-shiki-code{
+  padding: 10px 0 0 10px !important;
 }
 
 /* Allow scrolling in your user popout if it's too large (next to settings) */
