@@ -337,6 +337,11 @@ svg[class^="ellipsis"] {
 
 
 /* Hide buttons */
+/* Hide the "Close DM" button */
+[class^="closeButton__"] {
+    display: none !important;
+}
+
 /* Hide the "Invite to Server" button */
 [class^="inviteButton_"] {
      display: none !important;
