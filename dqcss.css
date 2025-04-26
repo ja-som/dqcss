@@ -278,7 +278,9 @@ span[class*="timestampInline_"] {
 }
 
 /* Hide Activity Status Icon */
-[class^=container] > [class^=icon]:has(> path) { display: none }
+[class^=container] > [class^=icon]:has(> path) {
+     display: none;
+}
 
 /* Hide Activity Status in Member list */
 [class*='membersGroup']:has([role=button]),
@@ -287,7 +289,9 @@ span[class*="timestampInline_"] {
 }
 
 /* Hide Active Now */
-[class^=nowPlayingColumn] { display: none }
+[class=nowPlayingColumn__133bf] {
+     display: none;
+}
 
 /* Hide chat box if you have no permission to write in the channel */
 [class*=channelTextAreaDisabled] {
@@ -338,12 +342,12 @@ svg[class^="ellipsis"] {
 
 /* Hide buttons */
 /* Hide the "Close DM" button */
-[class^="closeButton__"] {
+[class^="closeButton__972a0"] {
     display: none !important;
 }
 
 /* Hide the "Invite to Server" button */
-[class^="inviteButton_"] {
+[class^="inviteButton_f37cb1"] {
      display: none !important;
 }
 
@@ -353,7 +357,7 @@ svg[class^="ellipsis"] {
 }
 
 /* Hide Edit Image with Apps button */
-[class^=hoverButtonGroup] {
+[class=hoverButtonGroup__06ab4] {
     display: none;
 }
 
@@ -368,12 +372,12 @@ button[aria-label="Open sticker picker"] {
 }
 
 /* Hide "🔊 Show All" button */
-[class^=refreshVoiceChannelsButton] {
+[class^=refreshVoiceChannelsButton__29444] {
     display: none;
 }
 
 /* Hide "X IN VOICE" bar */
-[class*=voiceBar__] {
+[class*=voiceBar__7aaec] {
     display: none;
 }
 
