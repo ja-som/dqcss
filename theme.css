@@ -8,7 +8,8 @@
  * @updateUrl https://mudaranrhiod.github.io/DT/vencord/solar.css
  * @source
  */
-@import url(https://mudaranrhiod.github.io/DT/vencord/solar.css);
+@import url('https://mudaranrhiod.github.io/DT/vencord/solar.css');
+@import url('https://mudaranrhiod.github.io/DT/vencord/solarmoreicons.css');
 
 /* theme */
 /**
