@@ -38,18 +38,19 @@ span[class*="timestampInline_"] {
 }
 
 /* bigger folder icon */
-[class*=expandedFolderIconWrapper__] {
+[class^=folderIcon__] {
     svg {
   width: 25px;
   height: 25px;
   margin-bottom: 1px;
     }
 }
-
 /* Server icons are circles */
-[class*="closedFolderIconWrapper_"] > [class*="guildIcon_"],
-[data-list-item-id*="guildsnav_"] > [class*="icon_"] {
-    border-radius: 50% !important;
+.folderHeaderSmall__48112 {
+  --custom-folder-preview-padding: 4px;
+}
+.folderPreviewGuildIcon__48112 {
+  border-radius: 50% !important;
 }
 
 /* Move button bar above reply */
