@@ -45,13 +45,14 @@ span[class*="timestampInline_"] {
   margin-bottom: 1px;
     }
 }
+
 /* Server icons are circles */
-.folderHeaderSmall__48112 {
-  --custom-folder-preview-padding: 4px;
-}
-.folderPreviewGuildIcon__48112 {
-  border-radius: 50% !important;
-}
+[class*="childWrapper__"],
+    [class*="childWrapper__"] img,
+    [class*="icon_"],
+    [class*="circleIconButton__"] {
+        border-radius: 50% !important;
+    }
 
 /* Move button bar above reply */
 [class*=buttonContainer] > [class*=buttons_] {
