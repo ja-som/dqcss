@@ -21,3 +21,12 @@
 [class*=emojiButton] [class*=spriteGreyscale]{
   mask: var(--customEmojiIconMask) center/contain no-repeat;
 }
+
+/* bigger folder icon */
+[class^=folderIcon__] {
+    svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1px;
+    }
+}
