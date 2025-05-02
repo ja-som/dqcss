@@ -1,3 +1,16 @@
+/* Server icons are circles */
+@import url("https://scattagain.github.io/VencordStuff/css/GuildbarRevert.css");
+
+:root {
+    /* Only include this part if you wish to change these variables */
+    /* You can change the size but only to be less than 48px, you must change the blob scale too */
+    --guildbar-avatar-size: 45px;
+    --blob-scale: 45;
+
+    --guildbar-folder-size: var(--guildbar-avatar-size);
+    --folder-blob-scale: var(--blob-scale);
+}
+
 /* Blurred Background while loading */
 [class*="container_"][class*="fixClipping_"] {
   background: 0 0;
@@ -36,23 +49,6 @@ span[class*="timestampInline_"] time::before {
 span[class*="timestampInline_"] {
   font-size: 0px !important;
 }
-
-/* bigger folder icon */
-[class^=folderIcon__] {
-    svg {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 1px;
-    }
-}
-
-/* Server icons are circles */
-[class*="childWrapper__"],
-    [class*="childWrapper__"] img,
-    [class*="icon_"],
-    [class*="circleIconButton__"] {
-        border-radius: 50% !important;
-    }
 
 /* Move button bar above reply */
 [class*=buttonContainer] > [class*=buttons_] {
