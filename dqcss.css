@@ -53,7 +53,7 @@ span[class*="timestampInline_"] {
 
 /* Server icons preview in folders */
 .folderHeaderSmall__48112 {
-   --custom-folder-preview-padding: 4px;
+   --custom-folder-preview-padding: 5px;
  }
  .folderPreviewGuildIcon__48112 {
    border-radius: 25% !important;
