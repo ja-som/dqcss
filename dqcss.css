@@ -279,20 +279,10 @@ span[class*="timestampInline_"] {
     margin: 20px 10px !important;
 }
 
-/* Hide Activity Status Icon */
-[class^=container] > [class^=icon]:has(> path) {
-     display: none;
-}
-
 /* Hide Activity Status in Member list */
 [class*='membersGroup']:has([role=button]),
 [class*='member'] [class*='container']:has([class*='badges']) {
   display: none;
-}
-
-/* Hide Active Now */
-[class=nowPlayingColumn__133bf] {
-     display: none;
 }
 
 /* Hide chat box if you have no permission to write in the channel */
@@ -317,10 +307,7 @@ svg[class^="ellipsis"] {
   }
 }
 
-/* Hide Find or start a conversation button */
-[class=searchBar__35e86] { display: none }
-
-/* Adding people isn't that important Discord */
+/* Adding people isn't that important */
 [data-tab-id=ADD_FRIEND]{
     background-color: var(--background-color) !important;
     color: var(--interactive-normal) !important;
@@ -342,63 +329,22 @@ svg[class^="ellipsis"] {
 
 
 
-/* Hide buttons */
-/* Hide the "Close DM" button */
-[class^="closeButton__972a0"] {
+/* Hide all the things */
+[class=searchBar__35e86],/* Hide Find or start a conversation button */
+[class=nowPlayingColumn__133bf],/* Hide Active Now */
+[class^=container] > [class^=icon]:has(> path),/* Hide Activity Status Icon */
+[class^="closeButton__972a0"],/* Hide the "Close DM" button */
+[class^="inviteButton_f37cb1"],/* Hide the "Invite to Server" button */
+[aria-label="Channel Options"],/* Hide the "..." Channel Options button from Channels List */
+[aria-label="Invite to Voice"], [aria-label="Open Chat"],/* Hide the Invite to Voice and Open Chat buttons from voice channels */
+[class=hoverButtonGroup__06ab4],/* Hide Edit Image with Apps button */
+button[aria-label="Send a gift"],/* hide Gift button */
+button[aria-label="Open sticker picker"],/* hide Stickers button */
+button[aria-label="Apps"],/* hide App Launcher button */
+[class^=refreshVoiceChannelsButton__29444],/* Hide "🔊 Show All" button */
+[class*=voiceBar__7aaec],/* Hide "X IN VOICE" bar */
+[class=footer__5be3e],/* Hide the "message @name" box from profile */
+button[aria-label="Add Friend"]/* hide "Add Friend" button from profile */
+{
     display: none !important;
-}
-
-/* Hide the "Invite to Server" button */
-[class^="inviteButton_f37cb1"] {
-     display: none !important;
-}
-
-/* Hide the "..." Channel Options button from Channels List */
-[class^="iconVisibility_"] [aria-label="Channel Options"] {
-    display: none !important;
-}
-
-/* Hide the Invite to Voice and Open Chat buttons from voice channels */
-[aria-label="Invite to Voice"], [aria-label="Open Chat"] {
-    display: none !important;
-}
-
-/* Hide Edit Image with Apps button */
-[class=hoverButtonGroup__06ab4] {
-    display: none;
-}
-
-/* hide Gift button */
-button[aria-label="Send a gift"] {
-    display: none;
-}
-
-/* hide Stickers button */
-button[aria-label="Open sticker picker"] {
-    display: none;
-}
-
-/* Hide "🔊 Show All" button */
-[class^=refreshVoiceChannelsButton__29444] {
-    display: none;
-}
-
-/* Hide "X IN VOICE" bar */
-[class*=voiceBar__7aaec] {
-    display: none;
-}
-
-/* hide App Launcher button */
-button[aria-label="Apps"] {
-    display: none;
-}
-
-/* Hide the "message @name" box from profile */
-[class=footer__5be3e] {
-    display: none;
-}
-
-/* hide "Add Friend" button from profile */
-button[aria-label="Add Friend"] {
-    display: none;
 }
