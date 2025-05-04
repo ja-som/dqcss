@@ -358,6 +358,11 @@ svg[class^="ellipsis"] {
     display: none !important;
 }
 
+/* Hide the Invite to Voice and Open Chat buttons from voice channels */
+[aria-label="Invite to Voice"], [aria-label="Open Chat"] {
+    display: none !important;
+}
+
 /* Hide Edit Image with Apps button */
 [class=hoverButtonGroup__06ab4] {
     display: none;
