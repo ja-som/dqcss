@@ -1,0 +1,485 @@
+/* ////////////////////////////////////////////////// THEME \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* icon pack */
+/**
+ * @name Solar Bold
+ * @author Mudueon
+ * @authorId 807170846497570848
+ * @description An iconpack based off the Solar iconset by Designs480
+ * @version 1.0.0
+ * @updateUrl https://mudaranrhiod.github.io/DT/vencord/solar.css
+ * @source
+ */
+@import url('https://mudaranrhiod.github.io/DT/vencord/solar.css');
+@import url('https://mudaranrhiod.github.io/DT/vencord/solarmoreicons.css');
+
+/* theme */
+/**
+ * @name midnight
+ * @description a dark, rounded discord theme.
+ * @author refact0r
+ * @version 2.1.1
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/midnight-discord
+ * @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
+ * @source https://github.com/refact0r/midnight-discord/blob/master/themes/flavors/midnight-catppuccin-mocha.theme.css
+ * @authorId 508863359777505290
+ * @authorLink https://www.refact0r.dev
+*/
+
+/* import theme modules */
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+@import url('https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/themes/flavors/midnight-catppuccin-mocha.theme.css');
+
+body {
+    /* top bar options */
+    --top-bar-height: var(--gap); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
+    --top-bar-button-position: titlebar; /* off: default position, hide: hide inbox/support buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to titlebar (will hide title) */
+    --top-bar-title-position: hide; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
+    --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
+
+    /* window controls */
+    --custom-window-controls: off; /* off: default window controls, on: custom window controls */
+    --window-control-size: 14px; /* size of custom window controls */
+
+    /* dms button options */
+    --custom-dms-icon: custom; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
+    --dms-icon-svg-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
+    --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
+    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
+    --custom-dms-background: off; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
+    --dms-background-image-url: url('https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png'); /* url of the background image */
+    --dms-background-image-size: cover; /* size of the background image (css background-size property) */
+    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* fixed color/gradient (css background property) */
+
+    /* chatbar options */
+    --custom-chatbar: aligned; /* off: default chatbar, aligned: chatbar aligned with the user panel, separated: chatbar separated from chat */
+    --chatbar-height: 47px; /* height of the chatbar (52px by default, 47px recommended for aligned, 56px recommended for separated) */
+    --chatbar-padding: 8px; /* padding of the chatbar. only applies in aligned mode. */
+
+    /* other options */
+    --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
+}
+
+/* color options */
+:root {
+/* accent colors */   
+    --mention: var(--message-hover); /* background of messages that mention you */
+    --mention-hover: var(--message-hover); /* background of messages that mention you when hovered */
+    --reply: var(--message-hover); /* background of messages that reply to you */
+    --reply-hover: var(--message-hover); /* background of messages that reply to you when hovered */
+}
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////// CUSTOMIZATION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* Blurred Background while loading */
+[class*="container_"][class*="fixClipping_"] {
+    background: 0 0;
+    backdrop-filter: blur(5px);
+  }
+  
+  /* Collapsible chat actions */
+  [class^=chat_] [class*=textArea_] {
+    margin-right: 32px;
+    +[class^=buttons_] {
+      position: absolute;
+      right: 0;
+      background-color: var(--bg-3);
+      border-radius: 8px;
+      &:not(:hover)>:not(:has(>[class^=emojiButton] )) {
+        display: none;
+      }
+      &:not(:hover)>[class^=container_] button>div {
+        margin-left: 8px;
+      }
+      >:has(> [class*=emojiButton_]) {
+          order: 99;
+      }
+      >:has(> .app-launcher-entrypoint) {
+          order: -1;
+      }
+    }
+  }
+  
+  /* Detailed Timestamp */
+  span[class*="timestampInline_"] time::before {
+    content: attr(aria-label);
+    font-size: 12px;
+  }
+  
+  span[class*="timestampInline_"] {
+    font-size: 0px !important;
+  }
+  
+  /* Move button bar above reply */
+  [class*=buttonContainer] > [class*=buttons_] {
+      transform: translateY(-20%);
+  }
+  
+  /* bigger folder icon */
+  [class^=folderIcon__] {
+      svg {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 1px;
+      }
+  }
+  
+  /* Server icons preview in folders */
+  .folderHeaderSmall__48112 {
+     --custom-folder-preview-padding: 5px;
+   }
+   .folderPreviewGuildIcon__48112 {
+     border-radius: 30% !important;
+   }
+  
+  /* Spinny Discover button */
+  [data-list-item-id*="guild-discover-button"] svg {
+      transform: rotate(0deg);
+      transition: transform 1s ease-in-out;
+  }
+  [data-list-item-id*="guild-discover-button"]:hover svg {
+      transform: rotate(720deg);
+  }
+  
+  /* minimise Spotify player, expand on hover */
+  #vc-spotify-player {
+      height: 50px;
+      transition: height 0.4s ease-out;
+      overflow: hidden;
+      #vc-spotify-progress-bar,
+      .vc-spotify-button-row {
+          opacity: 0;
+          transition: opacity 0.4s ease-out;
+      }
+      &:hover {
+          height: 115px;
+          #vc-spotify-progress-bar,
+          .vc-spotify-button-row {
+              opacity: 1;
+          }
+      }
+  }
+  
+  /* Expandable User Panel */
+  .panels_c48ade div[class^="buttons_"] {
+    width: fit-content !important; 
+    margin-left: auto; 
+    margin-right: 0;
+  }
+  
+  .panels_c48ade div[class^="buttons_"] button[role="switch"] {
+    width: 0px;
+    overflow: hidden;
+    transition: all 0.3s;
+    left: 16px;
+  }
+  
+  .panels_c48ade div[class^="buttons_"]:hover button[role="switch"] {
+    width: 32px;
+    overflow: visible;
+    transition: all 0.3s;
+    left: 0px;
+  }
+  
+  .panels_c48ade div[class^="buttons_"]:not(:hover) button:not([role="switch"]) svg {
+    rotate: 360deg;
+    transition: rotate 0.3s;
+  }
+  
+  .panels_c48ade div[class^="buttons_"]:hover button:not([role="switch"]) svg {
+    rotate: 0deg;
+    transition: rotate 0.3s;
+  }
+  
+  /* Profile Popout Actions Hover */
+  .wrapper_da5890:not(:hover) {
+      pointer-events: none;
+  }
+  .wrapper_da5890 button:not([aria-label="More"]) {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateX(10px);
+      transition: all 0.3s ease;
+  }
+  .wrapper_da5890 button[aria-label="More"] {
+      opacity: 1;
+      pointer-events: all;
+      transform: none;
+  }
+  .wrapper_da5890:hover button:not([aria-label="More"]) {
+      opacity: 1;
+      pointer-events: all;
+      transform: none;
+  }
+  
+  /* Scrollable/compact codeblocks */
+  :root {
+      --codeblock-height: 200px;
+  }
+  .codeContainer__75297 > code, .vc-shiki-code {
+    max-height: var(--codeblock-height);
+    overflow-y: scroll;
+    
+    &::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+    }
+    &::-webkit-scrollbar-corner {
+      background-color: transparent;
+    }
+      &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb {
+      visibility: hidden;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-clip: padding-box;
+      background-color: var(--scrollbar-thin-thumb);
+      border: 2px solid transparent;
+      border-radius: 4px;
+      min-height: 40px;
+    }
+    &:hover::-webkit-scrollbar-track, &:hover::-webkit-scrollbar-thumb {
+      visibility: visible;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: var(--scrollbar-thin-track);
+      border: 2px solid var(--scrollbar-thin-track);
+      border-color: var(--scrollbar-thin-track);
+    }
+  }
+  .vc-shiki-btns {
+      position: sticky;
+      display: flex;
+      justify-content: flex-end;
+    }
+  .vc-shiki-code{
+    padding: 10px 0 0 10px !important;
+  }
+  
+  /* Allow scrolling in your user popout if it's too large (next to settings) */
+  [class*=userPopoutInner_]>[class*=body_] {
+    overflow-y: auto;
+  }
+  
+  /* bio scrollbar + unclamp */
+  [class^="descriptionClamp_"] {
+    -webkit-line-clamp: unset;
+    max-height: 112px;
+    overflow-x: hidden;
+    overflow-y: auto;
+      
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+  
+      &::-webkit-scrollbar-track {
+        border: 2px solid var(--scrollbar-thin-track);
+        background-color: var(--scrollbar-thin-track);
+        border-color: var(--scrollbar-thin-track);
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background: var(--profile-body-divider-color);
+        background-clip: padding-box;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        min-height: 40px;
+      }
+  }
+  
+  /* Remove Nitro tenure tooltip bloat */
+  [class^="tooltipContainer_"]:has([class^="tooltipWordmarkContainer_"]) {
+      padding: initial;
+      & img, h1, h2, [class^="tooltipWordmarkContainer_"] { display: none; }
+      
+      & [class*="tooltipDescription_"] {
+          color: inherit!important;
+          font: inherit;
+          margin: inherit;
+          /* text-transform: lowercase;
+          &:after, &:before { text-transform: initial; } */
+          &:before { content: "Nitro "; }
+      }
+      & [src="/assets/242f4d0069d97414.svg"] ~ div:after { content: " (Bronze)" }
+      & [src="/assets/a28ccbd2a55e8413.svg"] ~ div:after { content: " (Silver)" }
+      & [src="/assets/45bb84c5fd852085.svg"] ~ div:after { content: " (Gold)" }
+      & [src="/assets/d343a0b3439e81d1.svg"] ~ div:after { content: " (Platinum)" }
+      & [src="/assets/bb018f1613e8d528.svg"] ~ div:after { content: " (Diamond)" }
+      & [src="/assets/11a893d07ab86fe4.svg"] ~ div:after { content: " (Emerald)" }
+      & [src="/assets/2801bd9ef48c1d87.svg"] ~ div:after { content: " (Ruby)" }
+      & [src="/assets/c20bd44dcc3b5ecb.svg"] ~ div:after { content: " (Opal)" }
+  }
+  
+  /* Pin page switcher to bottom of search results */
+  [class^="searchResultsWrap_"] [class^="container_"]:has([class^="pageControlContainer_"]){
+    position: sticky;
+    bottom: 0px;
+    z-index: 999;
+    background: var(--bg-overlay-1, var(--background-primary));
+  }
+  
+  /* colored role pills */
+  [class^="role_"] {
+    position: relative;
+    overflow: hidden;
+    > [class^="roleRemoveButton_"],
+    > div > [class^="roleRemoveButtonCanRemove_"]
+    {
+      position: static;
+      > [class^="roleCircle_"]::before {
+        content: "";
+        position: absolute;
+        top: 0;       left: 0;
+        width: 100%;  height: 100%;
+        background-color: inherit;
+        opacity: 0.2;
+        z-index: 0;
+      }
+    }
+    > [class^="roleName_"] { z-index: 1; }
+    [class^="roleRemoveIcon_"] {
+      left: calc(
+        4px +     /* Pill padding */
+        1px +     /* "Remove Role" */
+        4px +     /* Circle margin */
+        12px/2);  /* Circle size */
+    }
+  }
+  
+  /* jump to present button on right side */
+  .jumpToPresentBar__0f481{
+      justify-self: end;
+      margin: 20px 10px !important;
+  }
+  
+  /* Hide Activity Status in Member list */
+  [class*='membersGroup']:has([role=button]),
+  [class*='member'] [class*='container']:has([class*='badges']) {
+    display: none;
+  }
+  
+  /* Hide chat box if you have no permission to write in the channel */
+  [class*=channelTextAreaDisabled] {
+      display: none!important;
+  }
+  
+  [class*=channelTextAreaDisabled] {
+      opacity: 0!important;
+      position: absolute!important;
+      height: 0px!important;
+      width: 0px!important;
+      z-index: 0!important;
+  }
+  
+  /* Hide typing dots in chat bar */
+  svg[class^="ellipsis"] {
+    display: none !important;
+  
+    & + span {
+      margin-left: 5px !important;
+    }
+  }
+  
+  /* Adding people isn't that important */
+  [data-tab-id=ADD_FRIEND]{
+      background-color: var(--background-color) !important;
+      color: var(--interactive-normal) !important;
+  }
+  [data-tab-id=ADD_FRIEND]:hover{
+      background-color: var(--background-modifier-hover) !important;
+      color: var(--interactive-hover) !important;
+  }
+  [data-tab-id=ADD_FRIEND][aria-selected=true]{
+      background-color: var(--background-modifier-selected) !important;
+      color: var(--interactive-active) !important;
+  }
+  [data-tab-id=ADD_FRIEND][aria-selected=true]:hover{
+      background-color: var(--background-modifier-hover) !important;
+      color: var(--interactive-active) !important;
+  }
+  
+  
+  
+  
+  
+  /* Hide all the things */
+  [class=searchBar__35e86],/* Hide Find or start a conversation button */
+  [class=nowPlayingColumn__133bf],/* Hide Active Now */
+  [class^=container] > [class^=icon]:has(> path),/* Hide Activity Status Icon */
+  [class^="closeButton__972a0"],/* Hide the "Close DM" button */
+  [class^="inviteButton_f37cb1"],/* Hide the "Invite to Server" button */
+  [aria-label="Channel Options"],/* Hide the "..." Channel Options button from Channels List */
+  [aria-label="Invite to Voice"], [aria-label="Open Chat"],/* Hide the Invite to Voice and Open Chat buttons from voice channels */
+  [class=hoverButtonGroup__06ab4],/* Hide Edit Image with Apps button */
+  button[aria-label="Send a gift"],/* hide Gift button */
+  button[aria-label="Open sticker picker"],/* hide Stickers button */
+  [class*=channelAppLauncher_],/* hide App Launcher button */
+  [class^=refreshVoiceChannelsButton__29444],/* Hide "🔊 Show All" button */
+  [class*=voiceBar__7aaec],/* Hide "X IN VOICE" bar */
+  [class=footer__5be3e],/* Hide the "message @name" box from profile */
+  button[aria-label="Add Friend"]/* hide "Add Friend" button from profile */
+  {
+      display: none !important;
+  }
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////// PERSONAL CUSTOMIZATION \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* ja_som loading */
+[class*=content]:has(> video[data-testid="app-spinner"]) {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      translate: 25%;
+      width: 200px;
+      height: 180px;
+      background-image: url('./neon_700_A_t.png') !important;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    video { visibility: hidden; }
+   div[class^=text_] { top: 10px; }
+  }
+  
+  /* makes my name purple */
+  img[src*="315546500639752202"]~h3 [class*="username_"] {
+      color:#ac02be!important
+  }
+  
+  /* ja_som's server animated icon */
+  [data-list-item-id="guildsnav___897109205968912415"] 
+  [class*=icon] {
+    content:url("./neon_700_A_t.png");
+  }
+  
+  /* ja_som's Helloween emojis server animated icon */
+  [data-list-item-id="guildsnav___1288171506710614090"] 
+  [class*=icon] {
+    content:url("https://cdn.discordapp.com/emojis/1288190606434238475.webp?animated=true");
+  }
+  
+  /* ja_som's festive emojis server animated icon */
+  [data-list-item-id="guildsnav___1291491635695452190"] 
+  [class*=icon] {
+    content:url("https://cdn.discordapp.com/emojis/1306291490502348861.webp?animated=true");
+  }
