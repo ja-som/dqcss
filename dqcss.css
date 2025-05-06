@@ -349,7 +349,7 @@ body {
     [class^="roleRemoveIcon_"] {
       left: calc(
         4px +     /* Pill padding */
-        1px +     /* "Remove Role" */
+        -2px +     /* "Remove Role" */
         4px +     /* Circle margin */
         12px/2);  /* Circle size */
     }
