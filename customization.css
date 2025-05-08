@@ -1,9 +1,3 @@
-/* Blurred Background while loading */
-[class*="container_"][class*="fixClipping_"] {
-  background: 0 0;
-  backdrop-filter: blur(5px);
-}
-
 /* Collapsible chat actions */
 [class^=chat_] [class*=textArea_] {
   margin-right: 32px;
@@ -59,15 +53,6 @@ span[class*="timestampInline_"] {
    border-radius: 30% !important;
  }
 
-/* Spinny Discover button */
-[data-list-item-id*="guild-discover-button"] svg {
-    transform: rotate(0deg);
-    transition: transform 1s ease-in-out;
-}
-[data-list-item-id*="guild-discover-button"]:hover svg {
-    transform: rotate(720deg);
-}
-
 /* minimise Spotify player, expand on hover */
 #vc-spotify-player {
     height: 50px;
@@ -118,27 +103,6 @@ span[class*="timestampInline_"] {
   transition: rotate 0.3s;
 }
 
-/* Profile Popout Actions Hover */
-.wrapper_da5890:not(:hover) {
-    pointer-events: none;
-}
-.wrapper_da5890 button:not([aria-label="More"]) {
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(10px);
-    transition: all 0.3s ease;
-}
-.wrapper_da5890 button[aria-label="More"] {
-    opacity: 1;
-    pointer-events: all;
-    transform: none;
-}
-.wrapper_da5890:hover button:not([aria-label="More"]) {
-    opacity: 1;
-    pointer-events: all;
-    transform: none;
-}
-
 /* Scrollable/compact codeblocks */
 :root {
     --codeblock-height: 200px;
@@ -180,11 +144,6 @@ span[class*="timestampInline_"] {
   }
 .vc-shiki-code{
   padding: 10px 0 0 10px !important;
-}
-
-/* Allow scrolling in your user popout if it's too large (next to settings) */
-[class*=userPopoutInner_]>[class*=body_] {
-  overflow-y: auto;
 }
 
 /* bio scrollbar + unclamp */
