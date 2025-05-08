@@ -35,12 +35,54 @@
     --folder-blob-scale: var(--blob-scale);
 }
 
+/* to simplify: */
+/* Blurred Background while loading */
+[class*="container_"][class*="fixClipping_"] {
+  background: 0 0;
+  backdrop-filter: blur(5px);
+}
+
+/* Spinny Discover button */
+[data-list-item-id*="guild-discover-button"] svg {
+    transform: rotate(0deg);
+    transition: transform 1s ease-in-out;
+}
+[data-list-item-id*="guild-discover-button"]:hover svg {
+    transform: rotate(720deg);
+}
+
+/* Profile Popout Actions Hover */
+.wrapper_da5890:not(:hover) {
+    pointer-events: none;
+}
+.wrapper_da5890 button:not([aria-label="More"]) {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+.wrapper_da5890 button[aria-label="More"] {
+    opacity: 1;
+    pointer-events: all;
+    transform: none;
+}
+.wrapper_da5890:hover button:not([aria-label="More"]) {
+    opacity: 1;
+    pointer-events: all;
+    transform: none;
+}
+
+/* Allow scrolling in your user popout if it's too large (next to settings) */
+[class*=userPopoutInner_]>[class*=body_] {
+  overflow-y: auto;
+}
 
 
 
 
 
-because of lag:
+
+/* because of lag: */
 /* Remove Nitro tenure tooltip bloat */
 [class^="tooltipContainer_"]:has([class^="tooltipWordmarkContainer_"]) {
     padding: initial;
