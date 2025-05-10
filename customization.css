@@ -215,12 +215,6 @@ span[class*="timestampInline_"] {
     margin: 20px 10px !important;
 }
 
-/* Hide Activity Status in Member list */
-[class*='membersGroup']:has([role=button]),
-[class*='member'] [class*='container']:has([class*='badges']) {
-  display: none;
-}
-
 /* Hide chat box if you have no permission to write in the channel */
 [class*=channelTextAreaDisabled] {
     display: none!important;
