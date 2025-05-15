@@ -21,6 +21,11 @@
   }
 }
 
+/* Move icons in chat box closer together */
+div:has(button[aria-label='Send a gift']) {
+  gap: 0px !important;
+}
+
 /* Detailed Timestamp */
 span[class*="timestampInline_"] time::before {
   content: attr(aria-label);
