@@ -35,6 +35,21 @@
     --folder-blob-scale: var(--blob-scale);
 }
 
+/* icon pack */
+/**
+ * @name Solar Bold
+ * @author Mudueon
+ * @authorId 807170846497570848
+ * @description An iconpack based off the Solar iconset by Designs480
+ * @version 1.0.0
+ * @updateUrl https://mudaranrhiod.github.io/DT/vencord/solar.css
+ * @source
+ */
+@import url('https://mudaranrhiod.github.io/DT/vencord/solar.css');
+@import url('https://mudaranrhiod.github.io/DT/vencord/solarmoreicons.css');
+
+
+
 /* to simplify: */
 /* Blurred Background while loading */
 [class*="container_"][class*="fixClipping_"] {
