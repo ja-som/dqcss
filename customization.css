@@ -303,7 +303,7 @@ svg[class^="ellipsis"] {
 .hoverButtonGroup__06ab4,/* Hide Edit Image with Apps button */
 button[aria-label="Send a gift"],/* hide Gift button */
 button[aria-label="Open sticker picker"],/* hide Stickers button */
-[class*=channelAppLauncher_],/* hide App Launcher button */
+[class^=channelAppLauncher_],/* hide App Launcher button */
 [class^=refreshVoiceChannelsButton__29444],/* Hide "🔊 Show All" button */
 [class*=voiceBar__7aaec],/* Hide "X IN VOICE" bar */
 .footer__5be3e,/* Hide the "message @name" box from profile */
