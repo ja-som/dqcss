@@ -111,36 +111,19 @@ span[class*="timestampInline_"] {
 }
 
 /* Scrollable/compact codeblocks */
-:root {
-  --codeblock-height: 200px;
-}
 .codeContainer__75297 > code {
-  max-height: var(--codeblock-height);
+  max-height: 200px;
   overflow-y: scroll;
   &::-webkit-scrollbar {
     height: 8px;
     width: 8px;
   }
-  &::-webkit-scrollbar-corner {
-    background-color: transparent;
-  }
-    &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb {
-    /* visibility: hidden; */
-  }
   &::-webkit-scrollbar-thumb {
     background-clip: padding-box;
-    background-color: var(--scrollbar-thin-thumb);
+    background-color: var(--bg-2); /* color from theme */
     border: 2px solid transparent;
     border-radius: 4px;
     min-height: 40px;
-  }
-  &:hover::-webkit-scrollbar-track, &:hover::-webkit-scrollbar-thumb {
-    visibility: visible;
-  }
-  &::-webkit-scrollbar-track {
-    background-color: var(--scrollbar-thin-track);
-    border: 2px solid var(--scrollbar-thin-track);
-    border-color: var(--scrollbar-thin-track);
   }
 }
 
@@ -156,14 +139,8 @@ span[class*="timestampInline_"] {
       height: 8px;
     }
 
-    &::-webkit-scrollbar-track {
-      border: 2px solid var(--scrollbar-thin-track);
-      background-color: var(--scrollbar-thin-track);
-      border-color: var(--scrollbar-thin-track);
-    }
-
     &::-webkit-scrollbar-thumb {
-      background: var(--profile-body-divider-color);
+      background: var(--bg-2); /*color from theme */
       background-clip: padding-box;
       border: 2px solid transparent;
       border-radius: 4px;
@@ -176,7 +153,7 @@ span[class*="timestampInline_"] {
   position: sticky;
   bottom: 0px;
   z-index: 999;
-  background: var(--bg-overlay-1, var(--background-primary));
+  background: var(--bg-overlay-1, var(--background-primary)); /* color from theme */
 }
 
 /* colored role pills */
