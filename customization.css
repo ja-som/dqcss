@@ -112,12 +112,11 @@ span[class*="timestampInline_"] {
 
 /* Scrollable/compact codeblocks */
 :root {
-    --codeblock-height: 200px;
+  --codeblock-height: 200px;
 }
-.codeContainer__75297 > code, .vc-shiki-code {
+.codeContainer__75297 > code {
   max-height: var(--codeblock-height);
   overflow-y: scroll;
-  
   &::-webkit-scrollbar {
     height: 8px;
     width: 8px;
@@ -143,14 +142,6 @@ span[class*="timestampInline_"] {
     border: 2px solid var(--scrollbar-thin-track);
     border-color: var(--scrollbar-thin-track);
   }
-}
-.vc-shiki-btns {
-    position: sticky;
-    display: flex;
-    justify-content: flex-end;
-  }
-.vc-shiki-code{
-  padding: 10px 0 0 10px !important;
 }
 
 /* bio scrollbar + unclamp */
