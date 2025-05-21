@@ -125,7 +125,7 @@ span[class*="timestampInline_"] {
     background-color: transparent;
   }
     &::-webkit-scrollbar-track, &::-webkit-scrollbar-thumb {
-    visibility: hidden;
+    /* visibility: hidden; */
   }
   &::-webkit-scrollbar-thumb {
     background-clip: padding-box;
