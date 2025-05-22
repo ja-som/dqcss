@@ -9,7 +9,7 @@
     translate: 25%;
     width: 200px;
     height: 180px;
-    background-image: url('./neon_700_A_t.png') !important;
+    background-image: url('./neon_700_A_t.webp') !important;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,7 +26,7 @@ img[src*="315546500639752202"]~h3 [class*="username_"] {
 /* ja_som's server animated icon */
 [data-list-item-id="guildsnav___897109205968912415"] 
 [class*=icon] {
-  content:url("./neon_700_A_t.png");
+  content:url("./neon_700_A_t.webp");
 }
 
 /* ja_som's Helloween emojis server animated icon */
