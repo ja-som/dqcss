@@ -1,3 +1,40 @@
+/* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* bigger folder icon */
+[class^=folderIcon__] {
+    svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1px;
+    }
+}
+
+/* Server icons preview in folders */
+.folderHeaderSmall__48112 {
+   --custom-folder-preview-padding: 5px;
+ }
+ .folderPreviewGuildIcon__48112 {
+   border-radius: 30% !important;
+ }
+
+
+
+/* ////////////////////////////// channels list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* Collapse Icon Position Fix */
+.containerDefault__29444 {
+  > div {
+    padding-left: 0.5em;
+
+    > div {
+      display: flex !important;
+      place-content: start !important;
+      flex-direction: row-reverse !important;
+    }
+  }
+}
+
+
+
+/* ////////////////////////////// chat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* Collapsible chat actions */
 .buttons__74017 {
     gap: 0 !important;
@@ -43,23 +80,58 @@ span[class*="timestampInline_"] {
     transform: translateY(-20%);
 }
 
-/* bigger folder icon */
-[class^=folderIcon__] {
-    svg {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 1px;
-    }
+/* Scrollable/compact codeblocks */
+.codeContainer__75297 > code {
+  max-height: 200px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: var(--bg-2); /* color from theme */
+    border: 2px solid transparent;
+    border-radius: 4px;
+    min-height: 40px;
+  }
 }
 
-/* Server icons preview in folders */
-.folderHeaderSmall__48112 {
-   --custom-folder-preview-padding: 5px;
- }
- .folderPreviewGuildIcon__48112 {
-   border-radius: 30% !important;
- }
+/* jump to present button on right side */
+.jumpToPresentBar__0f481{
+    justify-self: end;
+    margin: 20px 10px !important;
+}
 
+/* Hide chat box if you have no permission to write in the channel */
+[class*=channelTextAreaDisabled] {
+    display: none!important;
+}
+
+[class*=channelTextAreaDisabled] {
+    opacity: 0!important;
+    position: absolute!important;
+    height: 0px!important;
+    width: 0px!important;
+    z-index: 0!important;
+}
+
+/* Hide typing dots in chat bar */
+svg[class^="ellipsis"] {
+  display: none !important;
+
+  & + span {
+    margin-left: 5px !important;
+  }
+}
+
+
+
+/* ////////////////////////////// member list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+/* ////////////////////////////// user panel area \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* minimise Spotify player, expand on hover */
 #vc-spotify-player {
     height: 50px;
@@ -110,23 +182,9 @@ span[class*="timestampInline_"] {
   transition: rotate 0.3s;
 }
 
-/* Scrollable/compact codeblocks */
-.codeContainer__75297 > code {
-  max-height: 200px;
-  overflow-y: scroll;
-  &::-webkit-scrollbar {
-    height: 8px;
-    width: 8px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-clip: padding-box;
-    background-color: var(--bg-2); /* color from theme */
-    border: 2px solid transparent;
-    border-radius: 4px;
-    min-height: 40px;
-  }
-}
 
+
+/* ////////////////////////////// other \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* bio scrollbar + unclamp */
 [class^="descriptionClamp_"] {
   -webkit-line-clamp: unset;
@@ -146,14 +204,6 @@ span[class*="timestampInline_"] {
       border-radius: 4px;
       min-height: 40px;
     }
-}
-
-/* Pin page switcher to bottom of search results */
-[class^="searchResultsWrap_"] [class^="container_"]:has([class^="pageControlContainer_"]){
-  position: sticky;
-  bottom: 0px;
-  z-index: 999;
-  background: var(--bg-overlay-1, var(--background-primary)); /* color from theme */
 }
 
 /* colored role pills */
@@ -184,32 +234,47 @@ span[class*="timestampInline_"] {
   }
 }
 
-/* jump to present button on right side */
-.jumpToPresentBar__0f481{
-    justify-self: end;
-    margin: 20px 10px !important;
+/* Server Tag Hover */
+.message__5126c {
+    .chipletContainerInner__10651 {
+        max-width: 12px;
+        transition: max-width var(0.3s ease) var(0.2s);
+        overflow: hidden;
+        .badge__10651 {
+            margin-right: 5px;
+        }
+    }
+    .chipletContainerInner__10651:hover {
+        max-width: 60px;
+    }
+    .chipletContainerInner__10651:not(:hover) {
+        transition-delay: var(0s);
+    }
 }
 
-/* Hide chat box if you have no permission to write in the channel */
-[class*=channelTextAreaDisabled] {
-    display: none!important;
+/* reduce context menu padding */
+.layer_da8173 > .menu_c1e9c4 > .scroller_c1e9c4 {
+    margin: -4px;
+    .separator_c1e9c4 {
+        margin: 1px 8px !important;
+    }
+    .wrapper_f563df {
+        padding: 2px !important;
+    }
+    .item_c1e9c4{
+        /* min-height is 32px as default, change value for desired look */
+        min-height: 32;
+        /* padding is 4px 8px as default, change value for desired look */
+        padding: 4px 8px;
+    }
 }
 
-[class*=channelTextAreaDisabled] {
-    opacity: 0!important;
-    position: absolute!important;
-    height: 0px!important;
-    width: 0px!important;
-    z-index: 0!important;
-}
-
-/* Hide typing dots in chat bar */
-svg[class^="ellipsis"] {
-  display: none !important;
-
-  & + span {
-    margin-left: 5px !important;
-  }
+/* Pin page switcher to bottom of search results */
+[class^="searchResultsWrap_"] [class^="container_"]:has([class^="pageControlContainer_"]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-primary)); /* color from theme */
 }
 
 /* Adding people isn't that important */
@@ -230,39 +295,9 @@ svg[class^="ellipsis"] {
     color: var(--interactive-active) !important;
 }
 
-/* reduce context menu padding */
-.layer_da8173 > .menu_c1e9c4 > .scroller_c1e9c4 {
-    margin: -4px;
-    .separator_c1e9c4 {
-        margin: 1px 8px !important;
-    }
-    .wrapper_f563df {
-        padding: 2px !important;
-    }
-    .item_c1e9c4{
-        /* min-height is 32px as default, change value for desired look */
-        min-height: 32;
-        /* padding is 4px 8px as default, change value for desired look */
-        padding: 4px 8px;
-    }
-}
-
-/* Collapse Icon Position Fix */
-.containerDefault__29444 {
-  > div {
-    padding-left: 0.5em;
-
-    > div {
-      display: flex !important;
-      place-content: start !important;
-      flex-direction: row-reverse !important;
-    }
-  }
-}
 
 
-
-/* Hide all the things */
+/* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .searchBar__35e86,/* Hide Find or start a conversation button */
 .nowPlayingColumn__133bf,/* Hide Active Now */
 .icon_c9d15c,/* Hide Activity Status Icon */
