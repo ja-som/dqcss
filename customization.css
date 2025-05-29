@@ -303,10 +303,9 @@ svg[class^="ellipsis"] {
 .icon_c9d15c,/* Hide Activity Status Icon */
 .closeButton__972a0,/* Hide the "Close DM" button */
 .inviteButton_f37cb1,/* Hide the "Invite to Server" button */
-.children__2ea32,/* Hide buttons from channels in Channels List */
-/*[aria-label="Channel Options"],/* Hide the "..." Channel Options button from Channels List */
-/*[aria-label="Create Invite"], [aria-label="Edit Channel"],/* Hide the "Create Invite" and "Edit Channel" buttons from Channels List */
-/*[aria-label="Invite to Voice"], [aria-label="Open Chat"],/* Hide the "Invite to Voice" and "Open Chat" buttons from voice channels */
+[aria-label="Channel Options"],/* Hide the "..." Channel Options button from Channels List */
+[aria-label="Create Invite"], [aria-label="Edit Channel"],/* Hide the "Create Invite" and "Edit Channel" buttons from Channels List */
+[aria-label="Invite to Voice"], [aria-label="Open Chat"],/* Hide the "Invite to Voice" and "Open Chat" buttons from voice channels */
 [aria-label="Edit Image with Apps"],/* Hide Edit Image with Apps button */
 button[aria-label="Send a gift"],/* hide Gift button */
 button[aria-label="Open sticker picker"],/* hide Stickers button */
