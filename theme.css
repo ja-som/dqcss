@@ -77,7 +77,7 @@ body {
 
 /* color options */
 :root {
-    --colors: on; /* off: discord default colors, on: midnight custom colors */
+    --colors: off; /* off: discord default colors, on: midnight custom colors */
 
     /* text colors */
     --text-0: var(--bg-3); /* text on colored elements */
