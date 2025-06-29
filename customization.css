@@ -32,6 +32,15 @@
   }
 }
 
+/* Hide Events and Server Boosts */
+:is(
+  [data-list-item-id^=channels___upcoming-events-],
+  [data-list-item-id^=channels___skill-trees-]
+)+div,
+ul[aria-label="Channels"]>.sectionDivider__629e4 {
+  display: none !important;
+}
+
 
 
 /* ////////////////////////////// chat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
