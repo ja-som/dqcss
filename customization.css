@@ -244,7 +244,7 @@ svg[class^="ellipsis"] {
 }
 
 /* Server Tag Hover */
-.message__5126c {
+/* .message__5126c {
     .chipletContainerInner__10651 {
         max-width: 12px;
         transition: max-width var(0.3s ease) var(0.2s);
@@ -259,7 +259,7 @@ svg[class^="ellipsis"] {
     .chipletContainerInner__10651:not(:hover) {
         transition-delay: var(0s);
     }
-}
+} */
 
 /* reduce context menu padding */
 .layer_da8173 > .menu_c1e9c4 > .scroller_c1e9c4 {
