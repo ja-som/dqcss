@@ -23,11 +23,11 @@ img[src*="315546500639752202"]~h3 [class*="username_"] {
     color:#ac02be!important
 }
 
-/* ja_som's server animated icon */
+/* ja_som's server animated icon
 [data-list-item-id="guildsnav___897109205968912415"] 
 [class*=icon] {
   content:url("./neon_700_A_t.webp");
-}
+} */
 
 /* ja_som's Helloween emojis server animated icon */
 [data-list-item-id="guildsnav___1288171506710614090"] 
