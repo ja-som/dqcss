@@ -383,8 +383,8 @@ button[aria-label="Add Friend"],/* hide "Add Friend" button from profile */
 .closeButton__972a0,/* Hide the "Close DM" button */
 .inviteButton_f37cb1,/* Hide the "Invite to Server" button */
 [aria-label="Edit Image with Apps"],/* Hide Edit Image with Apps button */
-button[aria-label="Send a gift"],/* hide Gift button */
-button[aria-label="Open sticker picker"],/* hide Stickers button */
+[aria-label="Send a gift"],/* hide Gift button */
+[aria-label="Open sticker picker"],/* hide Stickers button */
 .channelAppLauncher_e6e74f,/* hide App Launcher button */
 .refreshVoiceChannelsButton__29444,/* Hide "🔊 Show All" button */
 .voiceBar__7aaec,/* Hide "X IN VOICE" bar */
