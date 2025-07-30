@@ -400,15 +400,15 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 button[aria-label="Add Friend"],/* hide "Add Friend" button from profile */
 .closeButton__972a0,/* Hide the "Close DM" button */
 .inviteButton_f37cb1,/* Hide the "Invite to Server" button */
-[aria-label="Edit Image with Apps"],/* Hide Edit Image with Apps button */
-[aria-label="Send a gift"],/* hide Gift button */
-[aria-label="Open sticker picker"],/* hide Stickers button */
+div[aria-label="Edit Image with Apps"],/* Hide Edit Image with Apps button */
+div[aria-label="Send a gift"],/* hide Gift button */
+div[aria-label="Open sticker picker"],/* hide Stickers button */
 .channelAppLauncher_e6e74f,/* hide App Launcher button */
 .refreshVoiceChannelsButton__29444,/* Hide "🔊 Show All" button */
 .voiceBar__7aaec,/* Hide "X IN VOICE" bar */
 /* Hide stupid buttons from channels in Channels List: */
-[aria-label="Channel Options"], [aria-label="Invite to Voice"], [aria-label="Open Chat"],
-[aria-label="Create Invite"], [aria-label="Edit Channel"], [aria-label="Invite to Server"]
+div[aria-label="Channel Options"], div[aria-label="Invite to Voice"], div[aria-label="Open Chat"],
+div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label="Invite to Server"]
 {
     display: none !important;
 }
