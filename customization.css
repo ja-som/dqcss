@@ -1,5 +1,6 @@
 /* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* bigger folder icon */
+/* https://discord.com/channels/1015060230222131221/1359880118436233357 */
 [class^=folderIcon__] {
     svg {
   width: 25px;
@@ -9,6 +10,7 @@
 }
 
 /* Server icons preview in folders */
+/* https://discord.com/channels/1015060230222131221/1354361432472555623 */
 .folderHeaderSmall__48112 {
    --custom-folder-preview-padding: 5px;
  }
@@ -20,6 +22,7 @@
 
 /* ////////////////////////////// channels list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* Collapse Icon Position Fix */
+/* https://discord.com/channels/1015060230222131221/1362945175957012612 */
 .containerDefault__29444 {
   > div {
     padding-left: 0.5em;
@@ -33,6 +36,7 @@
 }
 
 /* Hide Events and Server Boosts */
+/* https://discord.com/channels/1015060230222131221/1134844326933954622/1386633258103738420 */
 :is(
   [data-list-item-id^=channels___upcoming-events-],
   [data-list-item-id^=channels___skill-trees-]
@@ -45,6 +49,7 @@ ul[aria-label="Channels"]>.sectionDivider__629e4 {
 
 /* ////////////////////////////// chat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* Collapsible chat actions */
+/* https://github.com/moonself/Vencord-Repos */
 .buttons__74017 {
     gap: 0 !important;
     pointer-events: none;
@@ -70,11 +75,13 @@ ul[aria-label="Channels"]>.sectionDivider__629e4 {
 }
 
 /* Move icons in chat box closer together */
+/* https://discord.com/channels/1015060230222131221/1354181746731651184 */
 div:has(button[aria-label='Send a gift']) {
   gap: 0px !important;
 }
 
 /* Detailed Timestamp */
+/* https://discord.com/channels/1015060230222131221/1269064603019509771 */
 span[class*="timestampInline_"] time::before {
   content: attr(aria-label);
   font-size: 12px;
@@ -85,6 +92,7 @@ span[class*="timestampInline_"] {
 }
 
 /* Move button bar above reply */
+/* https://discord.com/channels/1015060230222131221/1263665501817536542 */
 [class*=buttonContainer] > [class*=buttons_] {
     transform: translateY(-20%);
 }
@@ -108,12 +116,14 @@ span[class*="timestampInline_"] {
 }
 
 /* jump to present button on right side */
+/* https://discord.com/channels/1015060230222131221/1134844326933954622/1363058690579501197 */
 .jumpToPresentBar__0f481{
     justify-self: end;
     margin: 20px 10px !important;
 }
 
 /* Hide chat box if you have no permission to write in the channel */
+/* https://discord.com/channels/1015060230222131221/1249362290667556965 */
 [class*=channelTextAreaDisabled] {
     display: none!important;
 }
@@ -127,6 +137,7 @@ span[class*="timestampInline_"] {
 }
 
 /* Hide typing dots in chat bar */
+/* https://discord.com/channels/1015060230222131221/1322496323202715689/1325755259896725505 */
 svg[class^="ellipsis"] {
   display: none !important;
 
@@ -143,7 +154,8 @@ svg[class^="ellipsis"] {
 
 /* ////////////////////////////// user panel area \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* minimise Spotify player, expand on hover */
-#vc-spotify-player {
+/* https://discord.com/channels/1015060230222131221/1279143864971825196/1279384068982833223 */
+/* #vc-spotify-player {
     height: 50px;
     transition: height 0.4s ease-out;
     overflow: hidden;
@@ -159,9 +171,10 @@ svg[class^="ellipsis"] {
             opacity: 1;
         }
     }
-}
+} */
 
 /* Expandable User Panel */
+/* https://discord.com/channels/1015060230222131221/1132758571474497569 */
 .panels_c48ade div[class^="buttons_"] {
   width: fit-content !important; 
   margin-left: auto; 
@@ -258,6 +271,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 
 /* ////////////////////////////// user profile \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* bio scrollbar + unclamp */
+/* https://discord.com/channels/1015060230222131221/1255186876084654191/1262252001979269130 */
 [class^="descriptionClamp_"] {
   -webkit-line-clamp: unset;
   max-height: 112px;
@@ -279,6 +293,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 }
 
 /* colored role pills */
+/* https://discord.com/channels/1015060230222131221/1335796176406184018/1343197847046193183 */
 [class^="role_"] {
   position: relative;
   overflow: hidden;
@@ -329,6 +344,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 } */
 
 /* reduce context menu padding */
+/* https://discord.com/channels/1015060230222131221/1371211975794888794 */
 .layer_da8173 > .menu_c1e9c4 > .scroller_c1e9c4 {
     margin: -4px;
     .separator_c1e9c4 {
@@ -346,6 +362,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 }
 
 /* Pin page switcher to bottom of search results */
+/* https://discord.com/channels/1015060230222131221/1334846468334555207 */
 [class^="searchResultsWrap_"] [class^="container_"]:has([class^="pageControlContainer_"]){
   position: sticky;
   bottom: 0px;
@@ -354,6 +371,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 }
 
 /* Adding people isn't that important */
+/* https://discord.com/channels/1015060230222131221/1276982404501999750 */
 [data-tab-id=ADD_FRIEND]{
     background-color: var(--background-color) !important;
     color: var(--interactive-normal) !important;
