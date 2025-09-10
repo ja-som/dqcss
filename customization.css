@@ -392,7 +392,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 
 
 /* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-.backForwardButtons__63abb, /* Hide the "Back & Forward" buttons */
+.backForwardButtons__63abb,/* Hide the "Back & Forward" buttons */
 .searchBar__35e86,/* Hide Find or start a conversation button */
 .nowPlayingColumn__133bf,/* Hide Active Now */
 .icon_c9d15c,/* Hide Activity Status Icon */
@@ -402,6 +402,7 @@ button[aria-label="Add Friend"],/* hide "Add Friend" button from profile */
 .closeButton__972a0,/* Hide the "Close DM" button */
 .inviteButton_f37cb1,/* Hide the "Invite to Server" button */
 div[aria-label="Edit Image with Apps"],/* Hide Edit Image with Apps button */
+.chatGradientBase__36d07,/* Hide gradient above chat input field */
 div[aria-label="Send a gift"],/* hide Gift button */
 div[aria-label="Open sticker picker"],/* hide Stickers button */
 .channelAppLauncher_e6e74f,/* hide App Launcher button */
