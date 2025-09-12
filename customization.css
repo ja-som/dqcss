@@ -1,22 +1,35 @@
 /* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* bigger folder icon */
-/* https://discord.com/channels/1015060230222131221/1359880118436233357 */
-[class^=folderIcon__] {
-    svg {
-  width: 25px;
-  height: 25px;
-  margin-bottom: 1px;
-    }
+/* Adjust padding/size in folder preview */
+/* https://discord.com/channels/1015060230222131221/1354502862390038528/1410141106196451388 */
+.folderHeaderSmall__48112 {
+  --custom-folder-preview-padding: 4px;
+}
+.folderPreviewGuildIcon__48112 {
+  border-radius: 50% !important;
+  font-size: 6px !important; /* Acronym font size. might want to adjust since it changes with different length text. see conversation about it around this message: https://discord.com/channels/1015060230222131221/1354502862390038528/1359845103019229346 */
+  line-height: 16px;
 }
 
-/* Server icons preview in folders */
-/* https://discord.com/channels/1015060230222131221/1354361432472555623 */
-.folderHeaderSmall__48112 {
-   --custom-folder-preview-padding: 5px;
- }
- .folderPreviewGuildIcon__48112 {
-   border-radius: 30% !important;
- }
+/* Round and animated server icons */
+.blobContainer_e5445c foreignObject:hover,
+.blobContainer_e5445c.selected_e5445c foreignObject,
+:is([data-list-item-id="guildsnav___home"],
+  [data-list-item-id=guildsnav___favorites]
+).selected__6e9f8 .childWrapper__6e9f8,
+:is([data-list-item-id="guildsnav___create-join-button"],
+  [data-list-item-id="guildsnav___guild-discover-button"]
+).selected__5bc7e,
+.stack_dbd263>div[style="opacity: 1; height: 40px; transform: scale(1);"] .selected__6e9f8>img {
+  border-radius: 50% !important;
+}
+.blobContainer_e5445c foreignObject,
+:is([data-list-item-id="guildsnav___home"],
+[data-list-item-id=guildsnav___favorites]) .childWrapper__6e9f8,
+:is([data-list-item-id="guildsnav___create-join-button"],
+[data-list-item-id="guildsnav___guild-discover-button"]) {
+  transition: border-radius 0.2s linear;
+  border-radius: 50%;
+}
 
 
 
