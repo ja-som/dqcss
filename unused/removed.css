@@ -126,3 +126,26 @@
     & [src="/assets/2801bd9ef48c1d87.svg"] ~ div:after { content: " (Ruby)" }
     & [src="/assets/c20bd44dcc3b5ecb.svg"] ~ div:after { content: " (Opal)" }
 }
+
+
+
+
+/* not working: */
+/* bigger folder icon */
+/* https://discord.com/channels/1015060230222131221/1359880118436233357 */
+[class^=folderIcon__] {
+    svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1px;
+    }
+}
+
+/* Server icons preview in folders */
+/* https://discord.com/channels/1015060230222131221/1354361432472555623 */
+.folderHeaderSmall__48112 {
+   --custom-folder-preview-padding: 5px;
+ }
+ .folderPreviewGuildIcon__48112 {
+   border-radius: 30% !important;
+ }
