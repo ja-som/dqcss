@@ -1,4 +1,13 @@
 /* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* Server icons preview in folders */
+/* https://discord.com/channels/1015060230222131221/1354361432472555623 */
+.folderHeaderSmall__48112 {
+   --custom-folder-preview-padding: 5px;
+ }
+ .folderPreviewGuildIcon__48112 {
+   border-radius: 50% !important;
+ }
+
 /* bigger folder icon */
 /* https://discord.com/channels/1015060230222131221/1359880118436233357 */
 [class^=folderIcon__] {
@@ -8,14 +17,6 @@
   margin-bottom: 1px;
     }
 
-/* Server icons preview in folders */
-/* https://discord.com/channels/1015060230222131221/1354361432472555623 */
-.folderHeaderSmall__48112 {
-   --custom-folder-preview-padding: 5px;
- }
- .folderPreviewGuildIcon__48112 {
-   border-radius: 50% !important;
- }
 
 
 
