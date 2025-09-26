@@ -147,6 +147,16 @@ svg[class^="ellipsis"] {
   }
 }
 
+/* fix slowmode / typing bar */
+/* https://discord.com/channels/1015060230222131221/1134844326933954622/1420231258977468507 */
+.typing_b88801 {
+  width: 100% !important;
+
+  >.cooldownWrapper_b21699 {
+    margin-right: 16px;
+  }
+}
+
 
 
 /* ////////////////////////////// member list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
