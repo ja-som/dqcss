@@ -264,7 +264,7 @@ svg[class^="ellipsis"] {
   [class^="roleRemoveIcon_"] {
     left: calc(
       4px +     /* Pill padding */
-      -4px +     /* "Remove Role" */
+      0px +     /* "Remove Role" */
       4px +     /* Circle margin */
       12px/2);  /* Circle size */
   }
