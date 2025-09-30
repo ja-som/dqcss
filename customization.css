@@ -166,7 +166,7 @@ svg[class^="ellipsis"] {
 /* ////////////////////////////// user panel area \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* minimise Spotify player, expand on hover */
 /* https://discord.com/channels/1015060230222131221/1279143864971825196/1279384068982833223 */
-/* #vc-spotify-player {
+#vc-spotify-player {
     height: 50px;
     transition: height 0.4s ease-out;
     overflow: hidden;
@@ -182,7 +182,7 @@ svg[class^="ellipsis"] {
             opacity: 1;
         }
     }
-} */
+}
 
 /* Expandable User Panel */
 /* https://discord.com/channels/1015060230222131221/1132758571474497569 */
