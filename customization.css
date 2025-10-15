@@ -433,7 +433,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 .icon_c9d15c,/* Hide Activity Status Icon */
 .container__0d0f9,/* Boosting progress bar */
 .footer__5be3e,/* Hide the "message @name" box from profile */
-button[aria-label="Add Friend"],/* hide "Add Friend" button from profile */
+.bannerButton_de8008[aria-label="Add Friend"],/* hide "Add Friend" button from profile */
 .closeButton__972a0,/* Hide the "Close DM" button */
 .inviteButton_f37cb1,/* Hide the "Invite to Server" button */
 div[aria-label="Edit Image with Apps"],/* Hide Edit Image with Apps button */
