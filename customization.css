@@ -443,10 +443,15 @@ div[aria-label="Open sticker picker"],/* hide Stickers button */
 .channelAppLauncher_e6e74f,/* hide App Launcher button */
 .refreshVoiceChannelsButton__29444,/* Hide "🔊 Show All" button */
 .voiceBar__7aaec,/* Hide "X IN VOICE" bar */
-.buttonChevron__37e49,/* Hide Input/Output options in the user panel area */
+.micButtonParent__37e49>.buttonChevron__37e49,/* Hide Input/Output options in the user panel area */
 /* Hide stupid buttons from channels in Channels List: */
 div[aria-label="Channel Options"], div[aria-label="Invite to Voice"], div[aria-label="Open Chat"],
 div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label="Invite to Server"]
 {
     display: none !important;
+}
+
+/* rounded corners for the mic icon in the user panel area */
+.micButtonParent__37e49>.micButtonWithMenu__37e49 {
+  border-radius: var(--radius-sm);
 }
