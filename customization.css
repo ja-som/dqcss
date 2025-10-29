@@ -149,13 +149,13 @@ svg[class^="ellipsis"] {
 
 /* fix slowmode / typing bar */
 /* https://discord.com/channels/1015060230222131221/1134844326933954622/1420231258977468507 */
-.typing_b88801 {
+/*.typing_b88801 {
   width: 100% !important;
 
   >.cooldownWrapper_b21699 {
     margin-right: 16px;
   }
-}
+} */
 
 
 
@@ -430,7 +430,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 .backForwardButtons__63abb,/* Hide the "Back & Forward" buttons */
 .searchBar__35e86,/* Hide Find or start a conversation button */
 .nowPlayingColumn__133bf,/* Hide Active Now */
-.icon_c9d15c,/* Hide Activity Status Icon */
+/*.icon_c9d15c,/* Hide Activity Status Icon */
 .container__0d0f9,/* Boosting progress bar */
 .footer__5be3e,/* Hide the "message @name" box from profile */
 .bannerButton_de8008[aria-label="Add Friend"],/* hide "Add Friend" button from profile */
