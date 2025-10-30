@@ -1,3 +1,6 @@
+/* Simplified Panel Area */
+@import url('https://davart154.github.io/Themes/Snippets/Simplified%20Panel%20Area/SimplifiedPanelArea.css');
+
 /* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* bigger folder icon */
 /* https://discord.com/channels/1015060230222131221/1359880118436233357 */
@@ -185,7 +188,7 @@ svg[class^="ellipsis"] {
 }
 
 /* Expandable User Panel */
-/* https://discord.com/channels/1015060230222131221/1132758571474497569 */
+/* https://discord.com/channels/1015060230222131221/1132758571474497569
 .panels_c48ade div[class^="buttons_"] {
   width: fit-content !important; 
   margin-left: auto; 
@@ -214,7 +217,7 @@ svg[class^="ellipsis"] {
 .panels_c48ade div[class^="buttons_"]:hover button:not([role="switch"]) svg {
   rotate: 0deg;
   transition: rotate 0.3s;
-}
+} */
 
 
 
