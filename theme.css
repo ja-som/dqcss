@@ -13,8 +13,8 @@
 */
 
 /* import theme modules */
-@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
-/* @import url('https://gitlab.com/ja-som/dqcss/-/raw/main/midnight_tempfix.css'); */
+/* @import url('https://refact0r.github.io/midnight-discord/build/midnight.css'); */
+@import url('https://gitlab.com/ja-som/dqcss/-/raw/main/midnight_tempfix.css');
 @import url('https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/themes/flavors/midnight-catppuccin-mocha.theme.css');
 /* Simplified Panel Area */
 @import url('https://davart154.github.io/Themes/Snippets/Simplified%20Panel%20Area/SimplifiedPanelArea.css');
