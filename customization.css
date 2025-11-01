@@ -1,7 +1,7 @@
 /* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* bigger folder icon */
 /* https://discord.com/channels/1015060230222131221/1359880118436233357 */
-.folderIcon__48112 {
+.folderHeader__48112 {
     svg {
   width: 25px;
   height: 25px;
@@ -186,32 +186,32 @@ svg[class^="ellipsis"] {
 
 /* Expandable User Panel */
 /* https://discord.com/channels/1015060230222131221/1132758571474497569
-.panels_c48ade div[class^="buttons_"] {
+.panels__5e434 div[class^="buttons_"] {
   width: fit-content !important; 
   margin-left: auto; 
   margin-right: 0;
 }
 
-.panels_c48ade div[class^="buttons_"] button[role="switch"] {
+.panels__5e434 div[class^="buttons_"] button[role="switch"] {
   width: 0px;
   overflow: hidden;
   transition: all 0.3s;
   left: 16px;
 }
 
-.panels_c48ade div[class^="buttons_"]:hover button[role="switch"] {
+.panels__5e434 div[class^="buttons_"]:hover button[role="switch"] {
   width: 32px;
   overflow: visible;
   transition: all 0.3s;
   left: 0px;
 }
 
-.panels_c48ade div[class^="buttons_"]:not(:hover) button:not([role="switch"]) svg {
+.panels__5e434 div[class^="buttons_"]:not(:hover) button:not([role="switch"]) svg {
   rotate: 360deg;
   transition: rotate 0.3s;
 }
 
-.panels_c48ade div[class^="buttons_"]:hover button:not([role="switch"]) svg {
+.panels__5e434 div[class^="buttons_"]:hover button:not([role="switch"]) svg {
   rotate: 0deg;
   transition: rotate 0.3s;
 } */
@@ -428,7 +428,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 
 /* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .backForwardButtons__63abb,/* Hide the "Back & Forward" buttons */
-.searchBar__35e86,/* Hide Find or start a conversation button */
+.searchBar_e6b769,/* Hide Find or start a conversation button */
 .nowPlayingColumn__133bf,/* Hide Active Now */
 /*.icon_c9d15c,/* Hide Activity Status Icon */
 .container__0d0f9,/* Boosting progress bar */
