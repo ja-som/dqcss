@@ -9,7 +9,8 @@
     translate: 25%;
     width: 200px;
     height: 180px;
-    background-image: url('./neon_700_A_t.webp') !important;
+    /* background-image: url('./neon_700_A_t.webp') !important; */
+    background-image: url('https://raw.githubusercontent.com/Vencord/Vesktop/refs/heads/main/static/splash.webp') !important;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
