@@ -331,6 +331,38 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 
 
 /* ////////////////////////////// other \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* vesktop loading */
+[class*=content]:has(> video[data-testid="app-spinner"]) {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    translate: 25%;
+    width: 200px;
+    height: 180px;
+    background-image: url('https://raw.githubusercontent.com/Vencord/Vesktop/refs/heads/main/static/splash.webp') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  video { visibility: hidden; }
+ div[class^=text_] { top: 10px; }
+}
+
+/* cat emoji button */
+:root{
+  --customEmojiIconURL: url(./emoji.svg);
+  --customEmojiIconMask: url(./emoji.svg);
+}
+[class*=emojiButton] [class*=spriteColored]{
+  background: var(--customEmojiIconURL) center/contain no-repeat;
+}
+
+[class*=emojiButton] [class*=spriteGreyscale]{
+  mask: var(--customEmojiIconMask) center/contain no-repeat;
+}
 
 /* Server Tag Hover */
 /* .message__5126c {
