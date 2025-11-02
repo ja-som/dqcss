@@ -468,17 +468,17 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 .bannerButton_de8008[aria-label="Add Friend"],/* hide "Add Friend" button from profile */
 .closeButton__972a0,/* Hide the "Close DM" button */
 .inviteButton_f37cb1,/* Hide the "Invite to Server" button */
-div[aria-label="Edit Image with Apps"],/* Hide Edit Image with Apps button */
-.chatGradientBase__36d07,/* Hide gradient above chat input field */
-div[aria-label="Send a gift"],/* hide Gift button */
-div[aria-label="Open sticker picker"],/* hide Stickers button */
+/* div[aria-label="Edit Image with Apps"],/* Hide Edit Image with Apps button */
+/* .chatGradientBase__36d07,/* Hide gradient above chat input field */
+.container_c0c49a,/* hide Gift button */
+.stickerButton__74017,/* hide Stickers button */
 .channelAppLauncher_e6e74f,/* hide App Launcher button */
 .refreshVoiceChannelsButton__29444,/* Hide "🔊 Show All" button */
 .voiceBar__7aaec,/* Hide "X IN VOICE" bar */
 .micButtonParent__37e49>.buttonChevron__37e49,/* Hide Input/Output options in the user panel area */
-/* Hide stupid buttons from channels in Channels List: */
-div[aria-label="Channel Options"], div[aria-label="Invite to Voice"], div[aria-label="Open Chat"],
-div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label="Invite to Server"]
+.iconNoChannelInfo_c69b6d/* Hide stupid buttons from channels in Channels List */
+/* div[aria-label="Channel Options"], div[aria-label="Invite to Voice"], div[aria-label="Open Chat"],
+div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label="Invite to Server"] */
 {
     display: none !important;
 }
