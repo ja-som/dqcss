@@ -476,7 +476,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 .refreshVoiceChannelsButton__29444,/* Hide "🔊 Show All" button */
 .voiceBar__7aaec,/* Hide "X IN VOICE" bar */
 .micButtonParent__37e49>.buttonChevron__37e49,/* Hide Input/Output options in the user panel area */
-.iconNoChannelInfo_c69b6d/* Hide stupid buttons from channels in Channels List */
+.iconNoChannelInfo_c69b6d,.iconWithChannelInfo_c69b6d/* Hide stupid buttons from channels in Channels List */
 /* div[aria-label="Channel Options"], div[aria-label="Invite to Voice"], div[aria-label="Open Chat"],
 div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label="Invite to Server"] */
 {
