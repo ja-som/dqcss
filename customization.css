@@ -470,7 +470,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 .inviteButton_f37cb1,/* Hide the "Invite to Server" button */
 /* div[aria-label="Edit Image with Apps"],/* Hide Edit Image with Apps button */
 /* .chatGradientBase__36d07,/* Hide gradient above chat input field */
-.container_c0c49a,/* hide Gift button */
+.button__24af7[aria-label="Send a gift"],/* hide Gift button */
 .stickerButton__74017,/* hide Stickers button */
 .channelAppLauncher_e6e74f,/* hide App Launcher button */
 .refreshVoiceChannelsButton__29444,/* Hide "🔊 Show All" button */
