@@ -12,13 +12,14 @@
  * @authorLink https://www.refact0r.dev
 */
 
-/* import theme modules */
+/* /////////////////////////// import theme modules \\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 @import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 @import url('https://raw.githubusercontent.com/refact0r/midnight-discord/refs/heads/master/themes/flavors/midnight-catppuccin-mocha.theme.css');
+/* ////////////////////////////// other imports \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* Simplified Panel Area */
 @import url('https://davart154.github.io/Themes/Snippets/Simplified%20Panel%20Area/SimplifiedPanelArea.css');
 
-
+/* ////////////////////////////// theme settings \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 body {
     /* font, change to '' for default discord font */
     --font: 'figtree'; /* change to '' for default discord font */
