@@ -472,7 +472,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 /* .chatGradientBase__36d07,/* Hide gradient above chat input field */
 .button__24af7[aria-label="Send a gift"],/* hide Gift button */
 .stickerButton__74017,/* hide Stickers button */
-.channelAppLauncher_e6e74f,/* hide App Launcher button */
+.app-launcher-entrypoint, /*channelAppLauncher_e6e74f, */ /* hide App Launcher button */
 .refreshVoiceChannelsButton__29444,/* Hide "🔊 Show All" button */
 .voiceBar__7aaec,/* Hide "X IN VOICE" bar */
 .micButtonParent__37e49>.buttonChevron__37e49,/* Hide Input/Output options in the user panel area */
