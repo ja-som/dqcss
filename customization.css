@@ -459,24 +459,25 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 
 
 /* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-.backForwardButtons__63abb,/* Hide the "Back & Forward" buttons */
-.searchBar_e6b769,/* Hide Find or start a conversation button */
-.nowPlayingColumn__133bf,/* Hide Active Now */
-/*.icon_c9d15c,/* Hide Activity Status Icon */
+.backForwardButtons__63abb,/* "Back & Forward" buttons */
+.button__85643:nth-of-type(1),/* Discord Checkpoint flag/button - wrapped */
+.searchBar_e6b769,/* Find or start a conversation button */
+.nowPlayingColumn__133bf,/* Active Now */
+/*.icon_c9d15c,/* Activity Status Icon */
 .container__0d0f9,/* Boosting progress bar */
-.footer__5be3e,/* Hide the "message @name" box from profile */
-.bannerButton_de8008[aria-label="Add Friend"],/* hide "Add Friend" button from profile */
-.closeButton__972a0,/* Hide the "Close DM" button */
-.inviteButton_f37cb1,/* Hide the "Invite to Server" button */
-/* div[aria-label="Edit Image with Apps"],/* Hide Edit Image with Apps button */
-/* .chatGradientBase__36d07,/* Hide gradient above chat input field */
-.button__24af7[aria-label="Send a gift"],/* hide Gift button */
-.stickerButton__74017,/* hide Stickers button */
-.app-launcher-entrypoint, /*channelAppLauncher_e6e74f, */ /* hide App Launcher button */
-.refreshVoiceChannelsButton__29444,/* Hide "🔊 Show All" button */
-.voiceBar__7aaec,/* Hide "X IN VOICE" bar */
-.micButtonParent__37e49>.buttonChevron__37e49,/* Hide Input/Output options in the user panel area */
-.iconNoChannelInfo_c69b6d,.iconWithChannelInfo_c69b6d/* Hide stupid buttons from channels in Channels List */
+.footer__5be3e,/* "message @name" box from profile */
+.bannerButton_de8008[aria-label="Add Friend"],/* "Add Friend" button from profile */
+.closeButton__972a0,/* "Close DM" button */
+.inviteButton_f37cb1,/* "Invite to Server" button */
+/* div[aria-label="Edit Image with Apps"],/* Edit Image with Apps button */
+/* .chatGradientBase__36d07,/* gradient above chat input field */
+.button__24af7[aria-label="Send a gift"],/* Gift button */
+.stickerButton__74017,/* Stickers button */
+.app-launcher-entrypoint, /*channelAppLauncher_e6e74f, */ /* App Launcher button */
+.refreshVoiceChannelsButton__29444,/* "🔊 Show All" button */
+.voiceBar__7aaec,/* "X IN VOICE" bar */
+.micButtonParent__37e49>.buttonChevron__37e49,/* Input/Output options in the user panel area */
+.iconNoChannelInfo_c69b6d,.iconWithChannelInfo_c69b6d/* stupid buttons from channels in Channels List */
 /* div[aria-label="Channel Options"], div[aria-label="Invite to Voice"], div[aria-label="Open Chat"],
 div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label="Invite to Server"] */
 {
