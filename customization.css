@@ -81,17 +81,6 @@ div:has(button[aria-label='Send a gift']) {
   gap: 0px !important;
 }
 
-/* Detailed Timestamp */
-/* https://discord.com/channels/1015060230222131221/1269064603019509771 */
-/* span[class*="timestampInline_"] time::before {
-  content: attr(aria-label);
-  font-size: 12px;
-}
-
-span[class*="timestampInline_"] {
-  font-size: 0px !important;
-} */
-
 /* Move button bar above reply */
 /* https://discord.com/channels/1015060230222131221/1263665501817536542 */
 [class*=buttonContainer] > [class*=buttons_] {
@@ -147,16 +136,6 @@ svg[class^="ellipsis"] {
   }
 }
 
-/* fix slowmode / typing bar */
-/* https://discord.com/channels/1015060230222131221/1134844326933954622/1420231258977468507 */
-/*.typing_b88801 {
-  width: 100% !important;
-
-  >.cooldownWrapper_b21699 {
-    margin-right: 16px;
-  }
-} */
-
 
 
 /* ////////////////////////////// member list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -164,57 +143,7 @@ svg[class^="ellipsis"] {
 
 
 /* ////////////////////////////// user panel area \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* minimise Spotify player, expand on hover */
-/* https://discord.com/channels/1015060230222131221/1279143864971825196/1279384068982833223 */
-/* #vc-spotify-player {
-    height: 50px;
-    transition: height 0.4s ease-out;
-    overflow: hidden;
-    #vc-spotify-progress-bar,
-    .vc-spotify-button-row {
-        opacity: 0;
-        transition: opacity 0.4s ease-out;
-    }
-    &:hover {
-        height: 115px;
-        #vc-spotify-progress-bar,
-        .vc-spotify-button-row {
-            opacity: 1;
-        }
-    }
-} */
 
-/* Expandable User Panel */
-/* https://discord.com/channels/1015060230222131221/1132758571474497569
-.panels__5e434 div[class^="buttons_"] {
-  width: fit-content !important; 
-  margin-left: auto; 
-  margin-right: 0;
-}
-
-.panels__5e434 div[class^="buttons_"] button[role="switch"] {
-  width: 0px;
-  overflow: hidden;
-  transition: all 0.3s;
-  left: 16px;
-}
-
-.panels__5e434 div[class^="buttons_"]:hover button[role="switch"] {
-  width: 32px;
-  overflow: visible;
-  transition: all 0.3s;
-  left: 0px;
-}
-
-.panels__5e434 div[class^="buttons_"]:not(:hover) button:not([role="switch"]) svg {
-  rotate: 360deg;
-  transition: rotate 0.3s;
-}
-
-.panels__5e434 div[class^="buttons_"]:hover button:not([role="switch"]) svg {
-  rotate: 0deg;
-  transition: rotate 0.3s;
-} */
 
 
 
@@ -363,24 +292,6 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 [class*=emojiButton] [class*=spriteGreyscale]{
   mask: var(--customEmojiIconMask) center/contain no-repeat;
 }
-
-/* Server Tag Hover */
-/* .message__5126c {
-    .chipletContainerInner__10651 {
-        max-width: 12px;
-        transition: max-width var(0.3s ease) var(0.2s);
-        overflow: hidden;
-        .badge__10651 {
-            margin-right: 5px;
-        }
-    }
-    .chipletContainerInner__10651:hover {
-        max-width: 60px;
-    }
-    .chipletContainerInner__10651:not(:hover) {
-        transition-delay: var(0s);
-    }
-} */
 
 /* reduce context menu padding */
 /* https://discord.com/channels/1015060230222131221/1371211975794888794 */
