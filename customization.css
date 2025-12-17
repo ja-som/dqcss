@@ -342,7 +342,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 
 /* Pin page switcher to bottom of search results */
 /* https://discord.com/channels/1015060230222131221/1334846468334555207 */
-[class^="a9e7064fdee8e9b0-searchResultsWrap"] [class^="_86c0fae6715927dc-container"]:has([class^="c1521037ef09de7e-pageControlContainer"]){
+[class*="-searchResultsWrap"] [class*="-container"]:has([class*="-pageControlContainer"]){
   position: sticky;
   bottom: 0px;
   z-index: 999;
