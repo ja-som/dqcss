@@ -1,0 +1,402 @@
+/* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* bigger folder icon */
+/* https://discord.com/channels/1015060230222131221/1359880118436233357 */
+._48112cbe77dc5022-folderIcon {
+    svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1px;
+    }
+  }
+
+  
+/* Server icons preview in folders */
+/* https://discord.com/channels/1015060230222131221/1354361432472555623 */
+._48112cbe77dc5022-folderHeaderSmall {
+   --custom-folder-preview-padding: 5px;
+ }
+ ._48112cbe77dc5022-folderPreviewGuildIcon {
+   border-radius: 50% !important;
+ }
+
+
+
+/* ////////////////////////////// channels list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* Collapse Icon Position Fix */
+/* https://discord.com/channels/1015060230222131221/1362945175957012612 */
+._29444ba32c7fbeab-containerDefault {
+  > div {
+    padding-left: 0.5em;
+
+    > div {
+      display: flex !important;
+      place-content: start !important;
+      flex-direction: row-reverse !important;
+    }
+  }
+}
+
+/* Hide Events and Server Boosts */
+/* https://discord.com/channels/1015060230222131221/1134844326933954622/1386633258103738420 */
+:is(
+  [data-list-item-id^=channels___upcoming-events-],
+  [data-list-item-id^=channels___skill-trees-]
+)+div,
+ul[aria-label="Channels"]>._629e4c86564a4ee7-sectionDivider {
+  display: none !important;
+}
+
+
+
+/* ////////////////////////////// chat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* Collapsible chat actions */
+/* https://github.com/moonself/Vencord-Repos */
+._740174f3d6a2c8fe-buttons {
+    gap: 0 !important;
+    pointer-events: none;
+&:hover {
+    pointer-events: all;
+  }
+}
+.expression-picker-chat-input-button {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+._740174f3d6a2c8fe-buttons:hover & {
+    opacity: 1;
+    pointer-events: all;
+    transform: none;
+  }
+&:has(._04eede68d145ae81-emojiButton) {
+    opacity: 1 !important;
+    pointer-events: all !important;
+    transform: none !important;
+  }
+}
+
+/* Move icons in chat box closer together */
+/* https://discord.com/channels/1015060230222131221/1354181746731651184 */
+div:has(button[aria-label='Send a gift']) {
+  gap: 0px !important;
+}
+
+/* Move button bar above reply */
+/* https://discord.com/channels/1015060230222131221/1263665501817536542 */
+.c19a557985eb7793-buttonContainer > ._5126c0cd07f243a0-buttons {
+    transform: translateY(-20%);
+}
+
+/* Scrollable/compact codeblocks */
+/* https://discord.com/channels/1015060230222131221/1363880201196404926 */
+._752971923a1e6683-codeContainer > code {
+  max-height: 200px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: var(--bg-2); /* color from theme */
+    border: 2px solid transparent;
+    border-radius: 4px;
+    min-height: 40px;
+  }
+}
+
+/* jump to present button on right side */
+/* https://discord.com/channels/1015060230222131221/1134844326933954622/1363058690579501197 */
+._0f481cbbd7530492-jumpToPresentBar{
+    justify-self: end;
+    margin: 10px 10px !important;
+}
+
+/* Hide chat box if you have no permission to write in the channel */
+/* https://discord.com/channels/1015060230222131221/1249362290667556965 */
+[class*=channelTextAreaDisabled] {
+    display: none!important;
+}
+
+[class*=channelTextAreaDisabled] {
+    opacity: 0!important;
+    position: absolute!important;
+    height: 0px!important;
+    width: 0px!important;
+    z-index: 0!important;
+}
+
+/* Hide typing dots in chat bar */
+/* https://discord.com/channels/1015060230222131221/1322496323202715689/1325755259896725505 */
+svg[class*="b8880176888cc928-ellipsis"] {
+  display: none !important;
+
+  & + span {
+    margin-left: 5px !important;
+  }
+}
+
+
+
+/* ////////////////////////////// member list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+/* ////////////////////////////// user panel area \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+
+
+
+
+/* ////////////////////////////// user profile \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* bio scrollbar + unclamp */
+/* https://discord.com/channels/1015060230222131221/1255186876084654191/1262252001979269130 */
+[class^="f5f93a5c4078d63c-descriptionClamp"] {
+  -webkit-line-clamp: unset;
+  max-height: 112px;
+  overflow-x: hidden;
+  overflow-y: auto;
+    
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--bg-2); /*color from theme */
+      background-clip: padding-box;
+      border: 2px solid transparent;
+      border-radius: 4px;
+      min-height: 40px;
+    }
+}
+
+/* colored role pills */
+/* !!!NEEDS UPDATE!!! */
+/* https://discord.com/channels/1015060230222131221/1335796176406184018/1343197847046193183 */
+[class^="role_"] {
+  position: relative;
+  overflow: hidden;
+  > [class^="roleRemoveButton_"],
+  > div > [class^="roleRemoveButtonCanRemove_"]
+  {
+    position: static;
+    > [class^="roleCircle_"]::before {
+      content: "";
+      position: absolute;
+      top: 0;       left: 0;
+      width: 100%;  height: 100%;
+      background-color: inherit;
+      opacity: 0.2;
+      z-index: 0;
+    }
+  }
+  > [class^="roleName_"] { z-index: 1; }
+  [class^="roleRemoveIcon_"] {
+    left: calc(
+      4px +     /* Pill padding */
+      -4.5px +     /* "Remove Role" */
+      4px +     /* Circle margin */
+      12px/2);  /* Circle size */
+  }
+}
+
+/* better expanded profile */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1395506910802743356
+https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expProfile.css */
+.visual-refresh {
+  ._49fc18ba07c5025f-focusLock {
+    >._9c3bea41fd465666-root .c0bea05627c5dc35-outer > .c0bea05627c5dc35-inner {
+      padding: 48px 36px 48px 48px;
+
+      >._9c3bea41fd465666-profile {
+        border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) var(--radius-lg);
+        
+        >._9c3bea41fd465666-profileBody {
+          padding: 4px 32px 0px;
+          margin-bottom: 22px;
+
+
+          /* Connections: Border like from roles | Comment for no borders */
+          >.bf424dc3dc4c8775-section.be87fdd576f7cb38-section > ._9bfb9a25604068f0-container._9c3bea41fd465666-profileAppConnections > ._9bfb9a25604068f0-connection{
+            padding: 7px;
+
+            border: 1px solid var(--user-profile-border);
+            border-radius: var(--radius-sm);
+          }
+
+          /* Horizontal layout | Comment for vertical layout */
+          >.bf424dc3dc4c8775-section.be87fdd576f7cb38-section > ._9bfb9a25604068f0-container._9c3bea41fd465666-profileAppConnections {
+            flex-direction: row; 
+            flex-wrap: wrap; 
+            align-items: flex-start;
+            gap: 10px 16px;
+
+            >._9bfb9a25604068f0-connection > ._9bfb9a25604068f0-connectionInfo {
+              min-width: 110px;
+              /* If you want to cut the Names for a better layout uncomment this */
+              /* max-width: 110px; */
+
+              /* No metadata for better layout | Comment for metadata */
+              ._4bd5201c86a2042b-defaultColor.text-xs\/normal_cf4812,
+              >._9bfb9a25604068f0-metadata{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+
+      /* Friends & Server: Border like from roles | Comment for no Borders */
+      >._37bfcf3d457db7a9-container > ._37bfcf3d457db7a9-tabBarPanel > ._28fdc02c1d2fcad1-scroller {
+        >._89036700569ec527-row,
+        >._0a95c8863b3b3f73-row {
+          padding: 7px;
+          border: 1px solid var(--user-profile-border);
+          border-radius: var(--radius-sm);
+        }
+      } 
+    }
+  }
+}
+
+
+/* ////////////////////////////// other \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* vesktop loading */
+[class*=content]:has(> video[data-testid="app-spinner"]) {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    translate: 25%;
+    width: 200px;
+    height: 180px;
+    background-image: url('./VCsplash.webp') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  video { visibility: hidden; }
+ div[class^=text_] { top: 10px; }
+}
+
+/* cat emoji button */
+:root{
+  --customEmojiIconURL: url(./emoji.svg);
+  --customEmojiIconMask: url(./emoji.svg);
+}
+[class*=emojiButton] [class*=spriteColored]{
+  background: var(--customEmojiIconURL) center/contain no-repeat;
+}
+
+[class*=emojiButton] [class*=spriteGreyscale]{
+  mask: var(--customEmojiIconMask) center/contain no-repeat;
+}
+
+/* reduce context menu padding */
+/* https://discord.com/channels/1015060230222131221/1371211975794888794 */
+.c1e9c47c23f12ca3-menu:has(.c1e9c47c23f12ca3-scroller) {
+    min-width: 0;
+    width: 200px !important;
+    &::after,.c1e9c47c23f12ca3-scroller {
+        /* border margin */
+        margin: -4px;
+    }
+    &::after,.c1e9c47c23f12ca3-separator {
+        /* separator margin */
+        margin: 1px 8px !important;
+    }
+    &::after,.f563df886a7377be-wrapper {
+        /* reactions margin */
+        padding: 0px !important;
+        margin: 1px;
+    }
+    &::after,.c1e9c47c23f12ca3-item {
+        /* min-height is 32px as default, change value for desired look */
+        min-height: 0;
+        /* padding is 4px 8px as default, change value for desired look */
+        padding: 4px 8px;
+    }
+    &::after,.f563df886a7377be-icon {
+        /* reactions size */
+        width: 18px;
+    }
+    &::after,.f563df886a7377be-button {
+        /* reactions border size */
+        width: 44px;
+        height: 36px;
+        border-radius: 4px;
+    }
+    &::after,.c1e9c47c23f12ca3-icon {
+        /* icons size */
+        width: 18px;
+        height: 18px;
+    }
+    &::after,.c1e9c47c23f12ca3-iconContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Pin page switcher to bottom of search results */
+/* https://discord.com/channels/1015060230222131221/1334846468334555207 */
+[class^="a9e7064fdee8e9b0-searchResultsWrap"] [class^="_86c0fae6715927dc-container"]:has([class^="c1521037ef09de7e-pageControlContainer"]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-primary)); /* color from theme */
+}
+
+/* Adding people isn't that important */
+/* https://discord.com/channels/1015060230222131221/1276982404501999750 */
+[data-tab-id=ADD_FRIEND]{
+    background-color: var(--background-color) !important;
+    color: var(--interactive-normal) !important;
+}
+[data-tab-id=ADD_FRIEND]:hover{
+    background-color: var(--background-modifier-hover) !important;
+    color: var(--interactive-hover) !important;
+}
+[data-tab-id=ADD_FRIEND][aria-selected=true]{
+    background-color: var(--background-modifier-selected) !important;
+    color: var(--interactive-active) !important;
+}
+[data-tab-id=ADD_FRIEND][aria-selected=true]:hover{
+    background-color: var(--background-modifier-hover) !important;
+    color: var(--interactive-active) !important;
+}
+
+
+
+/* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+._63abbca6d53b6035-backForwardButtons,/* "Back & Forward" buttons */
+/* ._85643a485899904b-smallButton:nth-of-type(1),/* Discord Checkpoint flag/button - wrapped */
+.e6b7699ce8339e1c-searchBar,/* Find or start a conversation button */
+._133bf5eea8e33a34-nowPlayingColumn,/* Active Now */
+/*.c9d15c8a962de3c8-icon,/* Activity Status Icon */
+._5be3ef42f92174b2-footer,/* "message @name" box from profile */
+.de800837163648e8-bannerButton[aria-label="Add Friend"],/* "Add Friend" button from profile */
+._972a0d22c8afa7f0-closeButton,/* "Close DM" button */
+._0d0f9ddd12a3ace3-container,/* Boosting progress bar */
+.f37cb1984c371ee5-inviteButton,/* "Invite to Server" button */
+/* div[aria-label="Edit Image with Apps"],/* Edit Image with Apps button */
+/* ._36d072eab2b2e737-chatGradientBase,/* gradient above chat input field */
+._24af7f4d0326ba4f-button[aria-label="Send a gift"],/* Gift button */
+._740174f3d6a2c8fe-stickerButton,/* Stickers button */
+.app-launcher-entrypoint, /*channelAppLauncher_e6e74f, */ /* App Launcher button */
+._29444ba32c7fbeab-refreshVoiceChannelsButton,/* "🔊 Show All" button */
+._7aaec78b97ff00f7-bottom,/* "X IN VOICE" bar */
+._37e49614b9f110a9-micButtonParent>._37e49614b9f110a9-buttonChevron,/* Input/Output options in the user panel area */
+.c69b6db0641110f6-iconNoChannelInfo,.c69b6db0641110f6-iconWithChannelInfo/* stupid buttons from channels in Channels List */
+/* div[aria-label="Channel Options"], div[aria-label="Invite to Voice"], div[aria-label="Open Chat"],
+div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label="Invite to Server"] */
+{
+    display: none !important;
+}
+
+/* rounded corners for the mic icon in the user panel area */
+._37e49614b9f110a9-micButtonParent>._37e49614b9f110a9-micButtonWithMenu {
+  border-radius: var(--radius-sm);
+}
