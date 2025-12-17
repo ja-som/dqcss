@@ -1,3 +1,7 @@
+/* colored role pills */
+@import url('https://raw.githubusercontent.com/moonself/Vencord-Repos/refs/heads/main/Full%20Role%20Pills');
+
+
 /* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* bigger folder icon */
 /* https://discord.com/channels/1015060230222131221/1359880118436233357 */
@@ -171,33 +175,12 @@ svg[class*="b8880176888cc928-ellipsis"] {
 }
 
 /* colored role pills */
-/* !!!NEEDS UPDATE!!! */
 /* https://discord.com/channels/1015060230222131221/1335796176406184018/1343197847046193183 */
-[class^="role_"] {
-  position: relative;
-  overflow: hidden;
-  > [class^="roleRemoveButton_"],
-  > div > [class^="roleRemoveButtonCanRemove_"]
-  {
-    position: static;
-    > [class^="roleCircle_"]::before {
-      content: "";
-      position: absolute;
-      top: 0;       left: 0;
-      width: 100%;  height: 100%;
-      background-color: inherit;
-      opacity: 0.2;
-      z-index: 0;
-    }
-  }
-  > [class^="roleName_"] { z-index: 1; }
-  [class^="roleRemoveIcon_"] {
-    left: calc(
-      4px +     /* Pill padding */
-      -4.5px +     /* "Remove Role" */
-      4px +     /* Circle margin */
-      12px/2);  /* Circle size */
-  }
+:root {
+/* Role Pill Settings */
+    --pill-roundness: 16px;
+    --pill-opacity: 30%;
+    --pill-border: false; /* "true" to enable */
 }
 
 /* better expanded profile */
