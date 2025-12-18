@@ -3,6 +3,10 @@
 @import url('https://davart154.github.io/Themes/Snippets/Simplified%20Panel%20Area/SimplifiedPanelArea.css');
 /* colored role pills */
 @import url('https://raw.githubusercontent.com/moonself/Vencord-Repos/refs/heads/main/Full%20Role%20Pills');
+/* Collapsed Search Bar */
+@import url('https://raw.githubusercontent.com/moonself/Vencord-Repos/refs/heads/main/Collapsed%20Search%20Bar');
+/* Profile Popout Actions Hover */
+@import url('https://raw.githubusercontent.com/moonself/Vencord-Repos/refs/heads/main/Profile%20Popout%20Actions%20Hover');
 
 
 /* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -363,7 +367,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 ._133bf5eea8e33a34-nowPlayingColumn,/* Active Now */
 /*.c9d15c8a962de3c8-icon,/* Activity Status Icon */
 ._5be3ef42f92174b2-footer,/* "message @name" box from profile */
-.de800837163648e8-bannerButton[aria-label="Add Friend"],/* "Add Friend" button from profile */
+.fb7f9476ada049c8-bannerButton[aria-label="Add Friend"],/* "Add Friend" button from profile */
 ._972a0d22c8afa7f0-closeButton,/* "Close DM" button */
 ._0d0f9ddd12a3ace3-container,/* Boosting progress bar */
 .f37cb1984c371ee5-inviteButton,/* "Invite to Server" button */
