@@ -336,7 +336,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
   position: sticky;
   bottom: 0px;
   z-index: 999;
-  background: var(--bg-overlay-1, var(--background-primary)); /* color from theme */
+  background: var(--bg-4); /* color from theme */
 }
 
 /* Adding people isn't that important */
