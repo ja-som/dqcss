@@ -358,6 +358,11 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
     color: var(--interactive-active) !important;
 }
 
+/* make search bar smaller */
+div[class*="searchBar"] {
+  max-width: 185px;
+}
+
 
 
 /* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
