@@ -367,7 +367,7 @@ div[class*="searchBar"] {
 
 /* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 ._63abbca6d53b6035-backForwardButtons,/* "Back & Forward" buttons */
-._85643a485899904b-button[aria-label="Checkpoint"],/* Discord Checkpoint flag/button - wrapped */
+/* ._85643a485899904b-button[aria-label="Checkpoint"],/* Discord Checkpoint flag/button - wrapped */
 .e6b7699ce8339e1c-searchBar,/* Find or start a conversation button */
 ._133bf5eea8e33a34-nowPlayingColumn,/* Active Now */
 /*.c9d15c8a962de3c8-icon,/* Activity Status Icon */
