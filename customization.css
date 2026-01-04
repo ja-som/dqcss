@@ -116,6 +116,34 @@ div:has(button[aria-label='Send a gift']) {
   }
 }
 
+/* Annoying GIF replacer */
+.imageWrapper:has(a:is(
+    [href*="table-mess-lmao-laugh"],
+    /* [href*="second_link"] */
+)) video {
+    display: none !important;
+}
+.imageWrapper:has(a:is(
+    [href*="table-mess-lmao-laugh"],
+    /* [href*="second_link"] */
+))::after {
+    content: "🚫 Annoying GIF hidden";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-muted);
+
+    background: var(--background-secondary);
+    border-radius: 8px;
+
+    pointer-events: none;
+}
+
 /* jump to present button on right side */
 /* https://discord.com/channels/1015060230222131221/1134844326933954622/1363058690579501197 */
 ._0f481cbbd7530492-jumpToPresentBar{
