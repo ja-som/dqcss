@@ -119,7 +119,7 @@ div:has(button[aria-label='Send a gift']) {
 /* Annoying GIF replacer */
 .imageWrapper:has(a:is(
     [href*="table-mess-lmao-laugh"],
-    /* [href*="second_link"] */
+    [href*="god-damn-gawd-dayum-baylon-outloud"]
 )) {
     width: fit-content !important;
     height: auto !important;
@@ -131,14 +131,16 @@ div:has(button[aria-label='Send a gift']) {
     margin-top: 4px;
 }
 
-.imageWrapper:has(a:is([href*="table-mess-lmao-laugh"],
-    /* [href*="second_link"] */
+.imageWrapper:has(a:is(
+    [href*="table-mess-lmao-laugh"],
+    [href*="god-damn-gawd-dayum-baylon-outloud"]
 )) > * {
     display: none !important;
 }
 
-.imageWrapper:has(a:is([href*="table-mess-lmao-laugh"],
-    /* [href*="second_link"] */
+.imageWrapper:has(a:is(
+    [href*="table-mess-lmao-laugh"],
+    [href*="god-damn-gawd-dayum-baylon-outloud"]
 ))::after {
     content: "🚫 Annoying GIF hidden";
     display: block;
