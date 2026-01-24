@@ -232,11 +232,11 @@ svg[class^="ellipsis"] {
 
 /* Fix discord's new role icons in the roles popup */
 /* https://discord.com/channels/1015060230222131221/1028106818368589824/1462111704682074254 */
-.af3987915705da59-role span:nth-of-type(2) {
+.role_af3987 span:nth-of-type(2) {
   display: flex;
 }
 
-.af3987915705da59-role span:nth-of-type(2) img:first-of-type {
+.role_af3987 span:nth-of-type(2) img:first-of-type {
   width: 14px; /* 14px and 15px both look good, pick your preference */
   height: 14px; /* Keep in mind the images will be upscaled from 12x12 which may make them look a bit odd */
 }
