@@ -1,3 +1,14 @@
+/* ///////////////////////////////// imports \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* Simplified Panel Area */
+@import url('https://davart154.github.io/Themes/Snippets/Simplified%20Panel%20Area/SimplifiedPanelArea.css');
+/* colored role pills */
+@import url('https://raw.githubusercontent.com/moonself/Vencord-Repos/refs/heads/main/Full%20Role%20Pills');
+/* Collapsed Search Bar
+@import url('https://raw.githubusercontent.com/moonself/Vencord-Repos/refs/heads/main/Collapsed%20Search%20Bar'); */
+/* Profile Popout Actions Hover */
+@import url('https://raw.githubusercontent.com/moonself/Vencord-Repos/refs/heads/main/Profile%20Popout%20Actions%20Hover');
+
+
 /* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* bigger folder icon */
 /* https://discord.com/channels/1015060230222131221/1359880118436233357 */
@@ -105,6 +116,46 @@ div:has(button[aria-label='Send a gift']) {
   }
 }
 
+/* Annoying GIF replacer */
+.imageWrapper:has(a:is(
+    [href*="table-mess-lmao-laugh"],
+    [href*="god-damn-gawd-dayum-baylon-outloud"]
+)) {
+    width: fit-content !important;
+    height: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    display: inline-flex !important;
+    padding: 0 !important;
+    margin-top: 4px;
+}
+
+.imageWrapper:has(a:is(
+    [href*="table-mess-lmao-laugh"],
+    [href*="god-damn-gawd-dayum-baylon-outloud"]
+)) > * {
+    display: none !important;
+}
+
+.imageWrapper:has(a:is(
+    [href*="table-mess-lmao-laugh"],
+    [href*="god-damn-gawd-dayum-baylon-outloud"]
+))::after {
+    content: "🚫 Annoying GIF hidden";
+    display: block;
+    padding: 8px 16px;
+    
+    background: var(--background-secondary);
+    color: var(--text-muted);
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: 8px;
+    
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
 /* jump to present button on right side */
 /* https://discord.com/channels/1015060230222131221/1134844326933954622/1363058690579501197 */
 .jumpToPresentBar__0f481{
@@ -172,31 +223,22 @@ svg[class^="ellipsis"] {
 
 /* colored role pills */
 /* https://discord.com/channels/1015060230222131221/1335796176406184018/1343197847046193183 */
-[class^="role_"] {
-  position: relative;
-  overflow: hidden;
-  > [class^="roleRemoveButton_"],
-  > div > [class^="roleRemoveButtonCanRemove_"]
-  {
-    position: static;
-    > [class^="roleCircle_"]::before {
-      content: "";
-      position: absolute;
-      top: 0;       left: 0;
-      width: 100%;  height: 100%;
-      background-color: inherit;
-      opacity: 0.2;
-      z-index: 0;
-    }
-  }
-  > [class^="roleName_"] { z-index: 1; }
-  [class^="roleRemoveIcon_"] {
-    left: calc(
-      4px +     /* Pill padding */
-      -4.5px +     /* "Remove Role" */
-      4px +     /* Circle margin */
-      12px/2);  /* Circle size */
-  }
+:root {
+/* Role Pill Settings */
+    --pill-roundness: 16px;
+    --pill-opacity: 30%;
+    --pill-border: false; /* "true" to enable */
+}
+
+/* Fix discord's new role icons in the roles popup */
+/* https://discord.com/channels/1015060230222131221/1028106818368589824/1462111704682074254 */
+.af3987915705da59-role span:nth-of-type(2) {
+  display: flex;
+}
+
+.af3987915705da59-role span:nth-of-type(2) img:first-of-type {
+  width: 14px; /* 14px and 15px both look good, pick your preference */
+  height: 14px; /* Keep in mind the images will be upscaled from 12x12 which may make them look a bit odd */
 }
 
 /* better expanded profile */
@@ -367,18 +409,24 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
     color: var(--interactive-active) !important;
 }
 
+/* make search bar smaller */
+div[class*="searchBar"] {
+  max-width: 185px;
+}
+
 
 
 /* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .backForwardButtons__63abb,/* "Back & Forward" buttons */
-.button__85643:nth-of-type(1),/* Discord Checkpoint flag/button - wrapped */
+/* .button__85643:nth-of-type(1),/* Discord Checkpoint flag/button - wrapped */
 .searchBar_e6b769,/* Find or start a conversation button */
 .nowPlayingColumn__133bf,/* Active Now */
 /*.icon_c9d15c,/* Activity Status Icon */
-.container__0d0f9,/* Boosting progress bar */
 .footer__5be3e,/* "message @name" box from profile */
 .bannerButton_de8008[aria-label="Add Friend"],/* "Add Friend" button from profile */
 .closeButton__972a0,/* "Close DM" button */
+.container__0d0f9,/* Boosting progress bar */
+.sidebarResizeHandle__5e434,/* channel list resizer */
 .inviteButton_f37cb1,/* "Invite to Server" button */
 /* div[aria-label="Edit Image with Apps"],/* Edit Image with Apps button */
 /* .chatGradientBase__36d07,/* gradient above chat input field */
@@ -398,4 +446,26 @@ div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label=
 /* rounded corners for the mic icon in the user panel area */
 .micButtonParent__37e49>.micButtonWithMenu__37e49 {
   border-radius: var(--radius-sm);
+}
+
+
+
+/* ////////////////////////////// recolors \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* toolbar icons to match the other icons */
+[role="button"] {
+  --icon-color: var(--text-5);
+}
+[role="button"]:hover {
+  --icon-color: var(--text-4);
+}
+
+/* Icons */
+path:is(
+   /* Search icon */
+  [d="M15.62 17.03a9 9 0 1 1 1.41-1.41l4.68 4.67a1 1 0 0 1-1.42 1.42l-4.67-4.68ZM17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"],
+  /* Vencord Tollbox icon */
+  [d="M0 0h7v1H6v1H5v1H4v1H3v1H2v1h5v1H0V6h1V5h1V4h1V3h1V2h1V1H0m13 2h5v1h-1v1h-1v1h-1v1h3v1h-5V7h1V6h1V5h1V4h-3m8 5h1v5h1v-1h1v1h-1v1h1v-1h1v1h-1v3h-1v1h-2v1h-1v1h1v-1h2v-1h1v2h-1v1h-2v1h-1v-1h-1v1h-6v-1h-1v-1h-1v-2h1v1h2v1h3v1h1v-1h-1v-1h-3v-1h-4v-4h1v-2h1v-1h1v-1h1v2h1v1h1v-1h1v1h-1v1h2v-2h1v-2h1v-1h1M8 14h2v1H9v4h1v2h1v1h1v1h1v1h4v1h-6v-1H5v-1H4v-5h1v-1h1v-2h2m17 3h1v3h-1v1h-1v1h-1v2h-2v-2h2v-1h1v-1h1m1 0h1v3h-1v1h-2v-1h1v-1h1"]
+) {
+  fill: var(--icon-color);
+  transition: fill 0.15s ease;
 }
