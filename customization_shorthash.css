@@ -94,7 +94,7 @@ div:has(button[aria-label='Send a gift']) {
 
 /* Move button bar above reply */
 /* https://discord.com/channels/1015060230222131221/1263665501817536542 */
-[class*=buttonContainer] > [class*=buttons_] {
+.buttonContainer_c19a55 > .buttons__5126c {
     transform: translateY(-20%);
 }
 
@@ -160,7 +160,7 @@ div:has(button[aria-label='Send a gift']) {
 /* https://discord.com/channels/1015060230222131221/1134844326933954622/1363058690579501197 */
 .jumpToPresentBar__0f481{
     justify-self: end;
-    margin: 20px 10px !important;
+    margin: 10px 10px !important;
 }
 
 /* Hide chat box if you have no permission to write in the channel */
@@ -179,7 +179,7 @@ div:has(button[aria-label='Send a gift']) {
 
 /* Hide typing dots in chat bar */
 /* https://discord.com/channels/1015060230222131221/1322496323202715689/1325755259896725505 */
-svg[class^="ellipsis"] {
+svg[class*="ellipsis_b88801"] {
   display: none !important;
 
   & + span {
@@ -201,7 +201,7 @@ svg[class^="ellipsis"] {
 /* ////////////////////////////// user profile \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* bio scrollbar + unclamp */
 /* https://discord.com/channels/1015060230222131221/1255186876084654191/1262252001979269130 */
-[class^="descriptionClamp_"] {
+[class^="descriptionClamp_f5f93a"] {
   -webkit-line-clamp: unset;
   max-height: 112px;
   overflow-x: hidden;
@@ -387,7 +387,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
   position: sticky;
   bottom: 0px;
   z-index: 999;
-  background: var(--bg-overlay-1, var(--background-primary)); /* color from theme */
+  background: var(--bg-4); /* color from theme */
 }
 
 /* Adding people isn't that important */
