@@ -418,7 +418,7 @@ div[class*="searchBar"] {
 
 /* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .backForwardButtons__63abb,/* "Back & Forward" buttons */
-/* .button__85643:nth-of-type(1),/* Discord Checkpoint flag/button - wrapped */
+.button__85643:nth-of-type(1),/* DevTools button */
 .searchBar_e6b769,/* Find or start a conversation button */
 .nowPlayingColumn__133bf,/* Active Now */
 /*.icon_c9d15c,/* Activity Status Icon */
