@@ -1,0 +1,31 @@
+/* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.backForwardButtons__63abb,/* "Back & Forward" buttons */
+.button__85643:nth-of-type(1),/* DevTools button */
+.searchBar_e6b769,/* Find or start a conversation button */
+.nowPlayingColumn__133bf,/* Active Now */
+/*.icon_c9d15c,/* Activity Status Icon */
+.footer__5be3e,/* "message @name" box from profile */
+.bannerButton_fb7f94[aria-label="Add Friend"],/* "Add Friend" button from profile */
+.closeButton__972a0,/* "Close DM" button */
+.container__0d0f9,/* Boosting progress bar */
+.sidebarResizeHandle__5e434,/* channel list resizer */
+.inviteButton_f37cb1,/* "Invite to Server" button */
+/* div[aria-label="Edit Image with Apps"],/* Edit Image with Apps button */
+/* .chatGradientBase__36d07,/* gradient above chat input field */
+.button__24af7[aria-label="Send a gift"],/* Gift button */
+.stickerButton__74017,/* Stickers button */
+.app-launcher-entrypoint, /*channelAppLauncher_e6e74f, */ /* App Launcher button */
+.refreshVoiceChannelsButton__29444,/* "🔊 Show All" button */
+.voiceBar__7aaec,/* "X IN VOICE" bar */
+.micButtonParent__37e49>.buttonChevron__37e49,/* Input/Output options in the user panel area */
+.iconNoChannelInfo_c69b6d,.iconWithChannelInfo_c69b6d/* stupid buttons from channels in Channels List */
+/* div[aria-label="Channel Options"], div[aria-label="Invite to Voice"], div[aria-label="Open Chat"],
+div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label="Invite to Server"] */
+{
+    display: none !important;
+}
+
+/* rounded corners for the mic icon in the user panel area */
+.micButtonParent__37e49>.micButtonWithMenu__37e49 {
+  border-radius: var(--radius-sm);
+}

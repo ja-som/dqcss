@@ -1,0 +1,17 @@
+/* ///////////////////////////////// imports \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* Simplified Panel Area */
+@import url('https://gitlab.com/ja-som/dqcss/-/raw/main/src/SimplifiedPanelArea_themefix.css');
+/* colored role pills */
+@import url('https://raw.githubusercontent.com/moonself/Vencord-Repos/refs/heads/main/Full%20Role%20Pills');
+/* Profile Popout Actions Hover */
+@import url('https://raw.githubusercontent.com/moonself/Vencord-Repos/refs/heads/main/Profile%20Popout%20Actions%20Hover');
+
+@import url('https://gitlab.com/ja-som/dqcss/-/raw/main/src/channels_list.css');
+@import url('https://gitlab.com/ja-som/dqcss/-/raw/main/src/chat.css');
+@import url('https://gitlab.com/ja-som/dqcss/-/raw/main/src/hide_all_the_things.css');
+@import url('https://gitlab.com/ja-som/dqcss/-/raw/main/src/member_list.css');
+@import url('https://gitlab.com/ja-som/dqcss/-/raw/main/src/other.css');
+@import url('https://gitlab.com/ja-som/dqcss/-/raw/main/src/recolors.css');
+@import url('https://gitlab.com/ja-som/dqcss/-/raw/main/src/servers_list.css');
+@import url('https://gitlab.com/ja-som/dqcss/-/raw/main/src/user_panel_area.css');
+@import url('https://gitlab.com/ja-som/dqcss/-/raw/main/src/user_profile.css');

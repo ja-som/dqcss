@@ -1,0 +1,24 @@
+/* ////////////////////////////// channels list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* Collapse Icon Position Fix */
+/* https://discord.com/channels/1015060230222131221/1362945175957012612 */
+.containerDefault__29444 {
+    > div {
+      padding-left: 0.5em;
+  
+      > div {
+        display: flex !important;
+        place-content: start !important;
+        flex-direction: row-reverse !important;
+      }
+    }
+  }
+  
+  /* Hide Events and Server Boosts */
+  /* https://discord.com/channels/1015060230222131221/1134844326933954622/1386633258103738420 */
+  :is(
+    [data-list-item-id^=channels___upcoming-events-],
+    [data-list-item-id^=channels___skill-trees-]
+  )+div,
+  ul[aria-label="Channels"]>.sectionDivider__629e4 {
+    display: none !important;
+  }

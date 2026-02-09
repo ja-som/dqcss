@@ -1,0 +1,20 @@
+/* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* bigger folder icon */
+/* https://discord.com/channels/1015060230222131221/1359880118436233357 */
+.folderIcon__48112 {
+    svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1px;
+    }
+  }
+
+  
+/* Server icons preview in folders */
+/* https://discord.com/channels/1015060230222131221/1354361432472555623 */
+.folderHeaderSmall__48112 {
+   --custom-folder-preview-padding: 5px;
+ }
+ .folderPreviewGuildIcon__48112 {
+   border-radius: 50% !important;
+ }

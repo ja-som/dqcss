@@ -1,0 +1,101 @@
+/* ////////////////////////////// user profile \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* bio scrollbar + unclamp */
+/* https://discord.com/channels/1015060230222131221/1255186876084654191/1262252001979269130 */
+[class^="descriptionClamp_f5f93a"] {
+    -webkit-line-clamp: unset;
+    max-height: 112px;
+    overflow-x: hidden;
+    overflow-y: auto;
+      
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background: var(--bg-2); /*color from theme */
+        background-clip: padding-box;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        min-height: 40px;
+      }
+  }
+  
+  /* colored role pills */
+  /* https://discord.com/channels/1015060230222131221/1335796176406184018/1343197847046193183 */
+  :root {
+  /* Role Pill Settings */
+      --pill-roundness: 16px;
+      --pill-opacity: 30%;
+      --pill-border: false; /* "true" to enable */
+  }
+  
+  /* Fix discord's new role icons in the roles popup */
+  /* https://discord.com/channels/1015060230222131221/1028106818368589824/1462111704682074254 */
+  .role_af3987 span:nth-of-type(2) {
+    display: flex;
+  }
+  
+  .role_af3987 span:nth-of-type(2) img:first-of-type {
+    width: 14px; /* 14px and 15px both look good, pick your preference */
+    height: 14px; /* Keep in mind the images will be upscaled from 12x12 which may make them look a bit odd */
+  }
+  
+  /* better expanded profile */
+  /* https://discord.com/channels/1015060230222131221/1028106818368589824/1395506910802743356
+  https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expProfile.css */
+  .visual-refresh {
+    .focusLock__49fc1 {
+      >.root__9c3be .outer_c0bea0 > .inner_c0bea0 {
+        padding: 48px 36px 48px 48px;
+  
+        >.profile__9c3be {
+          border-radius: var(--radius-lg) var(--radius-lg) var(--radius-lg) var(--radius-lg);
+          
+          >.profileBody__9c3be {
+            padding: 4px 32px 0px;
+            margin-bottom: 22px;
+  
+  
+            /* Connections: Border like from roles | Comment for no borders */
+            >.section_bf424d.section_be87fd > .container__9bfb9.profileAppConnections__9c3be > .connection__9bfb9{
+              padding: 7px;
+  
+              border: 1px solid var(--user-profile-border);
+              border-radius: var(--radius-sm);
+            }
+  
+            /* Horizontal layout | Comment for vertical layout */
+            >.section_bf424d.section_be87fd > .container__9bfb9.profileAppConnections__9c3be {
+              flex-direction: row; 
+              flex-wrap: wrap; 
+              align-items: flex-start;
+              gap: 10px 16px;
+  
+              >.connection__9bfb9 > .connectionInfo__9bfb9 {
+                min-width: 110px;
+                /* If you want to cut the Names for a better layout uncomment this */
+                /* max-width: 110px; */
+  
+                /* No metadata for better layout | Comment for metadata */
+                .defaultColor__4bd52.text-xs\/normal_cf4812,
+                >.metadata__9bfb9{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+  
+        /* Friends & Server: Border like from roles | Comment for no Borders */
+        >.container__37bfc > .tabBarPanel__37bfc > .scroller__28fdc {
+          >.row__89036,
+          >.row__0a95c {
+            padding: 7px;
+            border: 1px solid var(--user-profile-border);
+            border-radius: var(--radius-sm);
+          }
+        } 
+      }
+    }
+  }

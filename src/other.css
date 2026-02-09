@@ -1,0 +1,112 @@
+/* ////////////////////////////// other \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* vesktop loading */
+[class*=content]:has(> video[data-testid="app-spinner"]) {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      translate: 25%;
+      width: 200px;
+      height: 180px;
+      background-image: url('./assets/VCsplash.webp') !important;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    video { visibility: hidden; }
+   div[class^=text_] { top: 10px; }
+  }
+  
+  /* cat emoji button */
+  :root{
+    --customEmojiIconURL: url(./assets/emoji.svg);
+    --customEmojiIconMask: url(./assets/emoji.svg);
+  }
+  [class*=emojiButton] [class*=spriteColored]{
+    background: var(--customEmojiIconURL) center/contain no-repeat;
+  }
+  
+  [class*=emojiButton] [class*=spriteGreyscale]{
+    mask: var(--customEmojiIconMask) center/contain no-repeat;
+  }
+  
+  /* reduce context menu padding */
+  /* https://discord.com/channels/1015060230222131221/1371211975794888794 */
+  .menu_c1e9c4:has(.scroller_c1e9c4) {
+      min-width: 0;
+      width: 200px !important;
+      &::after,.scroller_c1e9c4 {
+          /* border margin */
+          margin: -4px;
+      }
+      &::after,.separator_c1e9c4 {
+          /* separator margin */
+          margin: 1px 8px !important;
+      }
+      &::after,.wrapper_f563df {
+          /* reactions margin */
+          padding: 0px !important;
+          margin: 1px;
+      }
+      &::after,.item_c1e9c4 {
+          /* min-height is 32px as default, change value for desired look */
+          min-height: 0;
+          /* padding is 4px 8px as default, change value for desired look */
+          padding: 4px 8px;
+      }
+      &::after,.icon_f563df {
+          /* reactions size */
+          width: 18px;
+      }
+      &::after,.button_f563df {
+          /* reactions border size */
+          width: 44px;
+          height: 36px;
+          border-radius: 4px;
+      }
+      &::after,.icon_c1e9c4 {
+          /* icons size */
+          width: 18px;
+          height: 18px;
+      }
+      &::after,.iconContainer_c1e9c4 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+  }
+  
+  /* Pin page switcher to bottom of search results */
+  /* https://discord.com/channels/1015060230222131221/1334846468334555207 */
+  [class^="searchResultsWrap_"] [class^="container_"]:has([class^="pageControlContainer_"]){
+    position: sticky;
+    bottom: 0px;
+    z-index: 999;
+    background: var(--bg-4); /* color from theme */
+  }
+  
+  /* Adding people isn't that important */
+  /* https://discord.com/channels/1015060230222131221/1276982404501999750 */
+  [data-tab-id=ADD_FRIEND]{
+      background-color: var(--background-color) !important;
+      color: var(--interactive-normal) !important;
+  }
+  [data-tab-id=ADD_FRIEND]:hover{
+      background-color: var(--background-modifier-hover) !important;
+      color: var(--interactive-hover) !important;
+  }
+  [data-tab-id=ADD_FRIEND][aria-selected=true]{
+      background-color: var(--background-modifier-selected) !important;
+      color: var(--interactive-active) !important;
+  }
+  [data-tab-id=ADD_FRIEND][aria-selected=true]:hover{
+      background-color: var(--background-modifier-hover) !important;
+      color: var(--interactive-active) !important;
+  }
+  
+  /* make search bar smaller */
+  div[class*="searchBar"] {
+    max-width: 185px;
+  }
