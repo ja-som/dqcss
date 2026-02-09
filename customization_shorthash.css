@@ -311,7 +311,7 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
     translate: 25%;
     width: 200px;
     height: 180px;
-    background-image: url('./VCsplash.webp') !important;
+    background-image: url('./assets/VCsplash.webp') !important;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -322,8 +322,8 @@ https://raw.githubusercontent.com/Augenbl1ck/Discord-Styles/refs/heads/main/expP
 
 /* cat emoji button */
 :root{
-  --customEmojiIconURL: url(./emoji.svg);
-  --customEmojiIconMask: url(./emoji.svg);
+  --customEmojiIconURL: url(./assets/emoji.svg);
+  --customEmojiIconMask: url(./assets/emoji.svg);
 }
 [class*=emojiButton] [class*=spriteColored]{
   background: var(--customEmojiIconURL) center/contain no-repeat;
