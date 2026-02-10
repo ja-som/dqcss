@@ -1,4 +1,9 @@
 /* ////////////////////////////// chat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* overlaping timestamp in reply fix */
+.vc-reply-timestamp {
+  width: unset !important;
+}
+
 /* Collapsible chat actions */
 /* https://github.com/moonself/Vencord-Repos */
 .buttons__74017 {
