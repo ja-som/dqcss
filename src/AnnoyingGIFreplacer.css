@@ -1,0 +1,42 @@
+/* Annoying GIF replacer */
+.imageWrapper:has(a:is(
+    [href*="table-mess-lmao-laugh"],
+    [href*="damn-boi-he-thick"],
+    [href*="god-damn-gawd-dayum-baylon-outloud"]
+)) {
+    width: fit-content !important;
+    height: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+    display: inline-flex !important;
+    padding: 0 !important;
+    margin-top: 4px;
+}
+
+.imageWrapper:has(a:is(
+    [href*="table-mess-lmao-laugh"],
+    [href*="damn-boi-he-thick"],
+    [href*="god-damn-gawd-dayum-baylon-outloud"]
+)) > * {
+    display: none !important;
+}
+
+.imageWrapper:has(a:is(
+    [href*="table-mess-lmao-laugh"],
+    [href*="damn-boi-he-thick"],
+    [href*="god-damn-gawd-dayum-baylon-outloud"]
+))::after {
+    content: "🚫 Annoying GIF hidden";
+    display: block;
+    padding: 8px 16px;
+    
+    background: var(--background-secondary);
+    color: var(--text-muted);
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: 8px;
+    
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
