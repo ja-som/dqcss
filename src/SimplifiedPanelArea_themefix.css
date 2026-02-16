@@ -426,6 +426,7 @@
   }
 }
 .vc-spotify-button-icon.vc-spotify-button-icon {
+  fill: var(--text-3) !important;
   height: 16px;
   width: 16px;
   transition: scale .4s cubic-bezier(.16,1,.3,1);
