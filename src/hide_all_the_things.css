@@ -17,7 +17,7 @@
 .app-launcher-entrypoint, /*channelAppLauncher_e6e74f, */ /* App Launcher button */
 .refreshVoiceChannelsButton__29444,/* "🔊 Show All" button */
 .voiceBar__7aaec,/* "X IN VOICE" bar */
-.micButtonParent__37e49>.buttonChevron__37e49,/* Input/Output options in the user panel area */
+.audioButtonParent__5e764>.buttonChevron__5e764,/* Input/Output options in the user panel area */
 .iconNoChannelInfo_c69b6d,.iconWithChannelInfo_c69b6d/* stupid buttons from channels in Channels List */
 /* div[aria-label="Channel Options"], div[aria-label="Invite to Voice"], div[aria-label="Open Chat"],
 div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label="Invite to Server"] */
@@ -26,6 +26,6 @@ div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label=
 }
 
 /* rounded corners for the mic icon in the user panel area */
-.micButtonParent__37e49>.micButtonWithMenu__37e49 {
+.audioButtonParent__5e764>.audioButtonWithMenu__5e764 {
   border-radius: var(--radius-sm);
 }
