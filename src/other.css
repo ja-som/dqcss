@@ -106,7 +106,11 @@
       color: var(--interactive-active) !important;
   }
   
-  /* make search bar smaller */
-  div[class*="searchBar"] {
+  /* make search bar smaller and fix imbox */
+  .searchBar_c322aa{
     max-width: 185px;
+    margin-right: 35px;
+  }
+  [aria-label="Inbox"]{
+    right: -10px;
   }
