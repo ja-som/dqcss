@@ -106,6 +106,10 @@
       color: var(--interactive-active) !important;
   }
   
+  /* "center" Vencord Toolbox button */
+  [aria-label="Vencord Toolbox"]{
+    right: 8px;
+  }
   /* make search bar smaller */
   .searchBar_c322aa{
     max-width: 185px;
