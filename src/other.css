@@ -106,25 +106,7 @@
       color: var(--interactive-active) !important;
   }
   
-  /* make search bar smaller and fix inbox button everlapping */
+  /* make search bar smaller */
   .searchBar_c322aa{
     max-width: 185px;
-    margin-right: 35px;
-  }
-  [aria-label="Inbox"]{
-    right: -10px;
-  }
-  /* inbox and "New Group DM" buttons overlapping fix */
-  .inviteToolbar__133bf{
-    margin-right: 35px;
-  }
-  [aria-label="Inbox"]{
-    right: -10px;
-  }
-  /* inbox button and Orbs overlapping fix */
-  .container__44ee9{
-    margin-right: 35px;
-  }
-  [aria-label="Inbox"]{
-    right: -10px;
   }
