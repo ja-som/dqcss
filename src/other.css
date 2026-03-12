@@ -107,7 +107,7 @@
   }
   
   /* "center" Vencord Toolbox button */
-  [aria-label="Vencord Toolbox"]{
+  .vc-toolbox-btn,[aria-label="Vencord Toolbox"]{
     right: 8px;
   }
   /* make search bar smaller */
