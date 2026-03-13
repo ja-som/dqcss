@@ -1,6 +1,6 @@
 /* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .backForwardButtons__63abb,/* "Back & Forward" buttons */
-.clickable__81391[aria-label="DevTools"],/*.button__85643:nth-of-type(1),*/ /* DevTools button */
+/*.clickable__81391[aria-label="DevTools"],.button__85643:nth-of-type(1),*/ /* DevTools button */
 .searchBar_e6b769,/* Find or start a conversation button */
 .nowPlayingColumn__133bf,/* Active Now */
 .wrapper__5d00f,/* top part (sponsored) of "All quests" */
