@@ -106,20 +106,7 @@
       color: var(--text-2) !important;
   }
   
-  /* "center" Vencord Toolbox button */
-  .vc-toolbox-btn,[aria-label="Vencord Toolbox"]{
-    right: 6px;
-  }
   /* make search bar smaller and inbox overlapping fix */
   .searchBar_c322aa{
     max-width: 185px;
-    margin-right: 32px;
-  }
-  /* inbox and "New Group DM" buttons overlapping fix */
-  .inviteToolbar__133bf{
-    margin-right: 32px;
-  }
-  /* inbox button and Orbs overlapping fix */
-  .container__44ee9{
-    margin-right: 32px;
   }
