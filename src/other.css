@@ -1,5 +1,5 @@
 /* ////////////////////////////// other \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-/* vesktop loading */
+/* vesktop loading
 [class*=content]:has(> video[data-testid="app-spinner"]) {
     position: relative;
     &::after {
@@ -17,7 +17,7 @@
     }
     video { visibility: hidden; }
    div[class^=text_] { top: 10px; }
-  }
+  } */
   
   /* cat emoji button */
   :root{
