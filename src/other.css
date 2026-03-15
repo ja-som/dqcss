@@ -12,7 +12,7 @@
         content: url('https://gitlab.com/ja-som/dqcss/-/raw/main/assets/VCsplash.webp');
         image-rendering: pixelated;
          align-content: center;
-         scale: 0.25;
+         scale: 0.5;
          margin-bottom: 96px;
     }
 }
