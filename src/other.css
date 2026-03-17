@@ -107,7 +107,26 @@
       color: var(--text-2) !important;
   }
   
-  /* make search bar smaller and inbox overlapping fix */
+  /* make search bar smaller */
   .searchBar_c322aa{
     max-width: 185px;
+  }
+
+
+  /* ////////////////////////////// Mac OS specific \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* "center" Vencord Toolbox button */
+  .platform-osx .vc-toolbox-btn,.platform-osx [aria-label="Vencord Toolbox"]{
+    right: 6px;
+  }
+    /* search bar and inbox overlapping fix */
+  .platform-osx .searchBar_c322aa{
+    margin-right: 36px;
+  }
+    /* inbox and "New Group DM" buttons overlapping fix */
+  .platform-osx .inviteToolbar__133bf{
+    margin-right: 36px;
+  }
+    /* inbox button and Orbs overlapping fix */
+  .platform-osx .container__44ee9{
+    margin-right: 36px;
   }
