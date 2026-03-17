@@ -118,15 +118,10 @@
   .platform-osx .vc-toolbox-btn,.platform-osx [aria-label="Vencord Toolbox"]{
     right: 6px;
   }
-    /* search bar and inbox overlapping fix */
-  .platform-osx .searchBar_c322aa{
-    margin-right: 36px;
-  }
-    /* inbox and "New Group DM" buttons overlapping fix */
-  .platform-osx .inviteToolbar__133bf{
-    margin-right: 36px;
-  }
-    /* inbox button and Orbs overlapping fix */
-  .platform-osx .container__44ee9{
+    /* inbox overlapping fix */
+  .platform-osx .searchBar_c322aa, /* search bar */
+  .platform-osx .inviteToolbar__133bf, /* "New Group DM" */
+  .platform-osx .container__44ee9 /* Orbs */
+  {
     margin-right: 36px;
   }
