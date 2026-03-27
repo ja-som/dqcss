@@ -115,13 +115,13 @@
 
   /* ////////////////////////////// Mac OS specific \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* "center" Vencord Toolbox button */
-  .platform-osx .vc-toolbox-btn,.platform-osx [aria-label="Vencord Toolbox"]{
+  /* .platform-osx .vc-toolbox-btn,.platform-osx [aria-label="Vencord Toolbox"]{
     right: 6px;
   }
     /* inbox overlapping fix */
-  .platform-osx .searchBar_c322aa, /* search bar */
-  .platform-osx .inviteToolbar__133bf, /* "New Group DM" */
-  .platform-osx .container__44ee9 /* Orbs */
-  {
+  /* .platform-osx .searchBar_c322aa, /* search bar */
+  /* .platform-osx .inviteToolbar__133bf, /* "New Group DM" */
+  /* .platform-osx .container__44ee9 /* Orbs */
+  /* {
     margin-right: 36px;
   }
