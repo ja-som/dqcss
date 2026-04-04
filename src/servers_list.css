@@ -18,3 +18,8 @@
  .folderPreviewGuildIcon__48112 {
    border-radius: 50% !important;
  }
+
+
+ /* Move "Pending Applications" to the bottom of the server list */
+ /* combination of Gemini's ridiculously long code, and a simple one from guys on Vencord server https://discord.com/channels/1015060230222131221/1134844326933954622/1489675749521752324 */
+.container__93fc9:has([data-dnd-name="Pending Applications"]) { order: 1; }
