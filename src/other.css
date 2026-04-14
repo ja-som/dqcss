@@ -10,7 +10,7 @@
       translate: 25%;
       width: 200px;
       height: 180px;
-      background-image: url('https://gitlab.com/ja-som/dqcss/-/raw/main/assets/VCsplash.webp') !important;
+      background-image: url('https://raw.githubusercontent.com/ja-som/dqcss/refs/heads/main/assets/VCsplash.webp') !important;
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
