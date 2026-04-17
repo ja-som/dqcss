@@ -1,0 +1,10 @@
+/* Blur images in specific channel */
+/* WW announcement channel - 728638965812428893 */
+[id*="728638965812428893"] .imageWrapper_af017a img {
+    filter: blur(30px) !important;
+    transition: filter 0.3s ease !important;
+}
+/* Reveal on hover */
+[id*="728638965812428893"] .imageWrapper_af017a:hover img {
+    filter: blur(0) !important;
+}
