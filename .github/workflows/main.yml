@@ -1,7 +1,16 @@
-  name: Actions Status Discord
-  uses: sarisia/actions-status-discord@v1.16.0
-  if: always()
-  with:
-    color: 0xac02be
-    username: GitHub - dqcss
-    avatar_url: ${{ secrets.AVATAR_URL }}
+name: Discord Status Notification
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Actions Status Discord
+        uses: sarisia/actions-status-discord@v1.16.0
+        if: always()
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          color: 0xac02be
+          username: GitHub - dqcss
+          avatar_url: ${{ secrets.AVATAR_URL }}
