@@ -1,4 +1,4 @@
-- name: Actions Status Discord
+  name: Actions Status Discord
   uses: sarisia/actions-status-discord@v1.16.0
   if: always()
   with:
