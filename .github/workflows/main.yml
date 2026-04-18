@@ -11,6 +11,7 @@ jobs:
         if: always()
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "file changed"
           color: 0xac02be
           username: GitHub - dqcss
           avatar_url: ${{ secrets.AVATAR_URL }}
