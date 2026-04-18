@@ -1,0 +1,62 @@
+name: External Repo Watcher
+
+on:
+  schedule:
+    - cron: '0 * * * *' 
+  workflow_dispatch:
+
+jobs:
+  vencord-watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Vencord Commit
+        id: vencord
+        run: |
+          SHA=$(curl -s https://api.github.com/repos/Vendicated/Vencord/commits/main | jq -r '.sha')
+          echo "sha=$SHA" >> $GITHUB_OUTPUT
+
+      - name: Notify Discord
+        uses: sarisia/actions-status-discord@v1.16.0
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "Vencord Update Detected"
+          description: "Latest commit: https://github.com/Vendicated/Vencord/commit/${{ steps.vencord.outputs.sha }}"
+          color: 0xac02be
+          username: GitHub - Vencord
+
+  midnight-mocha-watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get File Commit
+        id: mocha
+        run: |
+          # Adding the 'path' parameter targets just this file
+          SHA=$(curl -s "https://api.github.com/repos/refact0r/midnight-discord/commits?path=themes/flavors/midnight-catppuccin-mocha.theme.css&page=1&per_page=1" | jq -r '.[0].sha')
+          echo "sha=$SHA" >> $GITHUB_OUTPUT
+
+      - name: Notify Discord
+        uses: sarisia/actions-status-discord@v1.16.0
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "Midnight Mocha Theme Update"
+          description: "The Catppuccin Mocha flavor has been updated: https://github.com/refact0r/midnight-discord/commit/${{ steps.mocha.outputs.sha }}"
+          color: 0xac02be
+          username: GitHub - Midnight-mocha theme
+
+  midnight-main-watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get File Commit
+        id: midnight
+        run: |
+          SHA=$(curl -s "https://api.github.com/repos/refact0r/midnight-discord/commits?path=build/midnight.css&page=1&per_page=1" | jq -r '.[0].sha')
+          echo "sha=$SHA" >> $GITHUB_OUTPUT
+
+      - name: Notify Discord
+        uses: sarisia/actions-status-discord@v1.16.0
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "Midnight Main CSS Update"
+          description: "The main build/midnight.css has been updated: https://github.com/refact0r/midnight-discord/commit/${{ steps.midnight.outputs.sha }}"
+          color: 0xac02be
+          username: GitHub - Midnight theme
