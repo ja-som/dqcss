@@ -23,6 +23,7 @@ jobs:
           description: "Latest commit: https://github.com/Vendicated/Vencord/commit/${{ steps.vencord.outputs.sha }}"
           color: 0xac02be
           username: GitHub - Vencord
+          avatar_url: ${{ secrets.AVATAR_URL }}
 
   midnight-mocha-watch:
     runs-on: ubuntu-latest
@@ -42,6 +43,7 @@ jobs:
           description: "The Catppuccin Mocha flavor has been updated: https://github.com/refact0r/midnight-discord/commit/${{ steps.mocha.outputs.sha }}"
           color: 0xac02be
           username: GitHub - Midnight-mocha theme
+          avatar_url: ${{ secrets.AVATAR_URL }}
 
   midnight-main-watch:
     runs-on: ubuntu-latest
@@ -60,3 +62,4 @@ jobs:
           description: "The main build/midnight.css has been updated: https://github.com/refact0r/midnight-discord/commit/${{ steps.midnight.outputs.sha }}"
           color: 0xac02be
           username: GitHub - Midnight theme
+          avatar_url: ${{ secrets.AVATAR_URL }}
