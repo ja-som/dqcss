@@ -17,6 +17,7 @@
 /* .chatGradientBase__36d07,/* gradient above chat input field */
 .button__24af7[aria-label="Send a gift"],/* Gift button in chat*/
 .button__24af7[aria-label="Give a Gift"],/* Gift button in DMs*/
+.button_a22cb0[aria-label="Gift"],/* Gift button in big profile*/
 /* .stickerButton__74017,/* Stickers button */
 .app-launcher-entrypoint, /*channelAppLauncher_e6e74f, */ /* App Launcher button */
 .refreshVoiceChannelsButton__29444,/* "🔊 Show All" button */
