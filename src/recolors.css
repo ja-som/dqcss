@@ -17,3 +17,13 @@
     fill: var(--icon-color);
     transition: fill 0.15s ease;
   }
+
+/* ////////////////////////////// roles recolor \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* I Have No Mouth And I Must Scream */
+[style*="color: rgb(29, 18, 18)"] { /* original role color */
+    color: #ff00ea !important; /* replace with this color */
+}
+[style*="background-color: rgb(29, 18, 18)"] {
+    background-color: #ff00ea !important;
+    border-color: #ff00ea !important;
+}
