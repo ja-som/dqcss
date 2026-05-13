@@ -13,15 +13,32 @@ jobs:
 
     steps:
       - uses: actions/checkout@v6
+
       - id: update-src
         uses: metro420yt/class-update@v1
         with:
           folder: src
           ext: css
           diff: "https://raw.githubusercontent.com/SyndiShanX/Update-Classes/main/Changes.txt"
+          
+      - name: Revert folderIcon breakages
+        run: |
+          sed -i 's/\.folderHeader__48112/\.folderIcon__48112/g' src/**/*.css src/*.css 2>/dev/null || true
+
       - uses: EndBug/add-and-commit@v10
+        id: commit-step
         if: ${{steps.update-src.outputs.totalChanges > 0}}
         with:
           default_author: github_actions
-          message: "chore: update classes >_<"
+          message: "chore: update classes"
           fetch: true
+          
+      - name: Actions Status Discord
+        uses: sarisia/actions-status-discord@v1.16.0
+        if: ${{ steps.commit-step.outputs.committed == 'true' }}
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "Discord Classes Updated Automatically!"
+          color: 0xac02be
+          username: GitHub - dqcss
+          avatar_url: ${{ secrets.AVATAR_URL }}
