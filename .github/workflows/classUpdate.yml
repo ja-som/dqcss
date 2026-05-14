@@ -33,12 +33,48 @@ jobs:
           message: "chore: update classes"
           fetch: true
           
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changed-files
+        if: ${{ steps.commit-step.outputs.committed == 'true' }}
+        uses: tj-actions/changed-files@v44
+        with:
+          separator: "\n"
+
+      - name: Process Git Metadata
+        id: metadata
+        if: ${{ steps.commit-step.outputs.committed == 'true' }}
+        run: |
+          echo "SHORT_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV
+          IFS= read -r FIRST_LINE << 'EOF'
+          ${{ github.event.head_commit.message }}
+          EOF
+          echo "COMMIT_TITLE=$FIRST_LINE" >> $GITHUB_ENV
+
       - name: Actions Status Discord
         uses: sarisia/actions-status-discord@v1.16.0
         if: ${{ steps.commit-step.outputs.committed == 'true' }}
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          title: "Discord Classes Updated Automatically!"
+          nodetail: true
+          title: "File(s) changed"
+          description: |
+            **Repository:**
+            [${{github.repository}}](https://github.com/${{github.repository}})
+
+            **Event:**
+            [`${{env.SHORT_SHA}}`](https://github.com/${{github.repository}}/commit/${{github.sha}}) - ${{env.COMMIT_TITLE}}
+            
+            **File(s) changed:**
+            ```
+            ${{steps.changed-files.outputs.all_changed_files}}
+            ```
+            **Triggered by:**
+            Automated System (via ${{github.actor}})
           color: 0xac02be
           username: GitHub - dqcss
           avatar_url: ${{ secrets.AVATAR_URL }}
