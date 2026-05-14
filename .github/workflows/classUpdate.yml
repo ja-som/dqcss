@@ -38,19 +38,27 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Refresh Git State
+        if: ${{ steps.commit-step.outputs.committed == 'true' }}
+        run: |
+          git fetch --prune --unshallow || git fetch --prune
+          git pull --ff-only
+
       - name: Get changed files
         id: changed-files
         if: ${{ steps.commit-step.outputs.committed == 'true' }}
         uses: tj-actions/changed-files@v44
         with:
-          base_sha: "HEAD^"
+          base_sha: "HEAD~1"
           separator: "\n"
 
       - name: Process Git Metadata
         id: metadata
         if: ${{ steps.commit-step.outputs.committed == 'true' }}
         run: |
-          echo "ACTUAL_SHA=$(git rev-parse HEAD)" >> $GITHUB_ENV
+          # Use rev-parse to get the true current SHA
+          TRUE_SHA=$(git rev-parse HEAD)
+          echo "ACTUAL_SHA=$TRUE_SHA" >> $GITHUB_ENV
           echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
           echo "COMMIT_TITLE=$(git log -1 --pretty=%s)" >> $GITHUB_ENV
 
@@ -60,7 +68,7 @@ jobs:
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           nodetail: true
-          title: "Discord Classes Updated Automatically!"
+          title: "File(s) changed"
           description: |
             **Repository:**
             [${{github.repository}}](https://github.com/${{github.repository}})
