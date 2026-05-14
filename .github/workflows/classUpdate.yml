@@ -50,10 +50,7 @@ jobs:
         if: ${{ steps.commit-step.outputs.committed == 'true' }}
         run: |
           echo "SHORT_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV
-          IFS= read -r FIRST_LINE << 'EOF'
-          ${{ github.event.head_commit.message }}
-          EOF
-          echo "COMMIT_TITLE=$FIRST_LINE" >> $GITHUB_ENV
+          echo "COMMIT_TITLE=$(git log -1 --pretty=%s)" >> $GITHUB_ENV
 
       - name: Actions Status Discord
         uses: sarisia/actions-status-discord@v1.16.0
@@ -74,7 +71,7 @@ jobs:
             ${{steps.changed-files.outputs.all_changed_files}}
             ```
             **Triggered by:**
-            Automated System (via ${{github.actor}})
+            Class Updater [bot]
           color: 0xac02be
           username: GitHub - dqcss
           avatar_url: ${{ secrets.AVATAR_URL }}
