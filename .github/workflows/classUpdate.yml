@@ -30,7 +30,7 @@ jobs:
         if: ${{steps.update-src.outputs.totalChanges > 0}}
         with:
           default_author: github_actions
-          message: "chore: update classes"
+          message: "update classes"
           fetch: true
           
       - name: Checkout code
@@ -80,7 +80,6 @@ jobs:
             ```
             ${{steps.changed-files.outputs.all_changed_files}}
             ```
-            
             **Triggered by:**
             Class Updater [bot]
           color: 0xac02be
