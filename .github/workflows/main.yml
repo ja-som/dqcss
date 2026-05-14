@@ -1,17 +1,40 @@
 name: Discord Status Notification
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Process Git Metadata
+        id: metadata
+        run: |
+          # 7-digit Short SHA calculation
+          echo "SHORT_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV
+          
+          # Isolate the commit title summary line only
+          IFS= read -r FIRST_LINE << 'EOF'
+          ${{ github.event.head_commit.message }}
+          EOF
+          echo "COMMIT_TITLE=$FIRST_LINE" >> $GITHUB_ENV
+
       - name: Actions Status Discord
         uses: sarisia/actions-status-discord@v1.16.0
         if: always()
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          nodetail: true
           title: "file changed"
+          description: |
+            **Repository:**
+            ${{ github.repository }}
+            **Event:**
+            `${{ env.SHORT_SHA }}` - ${{ env.COMMIT_TITLE }}
+            **Triggered by:**
+            ${{ github.event.head_commit.author.name }}
           color: 0xac02be
           username: GitHub - dqcss
           avatar_url: ${{ secrets.AVATAR_URL }}
