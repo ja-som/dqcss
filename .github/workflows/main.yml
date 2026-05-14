@@ -30,9 +30,9 @@ jobs:
           title: "file changed"
           description: |
             **Repository:**
-            ${{ github.repository }}
+            [${{ github.repository }}](https://github.com{{ github.repository }})
             **Event:**
-            `${{ env.SHORT_SHA }}` - ${{ env.COMMIT_TITLE }}
+            [`${{ env.SHORT_SHA }}`](github.com${{ github.repository }}/commit/${{ github.sha }}) - ${{ env.COMMIT_TITLE }}
             **Triggered by:**
             ${{ github.event.head_commit.author.name }}
           color: 0xac02be
