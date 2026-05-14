@@ -23,10 +23,8 @@ jobs:
       - name: Process Git Metadata
         id: metadata
         run: |
-          # 7-digit Short SHA calculation
           echo "SHORT_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV
           
-          # Isolate the commit title summary line only
           IFS= read -r FIRST_LINE << 'EOF'
           ${{ github.event.head_commit.message }}
           EOF
