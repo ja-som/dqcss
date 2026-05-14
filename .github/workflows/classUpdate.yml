@@ -43,13 +43,15 @@ jobs:
         if: ${{ steps.commit-step.outputs.committed == 'true' }}
         uses: tj-actions/changed-files@v44
         with:
+          base_sha: "HEAD^"
           separator: "\n"
 
       - name: Process Git Metadata
         id: metadata
         if: ${{ steps.commit-step.outputs.committed == 'true' }}
         run: |
-          echo "SHORT_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV
+          echo "ACTUAL_SHA=$(git rev-parse HEAD)" >> $GITHUB_ENV
+          echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
           echo "COMMIT_TITLE=$(git log -1 --pretty=%s)" >> $GITHUB_ENV
 
       - name: Actions Status Discord
@@ -58,18 +60,19 @@ jobs:
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           nodetail: true
-          title: "File(s) changed"
+          title: "Discord Classes Updated Automatically!"
           description: |
             **Repository:**
             [${{github.repository}}](https://github.com/${{github.repository}})
 
             **Event:**
-            [`${{env.SHORT_SHA}}`](https://github.com/${{github.repository}}/commit/${{github.sha}}) - ${{env.COMMIT_TITLE}}
+            [`${{env.SHORT_SHA}}`](https://github.com/${{github.repository}}/commit/${{env.ACTUAL_SHA}}) - ${{env.COMMIT_TITLE}}
             
             **File(s) changed:**
             ```
             ${{steps.changed-files.outputs.all_changed_files}}
             ```
+            
             **Triggered by:**
             Class Updater [bot]
           color: 0xac02be
