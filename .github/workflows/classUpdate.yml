@@ -30,7 +30,7 @@ jobs:
         if: ${{steps.update-src.outputs.totalChanges > 0}}
         with:
           default_author: github_actions
-          message: "update classes"
+          message: "[bot] update classes"
           fetch: true
           
       - name: Checkout code
