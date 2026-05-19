@@ -112,6 +112,11 @@
     max-width: 185px;
   }
 
+  /* ////////////////////////////// Fixes \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+  /* fix for dragging app window from anywhere */
+  body { app-region: no-drag; }
+
+
 
   /* ////////////////////////////// Mac OS specific \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
     /* "center" Vencord Toolbox button */
@@ -124,4 +129,4 @@
   /* .platform-osx .container__44ee9 /* Orbs */
   /* {
     margin-right: 36px;
-  }
+  } */
