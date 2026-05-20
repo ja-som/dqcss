@@ -113,8 +113,6 @@
   }
 
   /* ////////////////////////////// Fixes \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
-  /* fix for dragging app window from anywhere */
-  body { app-region: no-drag; }
 
 
 
