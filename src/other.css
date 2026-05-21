@@ -79,9 +79,9 @@
       }
   }
   
-  /* Pin page switcher to bottom of search results */
+  /* Pin page switcher to the bottom of the search results */
   /* https://discord.com/channels/1015060230222131221/1334846468334555207 */
-  [class^="searchResultsWrap_"] [class^="container_"]:has([class^="pageControlContainer_"]){
+  #search-results+.container_b82a71 {
     position: sticky;
     bottom: 0px;
     z-index: 999;
