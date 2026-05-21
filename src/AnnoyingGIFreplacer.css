@@ -1,9 +1,8 @@
 /* Annoying GIF replacer */
-.imageWrapper:has(a:is(
-    [href*="table-mess-lmao-laugh"],
-    [href*="damn-boi-he-thick"],
-    [href*="god-damn-gawd-dayum-baylon-outloud"]
-)) {
+/* 1. Reset wrapper dimensions when a target GIF is present */
+.imageWrapper:has(a[href*="table-mess-lmao-laugh"]),
+.imageWrapper:has(a[href*="damn-boi-he-thick"]),
+.imageWrapper:has(a[href*="god-damn-gawd-dayum-baylon-outloud"]) {
     width: fit-content !important;
     height: auto !important;
     min-width: 0 !important;
@@ -14,19 +13,17 @@
     margin-top: 4px;
 }
 
-.imageWrapper:has(a:is(
-    [href*="table-mess-lmao-laugh"],
-    [href*="damn-boi-he-thick"],
-    [href*="god-damn-gawd-dayum-baylon-outloud"]
-)) > * {
+/* 2. Hide the actual GIF/Video elements inside the wrapper */
+.imageWrapper:has(a[href*="table-mess-lmao-laugh"]) > *,
+.imageWrapper:has(a[href*="damn-boi-he-thick"]) > *,
+.imageWrapper:has(a[href*="god-damn-gawd-dayum-baylon-outloud"]) > * {
     display: none !important;
 }
 
-.imageWrapper:has(a:is(
-    [href*="table-mess-lmao-laugh"],
-    [href*="damn-boi-he-thick"],
-    [href*="god-damn-gawd-dayum-baylon-outloud"]
-))::after {
+/* 3. Inject the clean placeholder text badge */
+.imageWrapper:has(a[href*="table-mess-lmao-laugh"])::after,
+.imageWrapper:has(a[href*="damn-boi-he-thick"])::after,
+.imageWrapper:has(a[href*="god-damn-gawd-dayum-baylon-outloud"])::after {
     content: "🚫 Annoying GIF hidden";
     display: block;
     padding: 8px 16px;
