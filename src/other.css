@@ -1,23 +1,27 @@
 /* ////////////////////////////// other \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 /* vesktop loading */
-[class*=content]:has(> video[data-testid="app-spinner"]) {
-    position: relative;
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      translate: 25%;
-      width: 200px;
-      height: 180px;
-      background-image: url('https://raw.githubusercontent.com/ja-som/dqcss/refs/heads/main/assets/VCsplash.webp') !important;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    video { visibility: hidden; }
-   div[class^=text_] { top: 10px; }
+.fixClipping_efbae7 .content_a2f514 {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    translate: 25%;
+    width: 200px;
+    height: 180px;
+    background-image: url('https://raw.githubusercontent.com/ja-som/dqcss/refs/heads/main/assets/VCsplash.webp') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+  & .spinner_a2f514[data-testid="app-spinner"] {
+    visibility: hidden;
+  }
+  & .text_a2f514 {
+    top: 10px;
+  }
+}
   
   
   /* cat emoji button */
