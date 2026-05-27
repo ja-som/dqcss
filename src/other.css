@@ -86,21 +86,19 @@
   
   /* Adding people isn't that important */
   /* https://discord.com/channels/1015060230222131221/1276982404501999750 */
-  [data-tab-id=ADD_FRIEND]{
-      background-color: var(--background-color) !important;
-      color: var(--text-4) !important;
+  .addFriend__133bf {
+    background-color: var(--background-color) !important;
+    color: var(--text-4) !important;
+
+    &:hover {
+        background-color: var(--hover) !important;
+        color: var(--text-3) !important;
+    }
   }
-  [data-tab-id=ADD_FRIEND]:hover{
-      background-color: var(--hover) !important;
-      color: var(--text-3) !important;
-  }
-  [data-tab-id=ADD_FRIEND][aria-selected=true]{
-      background-color: var(--active) !important;
-      color: var(--text-2) !important;
-  }
-  [data-tab-id=ADD_FRIEND][aria-selected=true]:hover{
-      background-color: var(--active) !important;
-      color: var(--text-2) !important;
+
+  .addFriend__133bf[aria-selected=true] {
+    background-color: var(--active) !important;
+    color: var(--text-2) !important;
   }
   
   /* make search bar smaller */
