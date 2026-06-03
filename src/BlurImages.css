@@ -1,10 +1,10 @@
 /* Blur images in specific channel */
 /* 
 WW announcement channel - 728638965812428893
-SAD drama-hub - 830167550166958080
+SAD drama-hub - 830167550166958080 - SPOILER images only
 */
 [id*="728638965812428893"] .imageWrapper_af017a img,
-[id*="830167550166958080"] .imageWrapper_af017a img {
+[id*="830167550166958080"] .imageWrapper_af017a img[src*="SPOILER"] {
     filter: blur(30px) !important;
     transition: filter 0.3s ease !important;
 }
