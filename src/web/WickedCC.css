@@ -1,0 +1,47 @@
+/* https://*.wicked.cc/* */
+
+/* 1. heavy blur: images, videos, and avatars */
+.post-card-image img,
+.category-card-image img,
+.widget-thumb img,
+.main-carousel .carousel-item img,
+.main-carousel .carousel-item video,
+.preview-carousel .carousel-item img,
+.preview-carousel .carousel-item video,
+.article_content img,
+.post-card-avatar img,
+.avatar img,
+.author-avatar img,
+.creator-card-avatar img {
+    filter: blur(30px) !important;
+    clip-path: inset(0) !important;
+    -webkit-clip-path: inset(0) !important;
+    transition: filter 0.4s ease-in-out !important;
+    transform: none !important;
+}
+
+/* 2. reveal on hover */
+.post-card:hover .post-card-image img,
+.post-card:hover .post-card-avatar img,
+.category-card:hover .category-card-image img,
+.widget-thumb:hover img,
+.main-carousel .carousel-item:hover img,
+.main-carousel .carousel-item:hover video,
+.preview-carousel .carousel-item:hover img,
+.preview-carousel .carousel-item:hover video,
+.article_content img:hover,
+.article_content p:hover img,
+.avatar:hover img,
+.author-avatar:hover img,
+.creator-card:hover .creator-card-avatar img {
+    filter: blur(0) !important;
+}
+
+/* 3. prevents "fuzz" from leaking outside boundaries */
+.post-card-image,
+.category-card-image,
+.widget-thumb,
+.post-card-avatar,
+.creator-card-avatar {
+    overflow: hidden !important;
+}
