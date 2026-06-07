@@ -1,0 +1,155 @@
+/* https://*.discord.com/* */
+
+/* ////////////////////////////// Hide all the things \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.searchBar_e6b769,/* Find or start a conversation button */
+.nowPlayingColumn__133bf,/* Active Now */
+.wrapper__5d00f,/* top part (sponsored) of "All quests" */
+.wrapper__0829a,/* top part (ORBS info) of "All quests" */
+.footer__5be3e,/* "message @name" box from profile */
+.bannerButton_fb7f94[aria-label="Add Friend"],/* "Add Friend" button from profile */
+.closeButton__972a0,/* "Close DM" button */
+.container__0d0f9,/* Boosting progress bar */
+.inviteButton_f37cb1,/* "Invite to Server" button */
+.button__24af7[aria-label="Send a gift"],/* Gift button in chat*/
+.button__24af7[aria-label="Give a Gift"],/* Gift button in DMs*/
+.refreshVoiceChannelsButton__29444,/* "🔊 Show All" button */
+.voiceBar__7aaec,/* "X IN VOICE" bar */
+.iconNoChannelInfo_c69b6d,.iconWithChannelInfo_c69b6d/* stupid buttons from channels in Channels List */
+{
+    display: none !important;
+}
+
+/* ////////////////////////////// user profile \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* bio scrollbar + unclamp */
+/* https://discord.com/channels/1015060230222131221/1255186876084654191/1262252001979269130 */
+[class^="descriptionClamp_f5f93a"] {
+    -webkit-line-clamp: unset;
+    max-height: 112px;
+    overflow-x: hidden;
+    overflow-y: auto;
+      
+      &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+  
+      &::-webkit-scrollbar-thumb {
+        background: var(--bg-2); /*color from theme */
+        background-clip: padding-box;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        min-height: 40px;
+      }
+  }
+
+/* ////////////////////////////// chat \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* Move button bar above reply */
+/* https://discord.com/channels/1015060230222131221/1263665501817536542 */
+.buttonContainer_c19a55 > .buttons__5126c {
+    transform: translateY(-20%);
+}
+
+/* Hide chat box if you have no permission to write in the channel */
+/* https://discord.com/channels/1015060230222131221/1249362290667556965 */
+[class*=channelTextAreaDisabled] {
+    display: none!important;
+}
+
+[class*=channelTextAreaDisabled] {
+    opacity: 0!important;
+    position: absolute!important;
+    height: 0px!important;
+    width: 0px!important;
+    z-index: 0!important;
+}
+
+/* Hide typing dots in chat bar */
+/* https://discord.com/channels/1015060230222131221/1322496323202715689/1325755259896725505 */
+svg[class*="ellipsis_b88801"] {
+  display: none !important;
+
+  & + span {
+    margin-left: 5px !important;
+  }
+}
+
+/* ////////////////////////////// servers list \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* bigger folder icon */
+/* https://discord.com/channels/1015060230222131221/1359880118436233357 */
+.folderIcon__48112 {
+    svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 1px;
+    }
+  }
+
+/* ////////////////////////////// other \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+  /* reduce context menu padding */
+  /* https://discord.com/channels/1015060230222131221/1371211975794888794 */
+    .menu_c1e9c4 {
+        min-width: 0;
+        width: 200px !important;
+    }
+    .scroller_c1e9c4 {
+        margin: -4px;
+    }
+    .separator_c1e9c4 {
+        margin: 0px 0px !important;
+    }
+    .wrapper_f563df {
+        padding: 0px !important;
+        margin: 1px;
+    }
+    .item_c1e9c4 {
+        min-height: 0;
+        padding: 4px 8px;
+    }
+    .icon_f563df {
+        width: 18px;
+    }
+    .button_f563df {
+        width: 44px;
+        height: 36px;
+        border-radius: 4px;
+    }
+    .icon_c1e9c4 {
+        width: 18px;
+        height: 18px;
+    }
+    .iconContainer_c1e9c4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+  /* Pin page switcher to the bottom of the search results */
+  /* https://discord.com/channels/1015060230222131221/1334846468334555207 */
+  #search-results+.container_b82a71 {
+    position: sticky;
+    bottom: 0px;
+    z-index: 999;
+    background: var(--bg-4); /* color from theme */
+  }
+  
+/* ////////////////////////////// blur images \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/* 
+WW announcement channel - 728638965812428893
+SAD nsfw-chat-and-pics - 830187485434478663
+SAD wcif-nsfw - 830306448173039649
+SAD drama-hub - 830167550166958080 - SPOILER images only
+*/
+[id*="728638965812428893"] .imageWrapper_af017a img,
+[id*="830187485434478663"] .imageWrapper_af017a img,
+[id*="830306448173039649"] .imageWrapper_af017a img,
+[id*="830167550166958080"] .imageWrapper_af017a img[src*="SPOILER"] {
+    filter: blur(30px) !important;
+    transition: filter 0.3s ease !important;
+}
+/* Reveal on hover */
+[id*="728638965812428893"] .imageWrapper_af017a:hover img,
+[id*="830187485434478663"] .imageWrapper_af017a:hover img,
+[id*="830306448173039649"] .imageWrapper_af017a:hover img,
+[id*="830167550166958080"] .imageWrapper_af017a:hover img {
+    filter: blur(0) !important;
+}
