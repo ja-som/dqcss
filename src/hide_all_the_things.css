@@ -23,9 +23,10 @@
 .refreshVoiceChannelsButton__29444,/* "🔊 Show All" button */
 .voiceBar__7aaec,/* "X IN VOICE" bar */
 .audioButtonParent__5e764>.buttonChevron__5e764,/* Input/Output options in the user panel area */
-.iconNoChannelInfo_c69b6d,.iconWithChannelInfo_c69b6d/* stupid buttons from channels in Channels List */
+.iconNoChannelInfo_c69b6d,.iconWithChannelInfo_c69b6d,/* stupid buttons from channels in Channels List */
 /* div[aria-label="Channel Options"], div[aria-label="Invite to Voice"], div[aria-label="Open Chat"],
 div[aria-label="Create Invite"], div[aria-label="Edit Channel"], div[aria-label="Invite to Server"] */
+.embedSuppressButton__623de/* supress embeds button on embed hover */
 {
     display: none !important;
 }
