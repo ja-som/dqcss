@@ -1,4 +1,22 @@
 /* ////////////////////////////// recolors \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+  
+  /* Adding people isn't that important */
+  /* https://discord.com/channels/1015060230222131221/1276982404501999750 */
+  .addFriend__133bf {
+    background-color: var(--background-color) !important;
+    color: var(--text-4) !important;
+
+    &:hover {
+        background-color: var(--hover) !important;
+        color: var(--text-3) !important;
+    }
+  }
+
+  .addFriend__133bf[aria-selected=true] {
+    background-color: var(--active) !important;
+    color: var(--text-2) !important;
+  }
+
 /* toolbar icons to match the other icons */
 [role="button"] {
     --icon-color: var(--text-5);
