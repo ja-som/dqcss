@@ -14,7 +14,8 @@
 .button__24af7[aria-label="Give a Gift"],/* Gift button in DMs*/
 .refreshVoiceChannelsButton__29444,/* "🔊 Show All" button */
 .voiceBar__7aaec,/* "X IN VOICE" bar */
-.iconNoChannelInfo_c69b6d,.iconWithChannelInfo_c69b6d/* stupid buttons from channels in Channels List */
+.iconNoChannelInfo_c69b6d,.iconWithChannelInfo_c69b6d,/* stupid buttons from channels in Channels List */
+.embedSuppressButton__623de/* supress embeds button on embed hover */
 {
     display: none !important;
 }
