@@ -149,5 +149,14 @@
   transition: border-radius 0.2s linear;
   border-radius: 50%;
 }
+  
+  /* Pin page switcher to the bottom of the search results */
+  /* https://discord.com/channels/1015060230222131221/1334846468334555207 */
+  #search-results+.container_b82a71 {
+    position: sticky;
+    bottom: 0px;
+    z-index: 999;
+    background: var(--bg-4); /* color from theme */
+  }
 
 /* just a test - teesting*/
