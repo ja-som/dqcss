@@ -75,15 +75,6 @@
         align-items: center;
     }
   
-  /* Pin page switcher to the bottom of the search results */
-  /* https://discord.com/channels/1015060230222131221/1334846468334555207 */
-  #search-results+.container_b82a71 {
-    position: sticky;
-    bottom: 0px;
-    z-index: 999;
-    background: var(--bg-4); /* color from theme */
-  }
-  
   /* make search bar smaller */
   .search__49676{
     max-width: 185px;
