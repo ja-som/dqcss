@@ -16,7 +16,6 @@ SAD wcif-NSFW - 830306448173039649
     transition: filter 0.3s ease !important;
 }
 /* Exclude images in embeds */
-[id*="728638965812428893"] .embed__623de .imageWrapper_af017a img,
 [id*="830167550166958080"] .embed__623de .imageWrapper_af017a img,
 [id*="830174285514670170"] .embed__623de .imageWrapper_af017a img,
 [id*="830187485434478663"] .embed__623de .imageWrapper_af017a img,
