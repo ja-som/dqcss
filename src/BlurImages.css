@@ -24,7 +24,7 @@ SAD wcif-NSFW - 830306448173039649
 }
 /* Reveal on hover */
 [id*="728638965812428893"] .imageWrapper_af017a:hover img,
-[id*="830167550166958080"] .imageWrapper_af017a:hover img[src*="SPOILER"],
+[id*="830167550166958080"] .imageWrapper_af017a:hover img,
 [id*="830174285514670170"] .imageWrapper_af017a:hover img,
 [id*="830187485434478663"] .imageWrapper_af017a:hover img,
 [id*="830306448173039649"] .imageWrapper_af017a:hover img
