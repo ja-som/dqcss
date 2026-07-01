@@ -7,7 +7,7 @@ SAD NSFW-chat-and-pics - 830187485434478663
 SAD wcif-NSFW - 830306448173039649
 */
 [id*="728638965812428893"] .imageWrapper_af017a img,
-[id*="830167550166958080"] .imageWrapper_af017a:not(.embedMedia__623de) img[src*="SPOILER"],
+[id*="830167550166958080"] .imageWrapper_af017a:not(.embedMedia__623de) img/* [src*="SPOILER"] */,
 [id*="830174285514670170"] .imageWrapper_af017a:not(.embedMedia__623de) img,
 [id*="830187485434478663"] .imageWrapper_af017a:not(.embedMedia__623de) img,
 [id*="830306448173039649"] .imageWrapper_af017a:not(.embedMedia__623de) img
@@ -16,6 +16,7 @@ SAD wcif-NSFW - 830306448173039649
     transition: filter 0.3s ease !important;
 }
 /* Exclude images in embeds */
+[id*="830167550166958080"] .embed__623de .imageWrapper_af017a img
 [id*="830174285514670170"] .embed__623de .imageWrapper_af017a img,
 [id*="830187485434478663"] .embed__623de .imageWrapper_af017a img,
 [id*="830306448173039649"] .embed__623de .imageWrapper_af017a img
